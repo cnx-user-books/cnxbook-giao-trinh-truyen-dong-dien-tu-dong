@@ -1,0 +1,172 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Đặc tính cơ của động cơ một chiều</title>
+  <metadata>
+  <md:content-id>m29960</md:content-id><md:title>Đặc tính cơ của động cơ một chiều</md:title>
+  <md:abstract>Phần này trình bày về đặc tính cơ của động cơ một chiều</md:abstract>
+  <md:uuid>5b3f14df-693f-45fc-b628-587c9c4eca36</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-256014327289">
+      <title>ĐẶC TÍNH CƠ CỦA ĐỘNG CƠ MỘT CHIỀU KÍCH TỪ NỐI TIẾP (ĐMnt) VÀ HỖN HỢP (ĐMhh)</title>
+      <section id="id-750748894508">
+        <title>Sơ đồ nối dây của ĐMnt : </title>
+        <para id="id3767957">Động cơ điện một chiều kích từ nối tiếp (ĐMnt): nguồn một chiều cấp chung cho phần ứng nối tiếp với kích từ.</para>
+        <para id="id3767970">IưIktU+-RưfECktFktFktđmHình 2-10: a) Sơ đồ nối dây ĐMnt  b) Đặc tính từ hoá của ĐMnt.a)b)đm</para>
+        <para id="id4746954">Từ sơ đồ nguyên lý ta thấy dòng kích từ chính là dòng phần ứng, nên từ thông của động cơ phụ thuộc vào dòng phần ứng và phụ tải của động cơ.</para>
+        <para id="id4746965">Theo sơ đồ hình 2-10a, có thể viết phương trình cân bằng điện áp của mạch phần ứng như sau:</para>
+        <para id="id4746973">U = E + R.Iư = k + R.Iư(2-39)</para>
+        <para id="id4747000">Trong đó: U là điện áp nguồn, (V)</para>
+        <para id="id4747006"> R = Rư + Rkt + Rưf(2-40)</para>
+        <para id="id4519742">Trong này: Rư là điện trở phần ứng động cơ.</para>
+        <para id="id4519754"> Rkt là điện trở cuộn dây kích từ</para>
+        <para id="id4519771"> Rưf là điện trở phụ mắc thêm vào mạch phần ứng</para>
+        <para id="id4519789">Tương tự ĐMđl, từ các phương trình trên ta rút ra:</para>
+        <para id="id4519800"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:mi fontstyle="italic">kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mi fontstyle="italic">kφ</m:mi></m:mfrac></m:mrow></m:mrow><m:mi>I</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U}  over  {kφ} }  -  {  {R+R rSub { size 8{ ital "æf"} } }  over  {kφ} } I} {}</m:annotation></m:semantics></m:math>(2-41)</para>
+        <para id="id3881413"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:mi fontstyle="italic">kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mi>R</m:mi><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U}  over  {kφ} }  -  {  {R+R rSub { size 8{ ital "æf"} } }  over  { \( kφ \)  rSup { size 8{2} } } } M} {}</m:annotation></m:semantics></m:math>(2-42)</para>
+        <para id="id4677320">Từ thông  phụ thuộc vào dòng kích từ Ikt theo đặc tính từ hoá như đường  trên hình 2-10b. Đó là quan hệ giữa từ thông  với sức từ động kích từ Fkt của động cơ. mà: Fkt = Ikt.Wkt . Khi cho dòng kích từ bằng định mức thì từ thông động cơ sẽ đạt định mức.</para>
+        <para id="id4705157">Để đơn giản hoá khi thành lập phương trình đặc tính cơ ĐMnt, ta coi mạch từ của động cơ là chưa bảo hoà, quan hệ giữa từ thông với dòng kích từ là tuyến tính đường  trên hình 2-10b:</para>
+        <para id="id4705179"> = C.Ikt ; (C - hệ số tỉ lệ)(2-43) </para>
+        <para id="id4705203">Nếu bỏ qua phản ứng phần ứng, ta có:</para>
+        <para id="id4705209"> = C.Ikt = C.Iư = C.I(2-44) </para>
+        <para id="id4505370">Kết hợp (2-44) với (2-39) ta được phương trình đặc tính cơ điện của ĐMnt:</para>
+        <para id="id4505383"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mi>U</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi><m:mtext>.</m:mtext><m:mi>I</m:mi></m:mrow></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mi>R</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mtext> A</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>I</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{w= {  {U}  over  {k "." C "." I} } - {  {R}  over  {k "." C} } = {  {" A" rSub { size 8{1} } }  over  {I} } -B} {}</m:annotation></m:semantics></m:math>(2-45)</para>
+        <para id="id3878577">Với: A1 = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi>U</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {U}  over  {k "." C} } } {}</m:annotation></m:semantics></m:math> = const ; B = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi>R</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {R}  over  {k "." C} } } {}</m:annotation></m:semantics></m:math> = const ;</para>
+        <para id="id4513175">Mặt khác: </para>
+        <para id="id4513180">M = k..I = k.C.I2 (2-46)</para>
+        <para id="id4513200">Nên:
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>I</m:mi><m:mo stretchy="false">=</m:mo><m:msqrt><m:mfrac><m:mi>M</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:mfrac></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I= sqrt { {  {M}  over  {k "." C} } } } {}</m:annotation></m:semantics></m:math>(2-47)</para>
+        <para id="id5677052">Thay (2-47) vào (2-45) ta có phương trình đặc tính cơ ĐMnt:</para>
+        <para id="id5677064"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:msub><m:mi>A</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msqrt><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:msqrt></m:mrow><m:msqrt><m:mi>M</m:mi></m:msqrt></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mi>R</m:mi><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mtext> A</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:msqrt><m:mi>M</m:mi></m:msqrt></m:mfrac><m:mo stretchy="false">−</m:mo><m:mi>B</m:mi></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{w= {  {A rSub { size 8{1} }  "."  sqrt {k "." C} }  over  { sqrt {M} } } - {  {R}  over  {k "." C} } = {  {" A" rSub { size 8{2} } }  over  { sqrt {M} } } -B} {}</m:annotation></m:semantics></m:math>(2-48)</para>
+        <para id="id5484669">Trong đó: </para>
+        <para id="id5484674">A2 = A1.
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msqrt><m:mrow><m:mi>k</m:mi><m:mtext>.</m:mtext><m:mi>C</m:mi></m:mrow></m:msqrt></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ sqrt {k "." C} } {}</m:annotation></m:semantics></m:math> = const.</para>
+        <para id="id5468961">Qua phương trình (2-45) và (2-48) ta thấy đặc tính cơ điện và đặc tính cơ của ĐMnt có dạng hypecbol và rất mềm như hình 2-11a, b và tốc độ không tải lý tưởng bằng vô cùng. Thực tế không có tốc độ không tải lý tưởng đối với động cơ điện một chiều kích từ nối tiếp.</para>
+        <para id="id5468982">Các đặc tính cơ điện và đặc tính cơ của ĐMnt :</para>
+        <para id="id5468994">đm1TNNT1, Rưf1IđmIđm1TNNT1, Rưf1MđmMa)b)Hình 2-11: a) Đặc tính cơ điện của ĐMnt b) Đặc tính cơ của ĐMnt</para>
+        <para id="id5253182">Như vậy đặc tính cơ điện của ĐMnt có dạng đường hypebol và rất mềm. Nó có hai đường tiệm cận (hình 2-12a):</para>
+        <para id="id5253196">+ Khi I  0,    : Tiệm cận trục tung.</para>
+        <para id="id4559927">+ Khi   -B, M   : Tiệm cận đường  = -B = - (Rư)/K.C .</para>
+        <para id="id4559985">Tương tự, đối với đặc tính cơ của ĐMnt cũng có hai đường tiệm cận (hình 2-12b):</para>
+        <para id="id4559998">+ Khi M  0,    : Tiệm cận trục tung.</para>
+        <para id="id4473574">+ Khi   -B, M   : Tiệm cận đường  = -B = - (Rư)/K.C .</para>
+        <para id="id4473632">đmTNNT, RưfIcIđmTNNT, RưfMcMa)b)Hình 2-12: a) Tiệm cận của đặc tính cơ điện của ĐMnt b) Tiệm cận của đặc tính cơ của ĐMnt-B-B</para>
+        <para id="id4872409">Với đặc tính cơ tự nhiên thì Rưf = 0, nên ta có hai đường tiệm cận ứng với:</para>
+        <para id="id4872422">+ Khi M  0,    : Tiệm cận trục tung.</para>
+        <para id="id4872467">+ Khi   -B(tn), M   : đặc tính cơ sẽ tiệm cận với đường thẳng  = -B(nt) = - (Rư)/K.C .</para>
+      </section>
+      <section id="id-509825497106">
+        <title>Đặc tính vạn năng của ĐMnt:</title>
+        <para id="id3682858">Các phương trình (2-40) , (2-41) và các đặc tính trên hình 2-12 được rút ra với giả thiết đặc tính từ hoá  = f(I) là đường thẳng. Tuy nhiên, thực tế quan hệ  = f(I) là phi tuyến nên việc viết phương trình và vẽ các đặc tính cơ ĐMnt là rất khó khăn. Vì vậy các nhà chế tạo động cơ thường cho trước các đường cong thực nghiệm:</para>
+        <para id="id3682896">* = f(I*) và M* = f(I*) khi không có điện trở phụ, và gọi là đặc tính vạn năng của ĐMnt như hình 2-13.</para>
+        <para id="id3682937">Hình 2-13: Các đặc tính vạn năng của ĐMnt 0,4 0,8 1,2 1,6 2,0 2,4 2,8 *M = f(I*)* = f(I*)I*2,42,01,61,20,80,40</para>
+        <para id="id4885812">Các đặc tính này cho theo đơn vị tương đối:</para>
+        <para id="id4885818">* = /đm ;</para>
+        <para id="id4885848">I* = I/Iđm ;</para>
+        <para id="id4885866">M* = M/Mđm ;</para>
+        <para id="id4885883">Dùng chung cho các loại động cơ trong dãy công suất có cùng tiêu chuẩn thiết kế.</para>
+        <para id="id4885890">Đối với động cơ đã cho, ta chỉ cần lấy giá trị đm nhân vào trục tung và lấy Iđm nhân vào trục hoành, ta sẽ được đặc tính cơ điện tự nhiên  = f(I) của động cơ đó. Mặt khác, từ giá trị I* tra theo đường M* = f(I*) ta được giá trị M* tương ứng. Nhân giá trị M* đó với Mđm của động cơ đã cho ta được M. Như vậy, từ đặc tính cơ điện tự nhiên và đường đặc tính vạn năng M* = f(I*) ta sẽ được đặc tính cơ tự nhiên  = f(M). Người ta có thể vẽ đặc tính cơ nhân tạo (dùng thêm điện trở phụ trong mạch phần ứng) của ĐMnt khi sử dụng các đặc tính vạn năng và đặc tính cơ tự nhiên.</para>
+      </section>
+      <section id="id-339416741088">
+        <title>Đặc tính cơ khi khởi động ĐMnt:</title>
+        <para id="id5666556">Tương tự ĐMđl, để hạn chế dòng khởi động ĐMnt người ta cũng đưa thêm điện trở phụ vào mạch phần ứng ngay khi bắt đầu khởi động, và sau đó thì loại dần đi để đưa tốc độ động cơ lên xác lập.</para>
+        <para id="id5666580">I’kđbđ = I’nm = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>®</m:mi><m:mi>m</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {U rSub { size 8{®m} } }  over  {R rSub { size 8{­} } +R rSub { size 8{­f} } } } "  "} {}</m:annotation></m:semantics></m:math>= (22,5)Iđm Icp(2-49)</para>
+        <section id="id-199969705937">
+          <title>a) Xây dựng các đặc tính cơ khi khởi động ĐMđl: </title>
+          <para id="id4588046">Sơ đồ nguyên lý và đặc tính khởi động trình bày trên hình 2-13:</para>
+          <para id="id4588053">CktIktIưEK2 K1Rưf2 Rưf1U+-Hình 2-13: a) Sơ đồ nối dây ĐMnt khởi động 2 cấp, m = 2b) Các đặc tính cơ khi khởi động ĐMnt, m = 2.a)0 Ic I2 I1 Iư12TNXL21abcdehb)fA</para>
+          <para id="id4831660"/>
+          <para id="id4831668">Quá trình xây dựng đặc tính khởi động theo các bước sau:</para>
+          <list id="id4831675" list-type="enumerated">
+            <item>Dựa vào các thông số của động cơ và đặc tính vạn năng, vẽ ra đặc tính cơ tự nhiên.</item>
+            <item>Chọn dòng điện giới hạn I1  (22,5)Iđm và tính điện trở tổng của mạch phần ứng khi khởi động R = Uđm/I1 . Ta kẻ đường I1 = const nó sẽ cắt đặc tính tự nhiên tại e.</item>
+            <item>Chọn dòng chuyển khi khởi động I2 = (1,11,3)Ic . Kẻ đường I2 = const nó sẽ cắt đặc tính tự nhiên tại f, và nó cũng cắt đặc tính nhân tạo dốc nhất (có R) tại b theo biểu thức:</item>
+          </list>
+          <para id="id4819914"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>NT</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>b</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>TN</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">(</m:mo><m:mi>f</m:mi><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>-I</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mi>R</m:mi></m:mrow><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>-I</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{ ital "NT" \( b \) } } =ω rSub { size 8{ ital "TN" \( f \) } }  {  {U rSub { size 8{"âm"} } "-I" rSub { size 8{2} } R}  over  {U rSub { size 8{"âm"} } "-I" rSub { size 8{2} } R rSub { size 8{æ} } } } "  "} {}</m:annotation></m:semantics></m:math>(2-50)</para>
+          <para id="id5095365">Kẻ các đường ef và ab kéo dài, chúng sẽ cắt nhau tại A, từ A dựng tiếp các đường đặc tính khởi động tuyến tính hoá thoả mãn các yêu cầu khởi động và ta có đường khởi động abcdefXL.</para>
+        </section>
+        <section id="id-558442945367">
+          <title>b) Tính điện trở khởi động:</title>
+          <para id="id5179324">Theo phương pháp tuyến tính hoá trên, điện trở phụ tổng được tính Rưf = R - Rư , ta có điện trở phụ các cấp:</para>
+          <para id="id5179344"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi fontstyle="italic">f1</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ac</m:mtext></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ea</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>­f</m:mtext></m:mrow></m:mstyle></m:msub><m:mi>;</m:mi><m:mtext/><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi fontstyle="italic">f2</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ce</m:mtext></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ea</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>­f</m:mtext></m:mrow></m:mstyle></m:msub><m:mi>;</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{­f1} } = {  { ital "ac"}  over  { ital "ea"} } R rSub { size 8{"­f"} } ;"      "R rSub { size 8{­f2} } = {  { ital "ce"}  over  { ital "ea"} } R rSub { size 8{"­f"} } ; } {}</m:annotation></m:semantics></m:math>(2-51)</para>
+        </section>
+      </section>
+      <section id="id-283619636364">
+        <title>Các trạng thái hãm ĐMnt:</title>
+        <para id="id4833585">Động cơ ĐMnt có 0  , nên không có hãm tái sinh mà chỉ có hai trạng thái hãm: Hãm ngược và Hãm động năng.</para>
+        <section id="id-57441613779">
+          <title>Hãm ngược ĐMnt:</title>
+          <section id="id-68256249174">
+            <title>a) Đưa điện trở phụ lớn vào mạch phần ứng:</title>
+            <para id="id4617359">Động cơ đang làm việc tại A, đóng Rưf lớn vào phần ứng thì động cơ sẽ chuyển sang B, C và sẽ thực hiện hãm ngược đoạn CD:</para>
+            <para id="id4617374">Hình 2-14: a) Sơ đồ nối dây ĐMnt khi hãm ngược với Rưf b) Đặc tính hãm ngược ĐMnt, đoạn CD.CktIktIưERưf U+-a)0 Mc MTNDBCRưfAb)HN</para>
+          </section>
+          <section id="id-869665060413">
+            <title>b) Hãm ngược bằng cách đảo chiều điện áp phần ứng:</title>
+            <para id="id4860646">Động cơ đang làm việc ở điểm A trên đặc tính cơ tự nhiên với: Uư &gt; 0, quay với chiều  &gt; 0, làm việc ở chế độ động cơ, chiều mômen trùng với chiều tốc độ; Nếu ta đổi cực tính điện áp đặt vào phần ứng Uư &lt; 0 (vì dòng đảo chiều lớn nên phải thêm điện trở phụ vào để hạn chế) và vẫn giữ nguyên chiều dòng kích từ thì dòng điện phần ứng sẽ đổi chiều Iư &lt; 0 do đó mômen đổi chiều, động cơ sẽ chuyển sang điểm B trên đặc tính  hình 2-15, đoạn BC là đoạn hãm ngược, và sẽ làm việc xác lập ở D nếu phụ tải ma sát. Lúc hãm động năng, dòng hãm và mômen hãm của động cơ:</para>
+            <para id="id4860707"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>U</m:mi></m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mrow><m:mi>U</m:mi><m:mo stretchy="false">+</m:mo><m:mi>K</m:mi></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>φω</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow><m:mtext>&lt;0  </m:mtext><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">KφI</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none I rSub { size 8{h} } = {  { - U - E rSub { size 8{æ} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{æf} } } } = -  {  {U+K ital "φω"}  over  {R rSub { size 8{æ} } +R rSub { size 8{æf} } } } "&lt;0  " {} # 
+ right rbrace  left none M rSub { size 8{h} } =KφI rSub { size 8{h} } &lt;0 {} # 
+ right rbra } }  rbrace } {}</m:annotation></m:semantics></m:math>(2-52)</para>
+            <para id="id3854976">Phương trình đặc tính cơ:</para>
+            <para id="id3854981"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>U</m:mi></m:mrow><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  { - U}  over  {Kφ} }  -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{"æf"} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-53)</para>
+            <para id="id4829958">bđMc MHNDAôđBCb)Mc’a)U+-CktIktIưERưfHình 2-15: a) Sơ đồ hãm ngược bằng cách đảo Uư.b) Đặc tính cơ khi hãm ngược bằng cách đảo Uư.</para>
+            <para id="id4633616">Hãm động năng ĐMnt:</para>
+          </section>
+          <section id="id-0480752178478">
+            <title>a) Hãm động năng kích từ độc lập:</title>
+            <para id="id4397066">Động cơ đang làm việc với lưới điện (điểm A, hình 2-16), thực hiện cắt phần ứng động cơ ra khỏi lưới điện và đóng vào một điện trở hãm Rh, còn cuộn kích từ được nối vào lưới điện qua điện trở phụ sao cho dòng kích từ có chiều và trị số không đổi (Iktđm), và như vậy giống với trường hợp hãm động năng kích từ độc lập của ĐMđl.</para>
+            <para id="id4397098">Phương trình đặc tính cơ khi hãm động năng:</para>
+            <para id="id4397104">Hình 2-16: a) Sơ đồ hãm động năng kích từ độc lập ĐMnt.b) Đặc tính cơ khi HĐN kích từ độc lập ĐMnt.bđMc MHĐN NọỹiĐNAôđ2B1b)ôđ1B2Rh1Rh20C2C1a)U+-IktRktfCktIưERhMbđ2 Mbđ1
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æΣ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= -  {  {R rSub { size 8{æΣ} } "+R" rSub { size 8{h} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-54)</para>
+          </section>
+          <section id="id-548055948149">
+            <title>b) Hãm động năng tự kích từ :</title>
+            <para id="id4108999">Động cơ đang làm việc với lưới điện (điểm A), thực hiện cắt cả phần ứng và kích từ của động cơ ra khỏi lưới điện và đóng nối tiếp vào một điện trở hãm Rh, nhưng dòng kích từ vẫn phải được giữ nguyên theo chiều cũ do động năng tích luỹ trong động cơ, cho nên động cơ vẫn quay và nó làm việc như một máy phát tự kích biến cơ năng thành nhiệt năng trên các điện trở. </para>
+            <para id="id4109025">Phương trình đặc tính cơ khi hãm động năng tự kích từ:</para>
+            <para id="id4706415"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>kt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{ ital "kt"} } +R rSub { size 8{h} } }  over  { \( Kφ \)  rSup { size 8{2} } } }  M"  "} {}</m:annotation></m:semantics></m:math>(2-55)</para>
+            <para id="id4706550">Và từ thông giảm dần trong quá trình hãm động năng tự kích.</para>
+            <para id="id3977578">Hình 2-17: a) Sơ đồ hãm động năng tự kích từ ĐMnt.b) Đặc tính cơ khi HĐN tự kích từ ĐMnt.a)U+-IktCktIưERhhđMc MHĐN NọỹiĐNAôđ2B1b)ôđ1B2Rh1Rh20C2C1Mhđ2Mhđ1</para>
+          </section>
+        </section>
+      </section>
+      <section id="id-191934781843">
+        <title>Đảo chiều ĐMnt:</title>
+        <para id="id4503546">Đặc tính cơ của động cơ ĐMnt khi đảo chiều bằng cách đảo chiều điện áp phần ứng: </para>
+        <para id="id4503558"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mi fontstyle="italic">Kφ</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æΣ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">[</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msup><m:mo stretchy="false">]</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  { - U rSub { size 8{æ} } }  over  {Kφ \( I rSub { size 8{æ} }  \) } }  -  {  {R rSub { size 8{æΣ} } +R rSub { size 8{æf} } }  over  { \[ Kφ \( I rSub { size 8{æ} }  \)  \]  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-56)</para>
+        <para id="id3746079">Khi Uư &gt; 0, động cơ quay thuận  &gt; 0 (tại điểm A trên đặc tính cơ ở góc phần tư thứ nhất của toạ độ [M, ], với phụ tải là Mc &gt; 0). Nếu ta đảo cực tính điện áp phần ứng động cơ (vẫn giữ nguyên chiều từ thông kích từ) Uư &lt; 0, phụ tải động cơ theo chiều ngược lại Mc' &lt; 0, động cơ sẽ quay ngược  &lt; 0 (tại điểm A' trên đặc tính cơ ở góc phần tư thứ ba của toạ độ [M, ]. Nếu cho điện trở phụ vào mạch phần ứng, ta sẽ có các tốc độ nhân tạo ngược, hình 2-18.</para>
+        <para id="id3746160"></para>
+        <para id="id4647075">M-+U</para>
+        <para id="id3770211">A</para>
+        <para id="id4620714">ôđ</para>
+        <para id="id4620786">(ĐCth)Mc’</para>
+        <para id="id4640631">RưfMc M</para>
+        <para id="id5544027">(ĐCng)ECkt-ôđ</para>
+        <para id="id3851251">MIưIktA’</para>
+        <para id="id5095512">a)b)</para>
+        <para id="id4769873">Hình 2-18: a) Sơ đồ đảo chiều điện áp Uư của ĐMnt .b) Đặc tính cơ khi đảo chiều Uư của ĐMnt</para>
+      </section>
+      <section id="id-316274957951">
+        <title>Nhận xét về ĐMnt:</title>
+        <para id="id4976964">Về cấu tạo, ĐMnt có cuộn kích từ chịu dòng lớn, nên tiết diện to và số vòng dây ít. Nhờ đó nó dễ chế tạo và ít hư hỏng hơn so với ĐMđl.</para>
+        <para id="id4976985">Động cơ ĐMnt có khả năng quá tải lớn về mmomen. Khi có cùng một hệ số quá tải dòng điện như nhau thì mômen của ĐMnt lớn hơn mômen của ĐMđl.</para>
+        <para id="id4977011">Thực vậy, lấy ví dụ khi cho quá tải dòng Iqt = 1,5Iđm thì mômen quá tải của ĐMđl là : Mqt = Kđm.1,5Iđm = 1,5Mđm, nghĩa là hệ số quá tải mômen bằng hệ số quá tải dòng điện: KqtM = KqtI = 1,5. Trong kho đó, mômen của ĐMnt tỷ lệ với bình phương dòng điện, nên M'qt = K.C.I2 = K.C.(1,5Iđm)2 = 1,52.Mđm = 2,25Mđm, nghĩa là hệ số quá tải mômen bằng bình phương lần của hệ số quá tải dòng điện: K'qtM = K2qtI.</para>
+        <para id="id3683156">Mômen của ĐMnt Không phụ thuộc vào sụt áp trên đường dây tải điện, nghĩa là nếu giữ cho dòng điện trong động cơ định mức thì mômen động cơ cũng là định mức, cho dù động cơ nối ở đầu đường dây hay ở cuối đường dây.</para>
+      </section>
+      <section id="id-223293453654">
+        <title>Đặc điểm, đặc tính cơ động cơ ĐMhh :</title>
+        <para id="id3683193">Sơ đồ nguyên lý của động cơ ĐMhh như hình 2-19, với hai cuộn kích từ song song và nối tiếp tạo ra từ thông kích từ động cơ:</para>
+        <para id="id3683208"> = s + n(2-57)</para>
+        <para id="id3683244">Trong đó: s là phần từ thông do cuộn kích từ song song tạo nên; s = (0,75  0,85)đm và không phụ thuộc vào dòng phần ứng, tức không phụ thuộc vào phụ tải.</para>
+        <para id="id4764409">Còn n là phần từ thông do cuộn kích từ nối tiếp tạo ra, nó phụ thuộc vào dòng phần ứng. Khi phụ tải Mc = Mđm thì Iư = Iđm, tương ứng:</para>
+        <para id="id4764450">n.đm = (0,25  0,15)đm</para>
+        <para id="id4764480">Do có hai cuộn kích từ nên đặc tính cơ của ĐMhh vừa có dạng phi tuyến như ĐMnt, đồng thời có điểm không tải lý tưởng [0, 0] như của ĐMđl, hình 2-20, trong đó tốc độ không tải lý tưởng có giá trị khá lớn so với tốc độ định mức: 0  (1,3  1,6) đm .</para>
+        <para id="id5025219">Động cơ ĐMhh có ba trạng thái hãm tương tự như ĐMđl.</para>
+        <para id="id5025236">00 Mc M-ôđb)U+-IưEa)Hình 2-20: a) Sơ đồ nối dây ĐMhh .b) Đặc tính cơ của ĐMhhRưfTNCknIktnRưfCksIktsRktfIgh</para>
+      </section>
+    </section>
+  </content>
+</document>

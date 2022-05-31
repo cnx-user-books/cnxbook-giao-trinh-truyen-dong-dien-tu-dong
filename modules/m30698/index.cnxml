@@ -1,0 +1,403 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Quá trình quá độ truyền động điện</title>
+  <metadata>
+  <md:content-id>m30698</md:content-id><md:title>Quá trình quá độ truyền động điện</md:title>
+  <md:abstract>Phần này trình bày các khái niệm chung</md:abstract>
+  <md:uuid>a7e50181-24c8-410e-9855-afbd61a5bdd5</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-206558695887">
+      <title>KHÁI NIỆM CHUNG</title>
+      <para id="id6371200">+ Quá trình quá độ truyền động điện (QTQĐ TĐĐ) là quá trình làm việc của hệ thống TĐĐ khi chuyển từ trạng thái xác lập này sang trạng thái xác lập khác, khi đó các đại lượng đặc trưng cho hệ thống TĐĐ (I, M, , ...) đều thay đổi theo thời gian.</para>
+      <para id="id6158155">+ Dựa vào các đặc tính I(t), M(t), (t), n(t) ... ta sẽ xác định được thời gian và tính chất diễn biến của QTQĐ tương ứng với chế độ công nghệ của máy; từ đó đánh giá được mômen cho phép, gia tốc dòng điện trong QTQĐ, cũng như biết được mức độ quá tải của động cơ, và từ đó mà chọn công suất động cơ và các khí cụ, thiết bị điều khiển cho phù hợp.</para>
+      <para id="id6158172">+ Nguyên nhân có QTQĐ có thể là:</para>
+      <para id="id6174050">Nguyên nhân khách quan: do tác động ngẫu nhiên (nhiễu loạn) như: mưa, bảo, sét đánh, nhiệt độ thay đổi, điện áp, tần số lưới thay đổi, phụ tải thay đỏi bất thường ...</para>
+      <para id="id6100385">Nguyên nhân chủ quan: do con người điều khiển hoặc tác động điều khiển các chế độ làm việc khác nhau của hệ thống TĐĐ theo yêu cầu công nghệ như: thay đổi tốc độ, khởi động, hãm, đảo chiều ..., vì các phần tử, các thiết bị có quán tính cơ và quán tính điện từ nên có QTQĐ.</para>
+      <para id="id5498311">+ Hệ thống TĐĐ có các phần tử điện + cơ nên luôn luôn tồn tại các phần tử tích luỹ năng lượng, do đó mà có quán tính. </para>
+      <para id="id5564928">Quán tính điện từ: đặc trưng bởi hằng số thời gian điện từ Tđt = <media id="id16897521" alt=""><image src="graphics1.wmf" mime-type="image/wmf" height="32" width="29"/></media>, do các phần tử tích luỹ năng lượng điện từ như điện cảm L, tụ điện C.</para>
+      <para id="id5365808">Quán tính cơ: đặc trưng bởi hằng số thời gian cơ Tc =<media id="id16897552" alt=""><image src="graphics2.wmf" mime-type="image/wmf" height="36" width="28"/></media>, do các khâu tích luỹ động năng như mômen quán tính J và khối lượng quán tính m ( là độ cứng đặc tính cơ).</para>
+      <para id="id5132983">Quán tính nhiệt: được đặc trưng bởi hằng số thời gian nhiệt Tn = <media id="id16897585" alt=""><image src="graphics3.wmf" mime-type="image/wmf" height="32" width="31"/></media>, do các phần tử tích luỹ nhiệt năng như nhiệt dung ... (C là nhiệt dung, A là hệ số toả nhiệt).</para>
+      <para id="id5646449">Thường Tn rất lớn nên ta bỏ qua khi xét QTQĐ, vì QTQĐ có thể đã kết thúc rồi mà quá trình thay đổi nhiệt vẫn còn, cho nên coi như không ảnh hưởng đến QTQĐ đang xét.</para>
+      <para id="id5646470">Tđt có thể xét đến khi điện cảm L lớn, lúc đó quán tính điện từ tương đương với quán tính cơ.</para>
+      <para id="id5444402">Còn khi Tđt &lt;&lt; Tc thì bỏ qua quán tính điện từ.</para>
+      <para id="id6197278">Tc luôn luôn xét đến, vì các phần tử thường có J, m tương đối lớn.</para>
+      <para id="id6165686">+ Khảo sát QTQĐ sẽ xây dựng được các quan hệ của các đại lượng cơ, điện (n, , I, M ...) theo thời gian (t). Từ đó tính được thời gian QTQĐ. </para>
+      <para id="id6113916">Như vậy sẽ đánh giá được năng suất máy và nếu cần thiết thì tìm biện pháp giảm thời gian quá độ để tăng năng suất máy.</para>
+      <para id="id4933468">Hoặc từ đó tính được các gia tốc, lực điện động và sẽ hạn chế không cho vượt quá trị số cho phép.</para>
+      <para id="id4933477">Đồng thời sẽ tính được sự phát nóng của động cơ theo dòng xác lập và dòng quá độ, từ đó tìm biện pháp khắc phục và chọn công suất động cơ cho phù hợp.</para>
+      <para id="id4933485">Sau đây sẽ khảo sát một số quá trình quá độ (QTQĐ) thường xảy ra trong hệ thống truyền động điện (TĐĐ) và chủ yếu xét đến hằng số Tc và Tđt.</para>
+    </section>
+    <section id="id-0370233869806">
+      <title>QUÁ TRÌNH QUÁ ĐỘ CƠ HỌC KHI UNGUỒN = CONST VÀ MĐỘNG() LÀ TUYẾN TÍNH:</title>
+      <section id="id-912340346872">
+        <title>Phương trình tổng quát:</title>
+        <para id="id6302304">+ Khảo sát QTQĐ khi chỉ xét đến quán tính cơ (Tc) bỏ qua quán tính điện từ <media id="id16883237" alt=""><image src="graphics4.wmf" mime-type="image/wmf" height="22" width="14"/></media>Tđt - gọi tắt là QTQĐ cơ học.</para>
+        <para id="id5536552">+ Khảo sát QTQĐ cơ học với điều kiện điện áp nguồn là hằng số (Unguồn = const), mômen động Mđộng() tuyến tính là trường hợp đơn giản nhất, có thể coi hệ thuộc loại mẫu cơ học đơn khối, tuy nhiên lại rất hay gặp, vì nó đúng với các dạng đặc tính cơ M(), Mc() là tuyến tính (hình 5-1a), cũng có thể áp dụng cho các động cơ có M() là phi tuyến, nhưng trong phạm vi xét thì M() gần tuyến tính (hình 5-1b), hoặc M() và Mc() là phi tuyến cả nhưng có dạng gần giống nhau, như vậy cũng có thể có Mđộng() gần tuyến tính (hình 5-1c).</para>
+        <para id="id5631090">M()Mc()xlMco Mxl Mn MM()Mc()MđgMđgMđgMn Mco MMco Mn Mxl MxlM()Mc()xl(xl,Mxl)Hình 5-1: Các dạng có Mđộng là tuyến tính</para>
+        <para id="id6286805">+ Các giả thuyết cho trước:</para>
+        <para id="id6286810">M() và Mc() là tuyến tính, vậy Mđg() sẽ là tuyến tính; J = const; Ung = const; ví dụ như hình 5-1a, b; theo đó, QTQĐ được mô tả bởi hệ phương trình:</para>
+        <para id="id5430385"><media id="id17158317" alt=""><image src="graphics5.wmf" mime-type="image/wmf" height="224" width="165"/></media>(5-1)</para>
+        <para id="id5371226">Rút ra: </para>
+        <para id="id5371231">(Mn - ) -(Mco - c) = J<media id="id17158355" alt=""><image src="graphics6.wmf" mime-type="image/wmf" height="43" width="29"/></media></para>
+        <para id="id5371753">
+          <media id="id17158382" alt=""><image src="graphics7.wmf" mime-type="image/wmf" height="47" width="197"/></media>
+        </para>
+        <para id="id6157765">Ta có:</para>
+        <para id="id6165641"><media id="id17158421" alt=""><image src="graphics8.wmf" mime-type="image/wmf" height="43" width="119"/></media>  (5-2)</para>
+        <para id="id4933518">Trong đó:</para>
+        <para id="id4933523">Hằng số thời gian cơ học: <media id="id17158459" alt=""><image src="graphics9.wmf" mime-type="image/wmf" height="47" width="79"/></media> (sec); (5-3) </para>
+        <para id="id5847428">Tốc độ xác lập: <media id="id17158490" alt=""><image src="graphics10.wmf" mime-type="image/wmf" height="47" width="111"/></media> (rad/sec); (5-4) </para>
+        <para id="id6166233">Nếu đặt: </para>
+        <para id="id6166241"> Mo = Mn - Mco ; </para>
+        <para id="id6113210">đg =  + c ;</para>
+        <para id="id5506072">Thì: Mđg = Mo - đg ;đg = Mo / ­xl ;</para>
+        <para id="id6197070">Và:Tc = J/đg ; (5-3a)</para>
+        <para id="id5541462">­xl = Mo / đg ;  (5-4a)</para>
+        <para id="id5369172">Nghiệm phương trình không thuần nhất (5-2) là:</para>
+        <para id="id5369178">­ = ­xl + c.<media id="id17158608" alt=""><image src="graphics11.wmf" mime-type="image/wmf" height="21" width="36"/></media>  (5-5)</para>
+        <para id="id5358518">Theo điều kiện ban đầu: ­ = ­bđ khi t = 0, do đó:</para>
+        <para id="id5645537">c = ­bđ - ­xl</para>
+        <para id="id5663200">Vậy ta có:</para>
+        <para id="id5663205">(t)­ = ­xl + (­bđ - ­xl).<media id="id17158679" alt=""><image src="graphics12.wmf" mime-type="image/wmf" height="21" width="36"/></media> (5-6)</para>
+        <para id="id6181915">Theo giả thiết: M  ­ nên:</para>
+        <para id="id4680598">M­ = M­xl +(M­bđ - M­xl).<media id="id16840493" alt=""><image src="graphics13.wmf" mime-type="image/wmf" height="21" width="36"/></media> (5-7)</para>
+        <para id="id5708616">Tc là hằng số thời gian cơ học, nó đặc trưng cho nhịp độ biến thiên của mômen và tốc độ động cơ trong QTQĐ.</para>
+        <para id="id5124476">Có thể coi Tc là thời gian tăng tốc của động cơ từ trạng thái đứng im đến tốc độ xác lập nếu Mđg.bđ = const trong QTQĐ.</para>
+        <para id="id6181117">Với giả thiết trên thì (5-6) và (5-7) có tính chất vạn năng. Chúng đúng với các QTQĐ khác nhau (khởi động, hãm, thay đổi tốc độ, đảo chiều ...) khi M() và Mc() là tuyến tính.</para>
+        <para id="id5266411">Tuỳ trường hợp cụ thể mà thay các giá trị tương ứng của các đại lượng bđ, xl, Mbđ, Mxl, và Tc vào (5-6) và (5-7).</para>
+        <para id="id5360690">Ví dụ nếu Mc() = const thì c = 0, do đó:</para>
+        <para id="id5670086"><media id="id16840605" alt=""><image src="graphics14.wmf" mime-type="image/wmf" height="97" width="200"/></media> (5-8)</para>
+        <para id="id5663250">Các phương trình (5-6), (5-7) cho thấy: (t) và M(t) có dạng hàm mũ. Đặc điểm của hàm mũ là đạo hàm của nó theo thời gian sẽ giảm đơn điệu, nghĩa là dM/dt và d/dt cứ sau một khoảng thời gian t = Tc thì chúng giảm đi e 2,718 lần:</para>
+        <para id="id5408290"><media id="id16840658" alt=""><image src="graphics15.wmf" mime-type="image/wmf" height="63" width="244"/></media> (5-9)</para>
+        <para id="id5645614">Tại thời điểm ban đầu, các đạo hàm có giá trị cực đại:</para>
+        <para id="id5645621"><media id="id16840704" alt=""><image src="graphics16.wmf" mime-type="image/wmf" height="99" width="163"/></media> (5-10)</para>
+        <para id="id5645838">Vì oTc = (xl - bđ) nên đường tiếp tuyến với (t) tại thời điểm ban đầu sẽ cắt đường thẳng  = xl = const ở điểm cách trục tung một khoảng đúng bằng Tc (hình 5-3).</para>
+        <para id="id5847379"> M, IMn Tc xlbđ = 0Mbđ36,8% 13,5% 5%95%85%63,2%100%(t)M(t)5%to t=Tc 2Tc 3Tc tHình 5-3: Đặc tính QTQĐ khi bđ = 0 và Mbđ = Mn</para>
+        <para id="id6082324">Khi bđ = 0 thì:  </para>
+        <para id="id6082350"> = xl(1 - e-t/Tc)</para>
+        <para id="id5357751">Tc là khoảng thời gian cần thiết để tốc độ tăng từ:</para>
+        <para id="id5512082">bđ = 0 lên đến  = 0,632xl</para>
+        <para id="id6475173"> = 0,632xl lên đến  = 0,85xl</para>
+        <para id="id4683418"> = 0,85xl lên đến  = 0,95xl</para>
+        <para id="id5847601">Và M(t) cũng diễn biến tương tự (t).</para>
+        <para id="id5847618">Về lý thuyết thì tqđ = , nhưng thực tế thì tqđ  3Tc (xem như kết thúc QTQĐ, vì sai số 5% có thể chấp nhận).</para>
+        <para id="id5688800">Khi giải phương trình (5-6) hoặc (5-7) có thể có nghiệm làm cho QTQĐ là ổn định hoặc không ổn định, không dao động hoặc dao động:</para>
+        <para id="id5688810">  xl xl xlôđ.quán tính ôđ.dao động không ôđ. dđ.t t tHình 5-4: Các QTQĐ ổn định, không ổn định, dao động ... </para>
+        <para id="id5243439">Các phương trình trên chỉ đúng khi M(), Mc() là liên tục, nếu M(), Mc() không liên tục thì QTQĐ phải tính riêng cho từng đoạn liên tục một. Sau điêmt đột biến của mômen, ta phải thay các giá trị mới của bđ, xl, Mbđ, Mxl và Tc vào các biểu thức (5-6), (5-7).</para>
+        <para id="id5510492">*Có thể ứng dụng: Mđộng() là tuyến tính đối với:</para>
+        <para id="id5510519">+ Động cơ ĐMđl, ĐKdq khi thay đổi phụ tải với Mc  .</para>
+        <para id="id6113924">+ Động cơ ĐMđl, ĐMnt, ĐK khi hãm: Mc = const, Mc  .</para>
+        <para id="id6293940">+ Động cơ ĐKls khi khởi động trực tiếp với phụ tải kiểu quạt gió Mc  2.</para>
+      </section>
+      <section id="id-804639752407">
+        <title>Quá trình quá độ cơ học khi khởi động:</title>
+        <para id="id4931734">Xét QTQĐ cơ học khi khởi động với M() tuyến tính, Mc() = const:</para>
+        <para id="id6286684">Hình 5-5: Các sơ đồ, đặc tính khởi động của ĐMđl, ĐMnt, ĐK++ƯCKT2G 1GRưf2 Rưf1--a)+ƯCKT2G 1GRưf2 Rưf1-b)Đ2G 2G1G 1GR2f2R2f1c)0 Mc M2 M1 M TNdebca21XLXL0 Mc M2 M1 M TNdebca21XLXL0 Mc M2 M1 M TNdebca21XL~</para>
+        <para id="id5124001">Để đơn giản, ta xét QTQĐ khi khởi động 2 cấp điện trở phụ mạch rôto của động cơ điện một chiều kích từ độc lập (hình 5-5a) khi khởi động m = 2 cấp: sẽ có 3 giai đoạn QTQĐ khởi động:</para>
+        <para id="id5124030">Hình 5 - 6: Các đặc tính khởi động với m = 2 II1XLI2Ic(t)I(t)Tc1 Tc2 Tc3t1 t2 t3tqđ =tkđtTNdebca21XL0 Mc M2 M1 Mxl2xl1a)b)</para>
+        <para id="id4933574">* Giai đoạn 1: đoạn (ab)  đặc tính :</para>
+        <para id="id5243324">Trên đó: Rưf = Rưf1 + Rưf2  R1 = Rư + Rưf1 + Rưf2</para>
+        <para id="id5708698">Theo đặc tính :<media id="id17153139" alt=""><image src="graphics17.wmf" mime-type="image/wmf" height="53" width="94"/></media>  <media id="id17153161" alt=""><image src="graphics18.wmf" mime-type="image/wmf" height="53" width="121"/></media> </para>
+        <para id="id5459920"><media id="id17153193" alt=""><image src="graphics19.wmf" mime-type="image/wmf" height="69" width="282"/></media>(sec); (5-11a)</para>
+        <para id="id5459963">Điều kiện ban đầu: điểm (a):</para>
+        <para id="id5459967">bđ1 = 0 ; Mbđ1 = M1 ;</para>
+        <para id="id5362679">Điều kiện xác lập: </para>
+        <para id="id5362683">xl1 = xác định theo đặc tính cơ ; Mxl1 = Mc ;</para>
+        <para id="id6165161">Theo các điều kiện trên và phương trình (5-6), (5-7) ta có phương trình QTQĐ trong giai đoạn 1 này:</para>
+        <para id="id6165170"><media id="id17153288" alt=""><image src="graphics20.wmf" mime-type="image/wmf" height="25" width="140"/></media> (5-12a)</para>
+        <para id="id6165221"><media id="id17153320" alt=""><image src="graphics21.wmf" mime-type="image/wmf" height="25" width="186"/></media> (5-13a)</para>
+        <para id="id5244750">Khi  = 1 : tính theo (5-13a) khi t = t1 ; M = M2 thì chuyển sang giai đoạn 2:</para>
+        <para id="id5374507">* Giai đoạn 2: đoạn (bcd)  đặc tính :</para>
+        <para id="id5374538">Trên đó: Rưf = Rưf2  R2 = Rư + Rưf2</para>
+        <para id="id5266386">Theo đặc tính :<media id="id17153393" alt=""><image src="graphics22.wmf" mime-type="image/wmf" height="53" width="94"/></media>  <media id="id17153415" alt=""><image src="graphics23.wmf" mime-type="image/wmf" height="53" width="124"/></media> </para>
+        <para id="id5447213"><media id="id17153447" alt=""><image src="graphics24.wmf" mime-type="image/wmf" height="69" width="236"/></media>(sec); (5-11b)</para>
+        <para id="id5630793">Điều kiện ban đầu: điểm (c):</para>
+        <para id="id5630798">bđ2 = 1 ; Mbđ2 = M1 ;</para>
+        <para id="id5630851">Điều kiện xác lập: </para>
+        <para id="id5630855">xl2 = xác định theo đặc tính cơ ; Mxl2 = Mc ;</para>
+        <para id="id6015932">Theo các điều kiện trên và phương trình (5-6), (5-7) ta có phương trình QTQĐ trong giai đoạn 2 này:</para>
+        <para id="id6015940"><media id="id17153542" alt=""><image src="graphics25.wmf" mime-type="image/wmf" height="25" width="200"/></media> (5-12b)</para>
+        <para id="id6082433"><media id="id17153575" alt=""><image src="graphics26.wmf" mime-type="image/wmf" height="25" width="186"/></media> (5-13b)</para>
+        <para id="id5438141">Khi  = 2 : tính theo (5-13b) khi t = t2 ; M = M2 thì chuyển sang giai đoạn 3:</para>
+        <para id="id5438189">* Giai đoạn 3: đoạn (deXL)  đặc tính TN:</para>
+        <para id="id5514168">Trên đó: Rưf = 0  R3 = Rư = Rư</para>
+        <para id="id6081977">Theo đặc tính TN: <media id="id17208915" alt=""><image src="graphics27.wmf" mime-type="image/wmf" height="53" width="142"/></media>  </para>
+        <para id="id6082032"><media id="id17208948" alt=""><image src="graphics28.wmf" mime-type="image/wmf" height="69" width="219"/></media>(sec); (5-11c)</para>
+        <para id="id5664292">Điều kiện ban đầu: điểm (e):</para>
+        <para id="id5664297">bđ3 = 2 ; Mbđ3 = M1 ;</para>
+        <para id="id5460046">Điều kiện xác lập: </para>
+        <para id="id5460051">xl3 = xl ; Mxl3 = Mc ;</para>
+        <para id="id5630685">Theo các điều kiện trên và phương trình (5-6), (5-7) ta có phương trình QTQĐ trong giai đoạn 3 này:</para>
+        <para id="id5630693"><media id="id17209043" alt=""><image src="graphics29.wmf" mime-type="image/wmf" height="25" width="193"/></media>  (5-12c)</para>
+        <para id="id6370953"><media id="id17209075" alt=""><image src="graphics30.wmf" mime-type="image/wmf" height="25" width="186"/></media> (5-13c)</para>
+        <para id="id6371003">Khi   xl ; M  Mc xem như kết thúc QTQĐ khởi động.</para>
+        <para id="id5429927">Dựa vào các phương trình QTQĐ của (t)i; M(t)i trong 3 giai đoạn ta vẽ được đặc tính (t); M(t) khi khởi động với m = 2 như hình 5-6.</para>
+        <para id="id5244630">Tính thời gian khởi động:</para>
+        <para id="id5244635">Tính:tkđ = tqđ = t1 + t2 + t3</para>
+        <para id="id5444951">Có m cấp khởi động sẽ có (m + 1) giai đoạn QTQĐ khi khởi động, từ phưpưng trình M(t) ta tính được:</para>
+        <para id="id5444960"><media id="id17209178" alt=""><image src="graphics31.wmf" mime-type="image/wmf" height="47" width="131"/></media> (5-14)</para>
+        <para id="id5541145">Vậy: <media id="id17209212" alt=""><image src="graphics32.wmf" mime-type="image/wmf" height="47" width="231"/></media> (5-15)</para>
+        <para id="id5541191">* Xây dựng I(t):</para>
+        <para id="id5541196">+ Đối với ĐMđl: <media id="id17209258" alt=""><image src="graphics33.wmf" mime-type="image/wmf" height="43" width="82"/></media>; (5-16)  tương tự M(t).</para>
+        <para id="id5842931">+ Đối với ĐKdq: từ M(t), đặc tính M(), I(), tính được ti tương ứng Mi, suy ra Ii(Mi), và cuối cùng ta có Ii(ti) và vẽ I(t).</para>
+      </section>
+      <section id="id-508945742652">
+        <title>Quá trình quá độ cơ học khi hãm:</title>
+        <para id="id6180994">Xét QTQĐ cơ học khi hãm ngược: </para>
+        <para id="id6180999">+ƯRưf-+CKT-a)M1 M2 Mc M TNRưfABoCbđHình 5-7: Các sơ đồ, đặc tính hãm ngược của ĐMđl, ĐMnt, ĐK+ƯRưf-CKTb)M1 M2 Mc M TNRưfABCbđĐR2fc)M1 M2 Mc M TNR2fABCbđ</para>
+        <para id="id5709327">Hãm ngược, đối với động cơ điện một chiều (ĐM) thì thay đổi cực tính điện áp phần ứng, còn động cơ không đồng bộ 3 pha (ĐK) thì thay đổi thứ tự pha điện áp stato, vì dòng hãm ban đầu lớn nên cần phải thêm điện trở phụ (Rưf, R2f) để hạn chế dòng hãm không được vượt quá dòng cho phép (Ih.bđ  Icp).</para>
+        <para id="id5556762">Cũng như khi tính toán quá trình khởi động, đối với quá trình hãm thì các đặc tính cơ phi tuyến như ĐMnt hay ĐKdq cũng được thay thế bằng đoạn đặ tính tuyến tính hoá từ -M1 đến -M2 như hình 4-8a. Phương trình của một đoạn thẳng ấy có dạng:</para>
+        <para id="id5556813"> = - bđ.<media id="id17209404" alt=""><image src="graphics34.wmf" mime-type="image/wmf" height="42" width="60"/></media>(5-17)</para>
+        <para id="id5244380"> M,Ibđ(sc)bđ(stn1)e1-M2 Mc Mh.bđ=-M1 M1 Mxl(t)M(t)MctTcthn-M2Mh.bđ =-M1Tcxl=Hình 5 -8: Đặc tính cơ (a) và quá độ khi hãm ngược (b)a)b)</para>
+        <para id="id5687807">Mômen hãm ban đầu có giá trị cực đại: Mh.bđ = - M1  Mcp (M1  2,5Mđm). Khi biết giá trị dòng điện cho phép, ta có thể xác định được điện trở phụ thêm vào để hạn chế dòng hãm ban đầu:</para>
+        <para id="id5663282">Rưf = <media id="id17209472" alt=""><image src="graphics35.wmf" mime-type="image/wmf" height="43" width="54"/></media>- Ru(5-18)</para>
+        <para id="id5663353">Trong đó: Ebđ là s.đ.đ ban đầu của động cơ khi hãm.</para>
+        <para id="id5941343">Đối với ĐMđl, tại thời điểm ban đầu quá trình hãm, s.đ.đ E vẫn giữ nguyên giá trị trước đó:</para>
+        <para id="id5941363">Ebđ = U - Ic.Rư(5-19a)</para>
+        <para id="id5941416">Đối với ĐMnt, tại thời điểm ban đầu quá trình hãm, dòng điện phần ứng và từ thông thay đổi đồng thời, lúc đó:</para>
+        <para id="id5655004">Ebđ = K(Icp).bđ(5-19b)</para>
+        <para id="id5655068">Trị số K(Icp) có thể được xác định từ phương trình cân bằng điện áp phần ứng với I = Icp trên đặc tính tự nhiên:</para>
+        <para id="id5656057">K(Icp) = <media id="id17209587" alt=""><image src="graphics36.wmf" mime-type="image/wmf" height="43" width="69"/></media>(5-20)</para>
+        <para id="id4681553">Trong đó: tn1 là tốc độ trên đặc tính cơ tự nhiên khi I = Icp.</para>
+        <para id="id4681584">Do đó:</para>
+        <para id="id4681589">Ebđ = (U - Icp.Rư).<media id="id17209647" alt=""><image src="graphics37.wmf" mime-type="image/wmf" height="42" width="33"/></media>(5-21)</para>
+        <para id="id5687681">+ Điểm cuối của quá trình hãm được xác định bởi giá trị M2 (hoặc I2) và  = 0. Đối với ĐMnt, M2 được xác định nhờ trị số dòng điện tương ứng:</para>
+        <para id="id5687737">I2 = <media id="id17209698" alt=""><image src="graphics38.wmf" mime-type="image/wmf" height="42" width="56"/></media>(5-22)</para>
+        <para id="id5941294">Theo giá trị I2 và đặc tính vạn năng của ĐMnt: </para>
+        <para id="id5941320"><media id="id17209744" alt=""><image src="graphics39.wmf" mime-type="image/wmf" height="36" width="85"/></media> (5-23)</para>
+        <para id="id6371048">Ta xác định được:</para>
+        <para id="id6371053">M2 = I2.<media id="id17209789" alt=""><image src="graphics40.wmf" mime-type="image/wmf" height="42" width="28"/></media>(5-24)</para>
+        <para id="id5525288">Đối với động cơ ĐK, điện trở phụ trong mạch rôto được xác định từ quan hệ tỉ lệ giữa độ trượt và điện trở khi M1 = const:</para>
+        <para id="id5525307"><media id="id17209836" alt=""><image src="graphics41.wmf" mime-type="image/wmf" height="43" width="97"/></media>(5-25)</para>
+        <para id="id5525356">Trong đó: sbđ = (2 - sc) là độ trượt ban đầu khi hãm.</para>
+        <para id="id6174879">sc là độ trượt ở trạng thái xác lập trước khi hãm.</para>
+        <para id="id6174898">stn1 là độ trượt trên đặc tính tự nhiên khi M1 = const.</para>
+        <para id="id6174925">Khi đó:</para>
+        <para id="id6174930"><media id="id17209921" alt=""><image src="graphics42.wmf" mime-type="image/wmf" height="46" width="129"/></media>(5-26)</para>
+        <para id="id6196367">+ Đối với động cơ ĐK, mômen M2 khi  = 0 (s = 1) được xác định theo công thức:</para>
+        <para id="id6196394"><media id="id17209968" alt=""><image src="graphics43.wmf" mime-type="image/wmf" height="60" width="111"/></media>(5-27)</para>
+        <para id="id6385998">Trong đó: st.btr - hệ số trượt tới hạn trên đặc tính biến trở:</para>
+        <para id="id6386017"><media id="id17210014" alt=""><image src="graphics44.wmf" mime-type="image/wmf" height="43" width="131"/></media>(5-28)</para>
+        <para id="id6386065">st.tn là độ trượt tới hạn trên đặc tính tự nhiên.</para>
+        <para id="id5545724">Trong quá trình hãm, sự biến thiên của tốc độ và mômen được xác định theo công thức (5-6), (5-7). Vì từ (5-17):</para>
+        <para id="id5545733"> xl = - bđ .<media id="id17210078" alt=""><image src="graphics45.wmf" mime-type="image/wmf" height="42" width="61"/></media> (5-29)</para>
+        <para id="id5372090"><media id="id17210111" alt=""><image src="graphics46.wmf" mime-type="image/wmf" height="42" width="251"/></media> (5-30)</para>
+        <para id="id5372140"><media id="id17210143" alt=""><image src="graphics47.wmf" mime-type="image/wmf" height="24" width="175"/></media> (5-31)</para>
+        <para id="id5510816">Trong đó: <media id="id17210178" alt=""><image src="graphics48.wmf" mime-type="image/wmf" height="42" width="149"/></media>; (5-32) là hằng số thời gian cơ học khi hãm.</para>
+        <para id="id5510864">+ Thời gian hãm có thể xác định:</para>
+        <para id="id5510870"><media id="id17210225" alt=""><image src="graphics49.wmf" mime-type="image/wmf" height="42" width="118"/></media>(5-32)</para>
+        <para id="id5393262">Trên hình 5-8b trình bày đồ thị tốc độ, mômen và thời gian khi hãm. Cuối quá trình hãm (  0) gia tốc vẫn khác không. Do đó muốn dừng động cơ thì lúc đó ta phải cắt động cơ ra khỏi lưới.</para>
+        <para id="id5393295">Xét QTQĐ cơ học khi hãm động năng: </para>
+        <para id="id5393301">Có thể coi quá trình hãm động năng là trường hợp riêng của quá trình hãm ngược khi M2 = 0 (I2 =0) lúc  = 0. Vì vậy có thể khảo sát tương tự khi hãm ngược ta sẽ được kết quả tương tự khi hãm ngược nhưng với điều kiện cuối là: M2 = 0 (I2 = 0) và  = 0.</para>
+      </section>
+      <section id="id-0183322454373">
+        <title>Quá trình quá độ cơ học khi Mc(t) biến đổi nhảy cấp:</title>
+        <para id="id5671893">Các trương hợp trên ta xét với Mc(t) là liên tục. Nhưng thực tế có Mc(t) thay đổi, tờn hióỷuường gặp là Mc(t) thay đổi kiểu nhảy cấp (đột biến) chu kỳ như: máy bào, máy đột dập ...</para>
+        <para id="id5671933">* Một chu kỳ đơn giản của </para>
+        <para id="id5847490">Mc(t) gồm có 2 giai đoạn:</para>
+        <para id="id5847506">+ Một giai đoạn có tải: </para>
+        <para id="id5847523">tương ứng Mc1, t1.</para>
+        <para id="id5847546">+ Một giai đoạn không tải: </para>
+        <para id="id5847563">tương ứng Mco, t2.</para>
+        <para id="id5662613">McMc1Mc2tt1 t2tckHình 4-9: Chu kỳ Mc(t)Chu kỳ: tck = t1 + t2</para>
+        <para id="id5374380">Mômen Mc(t) biến đổi chu kỳ thì M(t) và (t) cũng thay đổi chu kỳ. Hệ thống TĐĐ luôn làm việc ở chế độ quá độ, nếu khảo sát QTQĐ đó sẽ xác định được kích thước, trọng lượng bánh đà và công suất động cơ để động cơ chịu tải tốt và san bằng phụ tải.</para>
+        <para id="id5374416">Trong mỗi giai đoạn, coi Mc(t) = const, M() tuyến tính và Unguồn = const, bỏ qua Tđt, thì (t) và M(t) sẽ biến thiên theo quy luật hãm mũ, theo (5-6), (5-7), ta có:</para>
+        <para id="id6177000">Đối với đoạn thứ nhất:</para>
+        <para id="id6177004"> = xl1 + (bđ1 - xl1).<media id="id17210492" alt=""><image src="graphics50.wmf" mime-type="image/wmf" height="19" width="35"/></media>(5-33)</para>
+        <para id="id5510275">M = Mc1 + (Mbđ1 - Mc1).<media id="id17210526" alt=""><image src="graphics51.wmf" mime-type="image/wmf" height="19" width="35"/></media>(5-34)</para>
+        <para id="id5510350">Đối với đoạn thứ hai:</para>
+        <para id="id5510354"> = xl2 + (bđ2 - xl2).<media id="id17210572" alt=""><image src="graphics52.wmf" mime-type="image/wmf" height="19" width="35"/></media>(5-35)</para>
+        <para id="id6181871">M = Mc2 + (Mbđ2 - Mc2).<media id="id17210606" alt=""><image src="graphics53.wmf" mime-type="image/wmf" height="19" width="35"/></media> (5-36)</para>
+        <para id="id5540920">Mômen và tốc độ biến thiên trong phạm vi từ Mmin = Mbđ1 đến Mmax = Mcc1 và min = cc1 đến max = cc2. Vậy, đối với đoạn thứ nhất và thứ hai ta có thể viết M(t1) = Mbđ2 và M(t2) = Mcc2. Thay các điều kiện này vào (4-33)  (4-36), ta rút ra:</para>
+        <para id="id5365838"> Mcc1 = Mc1 + (Mbđ1 - Mc1).<media id="id17210662" alt=""><image src="graphics54.wmf" mime-type="image/wmf" height="19" width="39"/></media> = Mbđ2(5-37)</para>
+        <para id="id5316198"> Mcc2 = Mc2 + (Mcc1 - Mc2).<media id="id17210696" alt=""><image src="graphics55.wmf" mime-type="image/wmf" height="19" width="39"/></media>= Mbđ1(5-38)</para>
+        <para id="id5664329">Giải ra, ta có:</para>
+        <para id="id5664334">Mmin = Mbđ1 =<media id="id17210742" alt=""><image src="graphics56.wmf" mime-type="image/wmf" height="44" width="243"/></media> (5-39)</para>
+        <para id="id5664394">Mmax = Mcc1 =<media id="id17210776" alt=""><image src="graphics57.wmf" mime-type="image/wmf" height="44" width="243"/></media> (5-40)</para>
+        <para id="id6177781">Các giá trị max và Mmin có thể tìm được theo đặc tính cơ ứng với M = Mmin và M = Mmax. </para>
+        <para id="id6177829">Hình 5 - 10 biểu diễn quan hệ giữa mômen của động cơ với thời gian. Trong đoạn thứ nhất M &lt; Mc1, tốc độ giảm, lúc này động cơ làm việc nhờ động năng của khối lượng bánh đà. </para>
+        <para id="id5849086">Đến đoạn thứ hai M &gt; Mc2, </para>
+        <para id="id5849103">McMc1Mcc1Mbd1 Mc2 tt1 t2tckHình 5-10: Chu kỳ Mc(t)+-Mtbmômen dư làm cho tốc độ tăng lên, </para>
+        <para id="id5565317">tức làm tăng động năng dự trữ của </para>
+        <para id="id5565323">truyền động điện. Do đó Mmax của </para>
+        <para id="id5565340">động cơ không nhất thiết phải bằng </para>
+        <para id="id5565345">Mc.max, phần chênh lệch đó do bánh </para>
+        <para id="id5565362">đà cung cấp. Như vậy, khi giảm </para>
+        <para id="id5565367">chu kỳ biến thiên của Mc và giữ </para>
+        <para id="id5565384">Tc = const, hoặc khi tăng Tc và giữ </para>
+        <para id="id5675740">tck = const, thì các trị số Mmin và </para>
+        <para id="id5675765">Mmax sẽ tiến lại gần nhau, nghĩa là </para>
+        <para id="id5675782">đồ thị mômen và tốc độ động cơ </para>
+        <para id="id5675787">được “nắn thẳng”. Thường thêm bánh đà phụ để “nắn thẳng” mômen. Khi: <media id="id17210995" alt=""><image src="graphics58.wmf" mime-type="image/wmf" height="21" width="68"/></media> và <media id="id17211016" alt=""><image src="graphics59.wmf" mime-type="image/wmf" height="21" width="68"/></media>thì:</para>
+        <para id="id5357646"><media id="id17211048" alt=""><image src="graphics60.wmf" mime-type="image/wmf" height="42" width="193"/></media>(5-41)</para>
+        <para id="id5357691">* Trường hợp: đồ thị Mc(t) thay đổi nhảy cấp nhiều đoạn:</para>
+        <para id="id5126253">MMc1Mc3Mc2Mc4Mc5Mc6Mc1Mbđ1Mcc1Mcc2Mcc3Mcc4Mcc5Mcc6Mtbtt1 t2 t3 t4 t5 t6 tckHình 5 - 11: Đồ thị Mc(t) nhảy cấp nhiều đoạn</para>
+        <para id="id5368288">Bằng cách áp dụng liên tiếp các công thức (5-39), (5-40) ta sẽ xác định được giá trị mômen động cơ ở điểm cuối của từng giai đoạn:</para>
+        <para id="id5368298">Mcc1 = Mbđ1.<media id="id17211129" alt=""><image src="graphics61.wmf" mime-type="image/wmf" height="24" width="142"/></media>(5-42)</para>
+        <para id="id5689234">Mcc2 = Mbđ1.<media id="id17211163" alt=""><image src="graphics62.wmf" mime-type="image/wmf" height="24" width="167"/></media>(5-43)</para>
+        <para id="id5689295">Đối với đoạn thứ i bất kỳ:</para>
+        <para id="id5689299"><media id="id17211207" alt=""><image src="graphics63.wmf" mime-type="image/wmf" height="79" width="274"/></media>(5-44)</para>
+        <para id="id6285580">Và đoạn cuối cùng (đoạn thứ m) và đặt các giá trị mômen động cơ ở đầu và cuối chu kỳ bằng nhau (Mccm = Mbđ1), ta có:</para>
+        <para id="id6285609"><media id="id17211255" alt=""><image src="graphics64.wmf" mime-type="image/wmf" height="81" width="257"/></media>(5-45)</para>
+        <para id="id6285648">Các biểu thức (5-44), (5-45) cho phép dùng phương pháp giải tích để xác định các trị số mômen ban đâu và cuối cùng của tất cả các giai đoạn trong chu kỳ, nghĩa là cho phép vẽ được đồ thị biến thiên của mômen động cơ. </para>
+        <para id="id6285662">Hằng số thời giai cơ học Tc càng nhỏ thì mômen biến đổi càng lớn, khi đồ thị phụ tải biến đổi mãnh liệt, mômen đẳng trị sẽ vượt quá giá trị trung bình một cách đáng kể, và làm tăng phát nóng động cơ, Đỉnh cao nhất của mômen (Mmax) có thể là không cho phép đối với khả năng chịu quá tải của động cơ (Mmax &gt; Mcp). </para>
+        <para id="id5370374">Muốn san bằng đồ thị mômen, ta có thể tăng hằng số thời gian cơ học Tc, điều đó có thể thực hiện bằng cách thêm bánh đà phụ hoặc làm mềm đặc tính cơ của động cơ.</para>
+      </section>
+    </section>
+    <section id="id-994037069208">
+      <title>QUÁ TRÌNH QUÁ ĐỘ CƠ HỌC KHI UNGUỒN = CONST VÀ MĐỘNG() LÀ PHI TUYẾN :</title>
+      <section id="id-782435578319">
+        <title>Phương pháp giải tích:</title>
+        <para id="id5370433">+ Khi khảo sát QTQĐ đối với các hệ thống TĐĐ với động cơ điện có đặc tính cơ M() là phi tuyến như ĐMnt, ĐK, hay các phụ tải có Mc() là đường cong như máy bơm, quạt gió, hay Mc() ..., lúc đó Mđộng() sẽ không còn tuyến tính nữa, như vậy ta có thể khảo sát QTQĐ của hệ thống theo hai phương pháp:</para>
+        <para id="id5537568">Phương pháp giải tích:</para>
+        <para id="id5537574">Phương pháp này được áp dụng khi M() và Mc() có thể biểu diễn bằng những hàm giải tích không phức tạp quá, ví dụ như ĐKls có thể biểu diễn M() tương đối chính xác qua:</para>
+        <para id="id6181660"><media id="id17211442" alt=""><image src="graphics65.wmf" mime-type="image/wmf" height="100" width="97"/></media>(5-46)</para>
+        <para id="id6181709">Phương trình chuyển động:</para>
+        <para id="id6181715"><media id="id17211487" alt=""><image src="graphics66.wmf" mime-type="image/wmf" height="60" width="193"/></media>(5-47)</para>
+        <para id="id5645719">* Khi Mc() = const:</para>
+        <para id="id5645744"><media id="id17211531" alt=""><image src="graphics67.wmf" mime-type="image/wmf" height="63" width="196"/></media>(5-48)</para>
+        <para id="id5645789">Tích phân trên được xác định bằng cách khai triển biểu thức dưới dấu tích phân thành các phân thức cơ bản. Sau khi lấy tích phân và thay cận ta có:</para>
+        <para id="id5645799"><media id="id17211582" alt=""><image src="graphics68.wmf" mime-type="image/wmf" height="108" width="318"/></media> (5-49)</para>
+        <para id="id6177680">Trong đó: <media id="id17211615" alt=""><image src="graphics69.wmf" mime-type="image/wmf" height="67" width="197"/></media> (5-50)</para>
+        <para id="id6177728"><media id="id17211647" alt=""><image src="graphics70.wmf" mime-type="image/wmf" height="47" width="67"/></media> (5-51)</para>
+        <para id="id5655519">* Khi không tải Mc() = 0 thì biểu thức (5-48) sẽ đơn giản:</para>
+        <para id="id5655546"><media id="id17211693" alt=""><image src="graphics71.wmf" mime-type="image/wmf" height="53" width="168"/></media>(5-52)</para>
+        <para id="id5655592">Sau khi lấy tích phân ta có:</para>
+        <para id="id5368030"><media id="id17211739" alt=""><image src="graphics72.wmf" mime-type="image/wmf" height="49" width="211"/></media>(5-53)</para>
+        <para id="id5368075">Các biểu thức (5-49) và (5-53) cho phép xác định được quan hệ giữa mômen và độ trượt theo thời gian. Cho trước một loạt giá trị của s, dùng biểu thức (5-47) ta xác định được trị số tương ứng của M; theo (5-49) ta xác định được các giá trị của t.</para>
+        <para id="id5368089">Hình 5-12 giới thiệu các quan hệ giữa mômen và tốc độ với thời gian trong QTQĐ khi khởi động động cơ ĐK.</para>
+        <para id="id5368098">Có M() và (t) sẽ tìm được M(t) như trên hình 5-12. Ví dụ có t1 sẽ tìm được 1, và tìm được M1 và cuối cùng ta có M1(t1).</para>
+        <para id="id6143836">Nếu Mc()  0 thì: xl  0 và sxl  2.</para>
+        <para id="id6143908">+ Trong quá trình hãm ngược thì: sbđ = 2; scc  1, và cc  0.</para>
+        <para id="id5692268">+ Trong quá trình đảo chiều : sbđ = 2; scc  0, và cc  - o.</para>
+        <para id="id5664511">Trường hợp biết sbđ và scc sẽ tính được:</para>
+        <para id="id5664537"><media id="id17211880" alt=""><image src="graphics73.wmf" mime-type="image/wmf" height="53" width="225"/></media>(5-54)</para>
+        <para id="id5664581"> Mos=2s=1s=0-o0 Mc Mn MtSMt0 t1 tmM1M1MnMcM(t)(t)Mt5%5%tkđHình 5 - 12: Quan hệ M() vàM(t) , (t)</para>
+        <para id="id5538603">Thường kết thúc QTQĐ khi scc  5%sxl. Thời gian quá độ tqđ phụ thuộc vào st và Tt, nên muốn có tqđ.min thường là thay đổi st.</para>
+        <para id="id5498140">Phương pháp đồ thị giải tích:</para>
+        <para id="id5498146">Đây là phương pháp gần đúng, nhưng đơn giản và tiện lợi hơn phương pháp giải tích.</para>
+        <para id="id5498152">Phương trình chuyển động:</para>
+        <para id="id5498157"> Mđông() = Mđg() = M - Mc =<media id="id17211985" alt=""><image src="graphics74.wmf" mime-type="image/wmf" height="36" width="35"/></media>  (5-55)</para>
+        <para id="id6156232">Coi J = const, rút ra: <media id="id17212019" alt=""><image src="graphics75.wmf" mime-type="image/wmf" height="49" width="103"/></media> (5-56)</para>
+        <para id="id6167840">Lấy tích phân gần đúng: <media id="id17212054" alt=""><image src="graphics76.wmf" mime-type="image/wmf" height="49" width="142"/></media> (5-57)</para>
+        <para id="id6167885">Trong khoảng t nhỏ có thể coi Mđộng()  const, do đó:</para>
+        <para id="id6167929"><media id="id17212099" alt=""><image src="graphics77.wmf" mime-type="image/wmf" height="49" width="99"/></media>(5-58)</para>
+        <para id="id5373460">Trong đó: i = i - i-1</para>
+        <para id="id5373503"> Mđg.tbi là mômen động trung bình trong khoảng i.</para>
+        <para id="id5373541">Đặt: <media id="id17212159" alt=""><image src="graphics78.wmf" mime-type="image/wmf" height="49" width="126"/></media>; và <media id="id17212181" alt=""><image src="graphics79.wmf" mime-type="image/wmf" height="57" width="194"/></media> chính là diện tích trên mặt phẳng [M, ] do đường Nđg bao.</para>
+        <para id="id4680358">  Mxl xlNđôngM() Mđông1/Mđg.tb21/Mđg.tb1MMđông M4 M3 M1Mn Mc 0M5 M2 M4M5M3M2M1MnMc21t1 t2 t3 t4 t5 5%5%t(t)M(t)Hình5 - 13: Đồ thị , Mc(), Nđg() và M(t) và (t)</para>
+        <para id="id6171915">Chọn trước các giá trị i, sẽ xác định được (1/Mđông) nhờ Mđông() đã biết, từ đó tìm được ti theo (5-58).</para>
+        <para id="id5475377">Thường chọn i = const, như thế ta sẽ xác định được ti, i, và Mi(i), cuối cùng ta có M(t) và (t).</para>
+        <para id="id6128592">Trên hình 5-13, ta có: <media id="id17212267" alt=""><image src="graphics80.wmf" mime-type="image/wmf" height="26" width="143"/></media> (5-59)</para>
+        <para id="id6128638">Trong đó: m1/dg - tỉ xích theo mômen (1/N.m.mm); </para>
+        <para id="id6128658">m - tỉ xích theo tốc độ (Rad/s.mm); si - diện tích (mm2).</para>
+      </section>
+    </section>
+    <section id="id-237633631104">
+      <title>QUÁ TRÌNH QUÁ ĐỘ CƠ HỌC KHI UNGUỒN = VAR:</title>
+      <para id="id6128713">Đây là QTQĐ trong hệ thống TĐĐ có bộ biến đổi - động cơ (BBĐ - ĐC) như hệ F - ĐM, T - ĐM, KĐT - ĐM, BT - ĐK, .... Các hệ thống này thường điều chỉnh các thông số nguồn: thay đổi điện áp nguồn (thay đổi Uư, Us ...)</para>
+      <para id="id6112984">Lưới ~Lưới ~Bộ đkBộ đkBBĐBBĐUBĐ=var---Uư ---McMcĐMĐK+ -a)b)uBĐ=varfBĐ=varu1=constf1=constHình 5 - 14: Hệ thống BBĐ - ĐM, BBĐ - ĐK</para>
+      <para id="id5565723">Khi tác động điều khiển không đổi, hệ thống tương tự như khi có điện áp nguồn không đổi (đã xét ở trên).</para>
+      <para id="id5565732">Khi tác động điều khiển thay đổi theo quy luật cần thiết, thì hệ thống sẽ có điện áp nguồn thay đổi, và như vậy sẽ tạo ra được các đặc tính mong muốn của QTQĐ. Đó chính là ưu điểm của hệ thống bộ biến đổi - động cơ.</para>
+      <section id="id-407594023279">
+        <title>Hệ thống Bộ biến đổi - động cơ điện một chiều:</title>
+        <para id="id6179561">Các giả thiết: Mômen cản không đổi: Mc = const. </para>
+        <para id="id6179584"> Dòng điện phần ứng (Iư) liên tục.</para>
+        <para id="id6179608">Như vậy khi thay đổi tác động điều khiển (điện áp điều khiển uđk) ta sẽ có các đặc tính điều chỉnh là những đường thẳng và song song với nhau.</para>
+        <para id="id6179630">Quá trình quá độ có thể mô tả theo phương trình vi phân tuyến tính sau:</para>
+        <para id="id6179638"><media id="id17212497" alt=""><image src="graphics81.wmf" mime-type="image/wmf" height="43" width="113"/></media>(5-60)</para>
+        <para id="id5125089">Trong đó:</para>
+        <para id="id5125094"><media id="id17212541" alt=""><image src="graphics82.wmf" mime-type="image/wmf" height="94" width="253"/></media> (5-61)</para>
+        <para id="id5125145">Các giá trị điện áp uBĐ(t) khác nhau sẽ có các QTQĐ khác nhau trong hệ thống TĐĐ.</para>
+        <para id="id5125164">* Để đơn giản, xét QTQĐ khi khởi động BBĐ - ĐM có:</para>
+        <para id="id5125171">Điện áp bộ biến đổi:</para>
+        <para id="id5125175"> uBĐ(t) = ku.tkhi 0  t  t1 = UBĐ.đm/ku (5-62)</para>
+        <para id="id5663409">và điện áp định mức: UBĐ.đm = const khi t1  t</para>
+        <para id="id5663460">+ Khi t &lt; t1:o(t) =  BĐ.t (5-63)</para>
+        <para id="id5654390">xl(t) =  BĐ.t - c   (5-64)</para>
+        <para id="id5654456">Trong đó: gia tốc BĐ =<media id="id17212668" alt=""><image src="graphics83.wmf" mime-type="image/wmf" height="47" width="92"/></media>- thường cho trước.</para>
+        <para id="id5654511">+ Quá trình quá độ khi khởi động sẽ qua 3 giai đoạn:</para>
+        <para id="id5654517">* Giai đoạn 1: 0 &lt; t &lt; to ; M &lt; Mc ;  = 0 ; uBĐ(t) = ku.t</para>
+        <para id="id6157525"><media id="id17212729" alt=""><image src="graphics84.wmf" mime-type="image/wmf" height="99" width="293"/></media> (5-65)</para>
+        <para id="id6157568">Vậy, mômen tăng tỉ lệ bậc nhất với thời gian. Và điểm làm việc của động cơ sẽ dịch chuyển trong mặt phẳng [, M] theo trục hoành như hình 5-15a. </para>
+        <para id="id6157590">Khi t = to, kết thúc giai đoạn 1: <media id="id17212782" alt=""><image src="graphics85.wmf" mime-type="image/wmf" height="47" width="75"/></media> (5-66)</para>
+        <para id="id5545348">* Giai đoạn 2: to  t  t1 ; M  Mc ;   0 ; uBĐ(t) = ku.t</para>
+        <para id="id5545447">Tại t = to : M = Mc : o(to) = BĐ.to = c ; </para>
+        <para id="id5445852">c = <media id="id17212842" alt=""><image src="graphics86.wmf" mime-type="image/wmf" height="46" width="29"/></media> - là độ sụt tốc của động cơ khi M = Mc.</para>
+        <para id="id5445913">Điểm làm việc sẽ dich chuyển từ đặc tính này sang đặc tính khác theo quy luật nào đó (đường có mủi tên chỉ trên hình 4-15a).</para>
+        <para id="id5445920">Dời gốc toạ độ tới t = to, lúc này tính thời gian là t’ = t - to:</para>
+        <para id="id5941027">Phương trình vi phân:</para>
+        <para id="id5941032"><media id="id17212917" alt=""><image src="graphics87.wmf" mime-type="image/wmf" height="43" width="113"/></media> (5-60’)</para>
+        <para id="id5941084"><media id="id17212950" alt=""><image src="graphics88.wmf" mime-type="image/wmf" height="49" width="254"/></media> (5-67)</para>
+        <para id="id5941130">+ Nghiệm riêng của (4-60’): <media id="id17212984" alt=""><image src="graphics89.wmf" mime-type="image/wmf" height="22" width="99"/></media> (5-68)</para>
+        <para id="id6082867">Hệ số B xác định theo (4-60’) khi thay r vào và đồng nhất các hệ số: <media id="id17213021" alt=""><image src="graphics90.wmf" mime-type="image/wmf" height="22" width="178"/></media></para>
+        <para id="id6082920">Ta có:B = - Tc. BĐ</para>
+        <para id="id6082952">+ Nghiệm tự do: <media id="id17213066" alt=""><image src="graphics91.wmf" mime-type="image/wmf" height="25" width="90"/></media> (5-69)</para>
+        <para id="id4680461">Nghiệm tổng quát:</para>
+        <para id="id4680466"><media id="id17213111" alt=""><image src="graphics92.wmf" mime-type="image/wmf" height="25" width="260"/></media> (5-70)</para>
+        <para id="id4680516">Khi t’ = 0 thì  = 0 nên C = Tc. BĐ và ta có:</para>
+        <para id="id4680558"><media id="id17213158" alt=""><image src="graphics93.wmf" mime-type="image/wmf" height="25" width="196"/></media>  (5-71)</para>
+        <para id="id5663039">Trong giai đoạn này:</para>
+        <para id="id5663044"><media id="id17213202" alt=""><image src="graphics94.wmf" mime-type="image/wmf" height="43" width="283"/></media> (5-72)</para>
+        <para id="id5663086">Khi t = t1, uBĐ(t) = UBĐ.đm, o(t) = o.đm, kết thúc giai đoạn 2.</para>
+        <para id="id5663147">* Giai đoạn 3: t1  t ; M  Mc ;  &gt; 0 ; điện áp bộ biến đổi lúc này: uBĐ(t) = UBĐ.đm = const; </para>
+        <para id="id5366950">Dời gốc toạ độ tới t = t1, lúc này tính thời gian là t” = t - t1:</para>
+        <para id="id5366977">Tương tự QTQĐ cơ học khi điện áp nguồn không đổi, áp dụng các kết quả trên ta có phương trình:</para>
+        <para id="id5366985"><media id="id17213295" alt=""><image src="graphics95.wmf" mime-type="image/wmf" height="25" width="189"/></media> (5-73)</para>
+        <para id="id5367036"><media id="id17213328" alt=""><image src="graphics96.wmf" mime-type="image/wmf" height="25" width="194"/></media> (5-74)</para>
+        <para id="id5511964">xl = o.đm - c  (5-75)</para>
+        <para id="id5512025">Điều kiện ban đầu:</para>
+        <para id="id5512030">bđ = cc2 = (<media id="id17213386" alt=""><image src="graphics97.wmf" mime-type="image/wmf" height="18" width="14"/></media>) với t’ = t1 - to; (5-76)</para>
+        <para id="id4683103">Mbđ = Mcc2 = M(<media id="id17213420" alt=""><image src="graphics98.wmf" mime-type="image/wmf" height="18" width="14"/></media>) với t’ = t1 - to; (5-77)</para>
+        <para id="id4682862">Sự biến thiên của (t) và M(t) trình bày trên hình 5-15.</para>
+        <para id="id4682881">Từ (5-77): Mđg = M - Mc = J.(1 - e-t/Tc) (5-78)</para>
+        <para id="id4682943">  = d/dt = BĐ(1 - e-t/Tc) (5-79)</para>
+        <para id="id5360324">Ta thấy rằng, trong QTQĐ khi khởi động thì mômen động Mđg và gia số  không phụ thuộc Mc mà chỉ phụ thuộc vào BĐ và Tc. Như vậy khi cho trước hệ thống TĐĐ có Tc = const thì chỉ còn lại BĐ, do đó ta có thể điều khiển QTQĐ một cách tuỳ ý không phụ thuộc vào phụ tải.</para>
+        <para id="id5360411"> Mo.đmo.đmxlxl 5%cm0 Mc Mm M0 to t1 tkđ Mtqđ = tkđTcM(t)o(t)(t)TcM(t)5%MmMc(t)o(t)Hình 5 - 15: Đặc tính (M), quỹ đạo pha, (t) và M(t)</para>
+        <para id="id5524926">* Đối với QTQĐ khi hãm và đảo chiều: có Mđg và  tương tự ở trên, khi giảm o(t) một cách tuyến tính và Mc = const thì ta có BĐ &lt; 0.</para>
+        <para id="id5844156">Ta có thể lựa chọn quy luật biến thiên của uBĐ(t) để tạo ra được đặc tính mong muốn của QTQĐ trong hệ thống TĐĐ.</para>
+      </section>
+      <section id="id-236792874124">
+        <title>Hệ thống Bộ biến đổi - động cơ điện xoay chiều:</title>
+        <para id="id5844186">Trường hợp hệ thống bộ biến tần (BT) - động cơ không đồng bộ (ĐK), tác động điều khiển làm thay đổi điện áp và tần số của bộ BT theo quy luật nào đó (thông thường là theo quy luật uBT/fBT = const). </para>
+        <para id="id5844219">Giả thiết bỏ qua ảnh hưởng của các sóng điều hòa bậc cao của bộ BT đến đặc tính cơ. Nhịp độ biến thiên của uBT và fBT đảm bảo sao cho: M &lt; Mt (tức là động cơ làm việc ở đoạn đặc tính cơ có s &lt; st). Khi đó, thay đổi điện áp điều khiển bộ BT thì đặc tính cơ có thể coi là những đường thẳng song song nhau. </para>
+        <para id="id5572850">Với những giả thiết trên, hệ thống BT - ĐK có thể xem là hệ tuyến tính, nên ta có thể dùng các phương trình tuyến tính ở hệ BBĐ - ĐM trên để khảo sát cho hệ BT - ĐK.</para>
+        <para id="id5572861">Lúc này: fBT = kf.t ; và: BT = do/dt = (2/p).kf; (5-80)</para>
+      </section>
+    </section>
+    <section id="id-398065810552">
+      <title>QUÁ TRÌNH QUÁ ĐỘ ĐIỆN - CƠ TRONG HỆ TĐĐ:</title>
+      <para id="id5572950">Đối với hệ mà động cơ có điện cảm lớn thì hằng số thời gian điện từ sẽ lớn, như vậy ta phải xét QTQĐ có cả Tc và Tđt, gọi là QTQĐ điện - cơ trong hệ thống TĐĐ.</para>
+      <para id="id5572988">Ví dụ, khi khởi động trực tiếp động cơ ĐMđl, Nếu không có điện cảm Lư trong mạch phần ứng thì xảy ra hiện tượng thoạt đầu dòng điện phần ứng tăng vọt lên trị số bằng dòng ngắn mạch rồi sau đó giảm dần theo quy luật hàm mũ. </para>
+      <para id="id5630363">Nhưng thực tế, do có Lư nên dòng điện không tăng đột biến như vậy được. Và QTQĐ sẽ diễn ra khác đi.</para>
+      <para id="id5630383">Ví dụ xét QTQĐ mạch phần ứng ĐMđl:</para>
+      <para id="id5630401">+ Uư - + Uư -Iư Iư Rư Lư ERư, LưEa)b)Hình 5 - 16: Sơ đồ mạch phần ứng ĐM và sơ đồ thay thế</para>
+      <para id="id6100070">Phương trình đặc tính quá độ mạch phần ứng:</para>
+      <para id="id6100076"><media id="id17213783" alt=""><image src="graphics99.wmf" mime-type="image/wmf" height="43" width="321"/></media>; (5-81)</para>
+      <para id="id6286504">Mặt khác: Mđg = M - Mc =<media id="id17213817" alt=""><image src="graphics100.wmf" mime-type="image/wmf" height="43" width="36"/></media> (5-82)</para>
+      <para id="id6286573">Nên:  M = Mc + <media id="id17213851" alt=""><image src="graphics101.wmf" mime-type="image/wmf" height="43" width="36"/></media> (5-83)</para>
+      <para id="id6286637">Suy ra:  iư = Iư.c + <media id="id17213885" alt=""><image src="graphics102.wmf" mime-type="image/wmf" height="46" width="60"/></media> (5-84)</para>
+      <para id="id5510159">Đạo hàm (4-84) ta có: <media id="id17213919" alt=""><image src="graphics103.wmf" mime-type="image/wmf" height="49" width="108"/></media> (5-85)</para>
+      <para id="id5510208">Thay (5-84), (5-85) vào (5-81) ta có:</para>
+      <para id="id5510213"><media id="id17213964" alt=""><image src="graphics104.wmf" mime-type="image/wmf" height="49" width="292"/></media> (5-86)</para>
+      <para id="id5510260">Biến đổi, ta có:</para>
+      <para id="id6068252"><media id="id17214009" alt=""><image src="graphics105.wmf" mime-type="image/wmf" height="46" width="200"/></media> (5-87)</para>
+      <para id="id6068300">Trong đó:</para>
+      <para id="id6068304"> Tư = Lư/Rư - hằng số thời gian điện từ mạch phần ứng.</para>
+      <para id="id6068346"> Tc = J/ = (J.Rư)/(K)2 - hằng số thời gian cơ học.</para>
+      <para id="id6068404"> xl = o - c = o - (Iư.Rư)/K - tốc độ xác lập.</para>
+      <para id="id5540768">Phương trình đặc tính của (4-87):</para>
+      <para id="id5540774">Tư.Tc.p2 + Tcp + 1 = 0 (5-88)</para>
+      <para id="id5540836">Giải (5-88) ra ta có nghiệm:</para>
+      <para id="id5540842"><media id="id17214132" alt=""><image src="graphics106.wmf" mime-type="image/wmf" height="53" width="197"/></media> (5-89)</para>
+      <para id="id5655121">+ Nếu: Tc  4Tư thì (5-88) có nghiệm thực và âm:</para>
+      <para id="id5655156"><media id="id17214178" alt=""><image src="graphics107.wmf" mime-type="image/wmf" height="53" width="215"/></media> (5-90)</para>
+      <para id="id5655204">Và (t) sẽ biến thiên theo quy luật hàm mũ.</para>
+      <para id="id5655222">+ Nếu: Tc &lt; 4Tư thì (5-88) có nghiệm phức (phần thực âm):</para>
+      <para id="id5655249">P1, 2 = -   j(5-91)</para>
+      <para id="id5360198">Trong đó: <media id="id17214252" alt=""><image src="graphics108.wmf" mime-type="image/wmf" height="53" width="199"/></media>(5-92)</para>
+      <para id="id5360241">Và (t) sẽ biến thiên theo quy luật hàm bậc hai (dao động).</para>
+    </section>
+  </content>
+</document>

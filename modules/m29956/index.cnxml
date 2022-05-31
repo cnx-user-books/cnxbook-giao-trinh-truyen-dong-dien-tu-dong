@@ -1,0 +1,1599 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Đặc tính cơ của động cơ điện</title>
+  <metadata>
+  <md:content-id>m29956</md:content-id><md:title>Đặc tính cơ của động cơ điện</md:title>
+  <md:abstract>Phần này trình bày các khái niệm chung về đặc tính cơ của động cơ điện</md:abstract>
+  <md:uuid>c4da0f3f-d75d-4176-818e-ed0493183b0f</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-464006127288">
+      <title>KHÁI NIỆM CHUNG</title>
+      <para id="id3929762">Chương 1 đã cho ta thấy, khi đặt hai đường đắc tính cơ M() và Mc() lên cùng một hệ trục tọa độ, ta có thể xác định được trạng thái lamg việc của động cơ và của hệ (xem hình 1-2 và hình 1-3): trạng thái xác lập khi M = Mc ứng với giao điểm của hai đường đặc tính M() và Mc(); hoặc trạng thái quá độ khi M  Mc tại những vùng có   xl ; trạng thái động cơ thuộc góc phần tư thứ nhất và thứ ba; hoặc trạng thái hãm thuộc góc phần tư thứ hai và thứ tư.</para>
+      <para id="id3063618">Khi phân tích các hệ truyền động, ta thường coi máy sản xuất đã cho trước, nghĩa là coi như biết trước đặc tính cơ Mc() của nó. Vậy muốn tìm kiếm một trạng thái làm việc với những thông số yêu cầu như tốc độ, mômen, dòng điện động cơ v... ta phải tạo ra những đặc tính cơ của động cơ tương ứng. Muốn vậy, ta phải ta phải nắm vững các phương trình đặc tính cơ và các đặc tính cơ của các loại động cơ điện, từ đó hiểu được các phương pháp tạo ra các đặc tính cơ nhân tạo phù hợp với máy sản xuất đã cho và điều khiển động cơ sao cho có được các trạng thái làm việc theo yêu cầu công nghệ.</para>
+      <para id="id3549859">Mỗi động cơ có một đặc tính cơ tự nhiên xác định bởi các số liệu định mức của nó. Trong nhiều trường hợp ta coi đặc tính này như loạt số liệu cho trước. Mặt khác nó có thể có vô số đặc tính cơ nhân tạo có được do biến đổi một hoặc vài thông số của nguồn, của mạch điện động cơ, hoặc do thay đổi cách nối dây của mạch, hoặc do dùng thêm thiết bị biến đổi. Do đó bất kỳ thông số nào có ảnh hưởng đến hình dáng và vị trí của đặc tính cơ, đều được coi là thông số điều khiển động cơ, và tương ứng là một phương pháp tạo đặc tính cơ nhân tạo hay đặc tính điều chỉnh.</para>
+      <para id="id5183222">Phương trình đặc tính cơ của động cơ điện có thể viết theo dạng thuận M = f() hay dạng ngược  = f(M).</para>
+    </section>
+    <section id="id-491198386453">
+      <title>ĐẶC TÍNH CƠ CỦA ĐỘNG CƠ MỘT CHIỀU KÍCH TỪ ĐỘC LẬP (ĐMđl)</title>
+      <section id="id-801897120633">
+        <title>Sơ đồ nối dây của ĐMđl và ĐMss: </title>
+        <para id="id3856381">Động cơ điện một chiều kích từ độc lập (ĐMđl): nguồn một chiều cấp cho phần ứng và cấp cho kích từ độc lập nhau.</para>
+        <para id="id3681297">Khi nguồn một chiều có công suất vô cùng lớn và điện áp không đổi thì có thể mắc kích từ song song với phần ứng, lúc đó động cơ được gọi là động cơ điện một chiều kích từ song song (ĐMss).</para>
+        <para id="id5424439">a) b)Hình 2-1: a) Sơ đồ nối dây động cơ điện một chiều kích từ độc lập.b) Sơ đồ nối dây động cơ điện một chiều kích từ song song.CktRktfIktIưIưIkt+ Ukt -+ U -RktfRưfRưf+ Uư -EE</para>
+      </section>
+      <section id="id-478744802284">
+        <title>Các thông số cơ bản của ĐMđl:</title>
+        <para id="id3879448">Các thông số định mức:</para>
+        <para id="id3879453">nđm(vòng/phút); đm(Rad/sec); Mđm(N.m hay KG.m); đm(Wb);</para>
+        <para id="id5300670">fđm(Hz); Pđm(KW); Uđm(V); Iđm(A); ...</para>
+        <para id="id3684539">Các thông số tính theo các hệ đơn vị khác:</para>
+        <para id="id4833348">* = /đm ; M* = M/Mđm ; I* = I/Iđm; * = /đm; R* = R/Rđm; </para>
+        <para id="id4677823">Rcb = Uđm/Iđm,; </para>
+        <para id="id5433546">%; M%; I%; ...</para>
+      </section>
+      <section id="id-597360139507">
+        <title>Phương trình đặc tính cơ - điện và đặc tính cơ của ĐMđl:</title>
+        <para id="id4012444">Theo sơ đồ hình 2-1a và hình 2-1b, có thể viết phương trình cân bằng điện áp của mạch phần ứng như sau:</para>
+        <para id="id4716960">Uư = E + (Rư + Rưf).Iư (2-1)</para>
+        <para id="id4846370">Trong đó: </para>
+        <para id="id5430823">Uư là điện áp phần ứng động cơ, (V)</para>
+        <para id="id4658863">E là sức điện động phần ứng động cơ (V).</para>
+        <para id="id4658869"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>E=</m:mtext><m:mrow><m:mrow><m:mrow><m:mfrac><m:mrow><m:mi>p</m:mi><m:mtext>.</m:mtext><m:mi>N</m:mi></m:mrow><m:mn>2πa</m:mn></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mi>φ</m:mi></m:mrow><m:mo stretchy="false">⋅</m:mo><m:mi>ω</m:mi></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mi fontstyle="italic">Kφ</m:mi><m:mo stretchy="false">⋅</m:mo><m:mi>ω</m:mi></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{"E=" {  {p "." N}  over  {2πa} }  cdot φ cdot ω=Kφ cdot ω} {}</m:annotation></m:semantics></m:math>(2-2)</para>
+        <para id="id3685905"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>K</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>p</m:mi><m:mtext>.</m:mtext><m:mi>N</m:mi></m:mrow><m:mn>2πa</m:mn></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{K= {  {p "." N}  over  {2πa} } } {}</m:annotation></m:semantics></m:math> là hệ số kết cấu của động cơ.</para>
+        <para id="id5544536">Hoặc:E = Ke.n(2-3)</para>
+        <para id="id5676823">Và:
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>2πn</m:mn><m:mtext>60</m:mtext></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mi>n</m:mi><m:mrow><m:mn>9,</m:mn><m:mtext>55</m:mtext></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {2πn}  over  {"60"} } = {  {n}  over  {9,"55"} } } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id3357270">Vậy:Ke = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi>K</m:mi><m:mrow><m:mn>9,</m:mn><m:mtext>55</m:mtext></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {K}  over  {9,"55"} } } {}</m:annotation></m:semantics></m:math>= 0,105.K</para>
+        <para id="id5262265">Rư­ là điện trở mạch phần ứng, Rư = rư + rctf + rctb + rtx , ().</para>
+        <para id="id5544791">Trong đó: rư là điện trở cuộn dây phần ứng của động cơ ().</para>
+        <para id="id3002247">Rctf là điện trở cuộn dây cực từ phụ của động cơ ().</para>
+        <para id="id3702020">Rctb là điện trở cuộn dây cực từ bù của động cơ ().</para>
+        <para id="id5431112">Rctb là điện trở tiếp xúc giữa chổi than với cổ góp của</para>
+        <para id="id5245221">động cơ ().</para>
+        <para id="id5183165">Rư­f là điện trở phụ mạch phần ứng.</para>
+        <para id="id4140035">Iư là dòng điện phần ứng.</para>
+        <para id="id4140059">Từ (2-1) và (2-2) ta có:</para>
+        <para id="id4140068"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac></m:mrow></m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U rSub { size 8{æ} } }  over  {Kφ} }  -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{"æf"} } }  over  {Kφ} } I rSub { size 8{æ} }  } {}</m:annotation></m:semantics></m:math>(2-4)</para>
+        <para id="id3328989">Đây là phương trình đặc tính cơ - điện của động cơ một chiều kích từ độc lập.</para>
+        <para id="id3390136">Mặt khác, mômen điện từ của động cơ được xác định:</para>
+        <para id="id3390143">Mđt = KIư(2-5)</para>
+        <para id="id4169165">Khi bỏ qua tổn thất ma sát trong ổ trục, tổn thất cơ, tổn thất thép thì có thể coi: Mcơ  Mđt  M</para>
+        <para id="id3437838">Suy ra:Iư = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ât</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">≈</m:mo><m:mfrac><m:mi>M</m:mi><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {M rSub { size 8{ ital "ât"} } }  over  {Kφ} }  approx   {  {M}  over  {Kφ} } } {}</m:annotation></m:semantics></m:math>(2-6)</para>
+        <para id="id5467485">Thay giá trị Iư vào (2-4), ta có:</para>
+        <para id="id4270030"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æΣ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U rSub { size 8{æ} } }  over  {Kφ} }  -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{"æf"} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M=  {  {U rSub { size 8{æ} } }  over  {Kφ} }  -  {  {R rSub { size 8{æΣ} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M"   "} {}</m:annotation></m:semantics></m:math> (2-7)</para>
+        <para id="id3685354">Đây là phương trình đặc tính cơ của động cơ điện một chiều kích từ độc lập.</para>
+        <para id="id5467175">Có thể biểu diễn đặc tính cơ dưới dạng khác:</para>
+        <para id="id5197364"> = 0 - (2-8)</para>
+        <para id="id3778050">Trong đó: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{0} } = {  {U rSub { size 8{æ} } }  over  {Kφ} } } {}</m:annotation></m:semantics></m:math> gọi là tốc độ không tải lý tưởng.(2-9)</para>
+        <para id="id3680864"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi fontstyle="italic">Δω</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æΣ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δω= {  {R rSub { size 8{æ} } +R rSub { size 8{æf} } }  over  { \( Kφ \)  rSup { size 8{2} } } } = {  {R rSub { size 8{æΣ} } }  over  { \( Kφ \)  rSup { size 8{2} } } }  } {}</m:annotation></m:semantics></m:math> gọi là độ sụt tốc độ.(2-10)</para>
+        <para id="id5300687">Từ các phương trình đặc tính cơ điện (2-4) và phương trình đặc tính cơ (2-8) trên, với giả thiết phần ứng được bù đủ và  = const thì ta có thể vẽ được các đặc tính cơ - điện (hình 2-2a) và đặc tính cơ (hình 2-2b) là những đường thẳng.</para>
+        <para id="id2350697">0 đm TNnt NTIđm Inm Iưa)0 đm TNnt NTMđm Mnm Mb)Hình 2-2: a) Đặc tính cơ - điện động cơ một chiều kích từ độc lập.b) Đặc tính cơ động cơ điện một chiều kích từ độc lập.</para>
+        <para id="id4160976">Đặc tính cơ tự nhiên (TN) là đặc tính cơ có các tham số định mức và không có điện trở phụ trong mạch phần ứng động cơ:</para>
+        <para id="id4160988"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æâm</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi fontstyle="italic">Kφ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æâm</m:mtext></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi fontstyle="italic">Kφ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:msub><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U rSub { size 8{"æâm"} } }  over  {Kφ rSub { size 8{"âm"} } } }  -  {  {R rSub { size 8{"æâm"} } }  over  { \( Kφ rSub { size 8{"âm"} }  \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-11)</para>
+        <para id="id4526144">Đặc tính cơ nhân tạo (NT) là đặc tính cơ có một trong các tham số khác định mức hoặc có điện trở phụ trong mạch phần ứng động cơ.</para>
+        <para id="id4526151">Khi  = 0, ta có:</para>
+        <para id="id4526161"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{æ} } = {  {U rSub { size 8{æ} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{ ital "æf"} } } } =I rSub { size 8{ ital "nm"} } } {}</m:annotation></m:semantics></m:math>(2-12)</para>
+        <para id="id3933789">Và:
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mi fontstyle="italic">Kφ</m:mi></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">⋅</m:mo><m:mi fontstyle="italic">Kφ</m:mi></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M= {  {U rSub { size 8{æ} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{ ital "æf"} } } }  cdot Kφ=I rSub { size 8{ ital "nm"} }  cdot Kφ=M rSub { size 8{ ital "nm"} } } {}</m:annotation></m:semantics></m:math>(2-13)</para>
+        <para id="id5484052">Trong đó: Inm - gọi là dòng điện (phần ứng) ngắn mạch</para>
+        <para id="id5484070"> Mnm - gọi là mômen ngắn mạch</para>
+        <para id="id3868006">Từ (2-7) ta xác định được độ cứng đặc tính cơ :</para>
+        <para id="id3868020"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>β</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dM</m:mtext></m:mrow></m:mstyle><m:mi fontstyle="italic">dω</m:mi></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β= {  { ital "dM"}  over  {dω} } = -  {  { \( Kφ \)  rSup { size 8{2} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{ ital "æf"} } } } } {}</m:annotation></m:semantics></m:math>(2-14)</para>
+        <para id="id4634401">Đối với đặc tính cơ tự nhiên:</para>
+        <para id="id4634405"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tn</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi fontstyle="italic">Kφ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β rSub { size 8{ ital "tn"} } = -  {  { \( Kφ rSub { size 8{ ital "dm"} }  \)  rSup { size 8{2} } }  over  {R rSub { size 8{æ} } } } } {}</m:annotation></m:semantics></m:math>(2-15)</para>
+        <para id="id4658936">Và:
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tn</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mn>1</m:mn><m:msubsup><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β rSub { size 8{ ital "tn"} }  rSup { size 8{*} } = -  {  {1}  over  {R rSub { size 8{­} }  rSup { size 8{*} } } } } {}</m:annotation></m:semantics></m:math>(2-16)</para>
+        <para id="id5430605">Nếu chưa có giá trị Rư thì ta có thể xác định gần đúng dựa vào giả thiết coi tổn thất trên điện trở phần ứng do dòng điện định mức gây ra bằng một nửa tổn thất trong động cơ:</para>
+        <para id="id5430623"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mn>0,5</m:mn></m:mrow><m:mtext>.</m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:msub><m:mi>η</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac><m:mi>,</m:mi><m:mo stretchy="false">Ω</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{æ} } =0,5 "."  \( 1 - η rSub { size 8{ ital "âm"} }  \)  {  {U rSub { size 8{ ital "âm"} } }  over  {I rSub { size 8{ ital "âm"} } } } , %OMEGA } {}</m:annotation></m:semantics></m:math>(2-17)</para>
+        <para id="id4869380">* Ví dụ 2-1: </para>
+        <para id="id3941599">Xây dựng đặc tính cơ tự nhiên và nhân tạo của động cơ điện một chiều kích từ độc lập có các số liệu sau:</para>
+        <para id="id3941608">Động cơ làm việc dài hạn, công suất định mức là 6,6KW; điện áp định mức: 220V; tốc độ định mức: 2200vòng/phút; điện trở mạch phần ứng gồm điện trở cuộn dây phần ứng và cực từ phụ: 0,26; điện trở phụ đưa vào mạch phần ứng: 1,26.</para>
+        <para id="id3941630">* Giải:</para>
+        <para id="id3941635">a) Xây dựng đặc tính cơ tự nhiên:</para>
+        <para id="id3941640">Đặc tính cơ tự nhiên có thể vẽ qua 2 điểm: là điểm định mức [Mđm; đm] và điểm không tải lý tưởng [M = 0;  = 0]. Hoặc điểm không tải lý tưởng [M = 0;  = 0] và điểm ngắn mạch [Mnm;  = 0]. Hoặc điểm định mức [Mđm; đm] và điểm ngắn mạch [Mnm;  = 0].</para>
+        <para id="id4952327">Tốc độ góc định mức:</para>
+        <para id="id4952336">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>ω</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>âm</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>n</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mrow>
+                                <m:mn>9,</m:mn>
+                                <m:mtext>55</m:mtext>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mtext>2200</m:mtext>
+                            <m:mrow>
+                              <m:mn>9,</m:mn>
+                              <m:mtext>55</m:mtext>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>230</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mn>3</m:mn>
+                      <m:mtext> rad/s</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{ ital "âm"} } = {  {n rSub { size 8{ ital "âm"} } }  over  {9,"55"} } = {  {"2200"}  over  {9,"55"} } ="230",3" rad/s"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5486743">Mômen (cơ) định mức:</para>
+        <para id="id5486748">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>M</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>âm</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>P</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>1000</m:mtext>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>ω</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>6,6</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>1000</m:mtext>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>230</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>28</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mn>6</m:mn>
+                      <m:mtext> Nm</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "âm"} } = {  {P rSub { size 8{ ital "âm"} }  "." "1000"}  over  {ω rSub { size 8{ ital "âm"} } } } = {  {6,6 "." "1000"}  over  {"230",3} } ="28",6" Nm"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id4854910">Như vậy ta có điểm thứ nhất trên đặc tính cơ tự nhiên cần tìm là điểm định mức: [28,6 ; 230,3].</para>
+        <para id="id4854918">Từ phương trình đặc tính cơ tự nhiên ta tính được:</para>
+        <para id="id4854925">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi fontstyle="italic">Kφ</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>âm</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>U</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>âm</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:msub>
+                                    <m:mi>I</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>âm</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:mtext>.</m:mtext>
+                                <m:msub>
+                                  <m:mi>R</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mi>æ</m:mi>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>ω</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mtext>220</m:mtext>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mtext>35</m:mtext>
+                              </m:mrow>
+                              <m:mtext>.</m:mtext>
+                              <m:mn>0,</m:mn>
+                              <m:mtext>26</m:mtext>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>230</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>091</m:mtext>
+                      </m:mrow>
+                      <m:mtext> Wb</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{Kφ rSub { size 8{ ital "âm"} } = {  {U rSub { size 8{ ital "âm"} }  - I rSub { size 8{ ital "âm"} }  "." R rSub { size 8{æ} } }  over  {ω rSub { size 8{ ital "âm"} } } } = {  {"220" - "35" "." 0,"26"}  over  {"230",3} } ="091"" Wb"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5178991">Tốc độ không tải lý tưởng:</para>
+        <para id="id5178997">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>ω</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>0</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>U</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi fontstyle="italic">Kφ</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mtext>220</m:mtext>
+                            <m:mrow>
+                              <m:mn>0,</m:mn>
+                              <m:mtext>91</m:mtext>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">≈</m:mo>
+                        <m:mtext>241</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mn>7</m:mn>
+                      <m:mtext> rad/s</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ω rSub { size 8{0} } = {  {U rSub { size 8{ ital "âm"} } }  over  {Kφ rSub { size 8{ ital "âm"} } } } = {  {"220"}  over  {0,"91"} }  approx "241",7" rad/s"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id4764176">Ta có điểm thứ hai của đặc tính [0; 241,7] và như vậy ta có thể dựng được đường đặc tính cơ tự nhiên như đường  trên hình 2 - 3.</para>
+        <para id="id4764191">Ta có thể tính thêm điểm thứ ba là điểm ngắn mạch [Mnm; 0]</para>
+        <para id="id4764203">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>M</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>nm</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi fontstyle="italic">Kφ</m:mi>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>nm</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mi fontstyle="italic">Kφ</m:mi>
+                            <m:mo stretchy="false">⋅</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>U</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>dm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi>­</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0,</m:mn>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mtext>91</m:mtext>
+                          <m:mo stretchy="false">⋅</m:mo>
+                          <m:mfrac>
+                            <m:mtext>220</m:mtext>
+                            <m:mrow>
+                              <m:mn>0,</m:mn>
+                              <m:mtext>26</m:mtext>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>770</m:mtext>
+                      </m:mrow>
+                      <m:mtext> Nm</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "nm"} } =Kφ "." I rSub { size 8{ ital "nm"} } =Kφ cdot  {  {U rSub { size 8{ ital "dm"} } }  over  {R rSub { size 8{­} } } } =0,"91" cdot  {  {"220"}  over  {0,"26"} } ="770"" Nm"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id3716290">Vậy ta có tọa độ điểm thứ ba của đặc tính cơ tự nhiên [770; 0].</para>
+        <para id="id3716297">Độ cứng của đặc tính cơ tự nhiên có thể xác định theo biểu thức (2-15) hoặc xác định theo số liệu lấy trên đường đặc tính hình 2-3.</para>
+        <para id="id3716304">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∣</m:mo>
+                                  <m:msub>
+                                    <m:mi>β</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>tn</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mo stretchy="false">∣</m:mo>
+                                </m:mrow>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mfrac>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>dM</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mi fontstyle="italic">dω</m:mi>
+                                </m:mfrac>
+                              </m:mrow>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mi fontstyle="italic">ΔM</m:mi>
+                                <m:mi fontstyle="italic">Δω</m:mi>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mn>0</m:mn>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:msub>
+                                  <m:mi>M</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>ω</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mn>0</m:mn>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:msub>
+                                  <m:mi>ω</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>28</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mn>6</m:mn>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>241</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mrow>
+                                <m:mn>7</m:mn>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mtext>230</m:mtext>
+                              </m:mrow>
+                              <m:mi>,</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>2,5</m:mn>
+                      </m:mrow>
+                      <m:mtext> Nm</m:mtext>
+                      <m:mtext>.</m:mtext>
+                      <m:mi>s</m:mi>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{ lline β rSub { size 8{ ital "tn"} }  rline = {  { ital "dM"}  over  {dω} } = {  {ΔM}  over  {Δω} } = {  {0 - M rSub { size 8{ ital "âm"} } }  over  {ω rSub { size 8{0} }  - ω rSub { size 8{ ital "âm"} } } } = {  {"28",6}  over  {"241",7 - "230",3} } =2,5" Nm" "." s} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id3813712">b) Xây dựng đặc tính cơ nhân tạo có Rưf = 0,78:</para>
+        <para id="id3813741">Khi thay đổi điện trở phụ trên mạch phần ứng thì tốc độ không tải lý tưởng không thay đổi, nên ta có thể vẽ đặc tính cơ nhân tạo (có Rưf = 0,78) qua các điểm không tải lý tưởng [0; 0] và điểm tương ứng với tốc độ nhân tạo [Mđm; nt]:</para>
+        <para id="id4789218"> (rad/s)241,7230,328,60M (Nm)Hình 2 - 3: Đặc tính cơ tự nhiên và đặc tính cơ nhân tạo183,3</para>
+        <para id="id5190476">Ta tính được giá trị mômen (cơ) định mức:</para>
+        <para id="id5190482">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>M</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>âm</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>P</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>1000</m:mtext>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>ω</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>âm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mn>6,6</m:mn>
+                              <m:mtext>.</m:mtext>
+                              <m:mtext>1000</m:mtext>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mtext>230</m:mtext>
+                              <m:mi>,</m:mi>
+                              <m:mn>3</m:mn>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>28</m:mtext>
+                      </m:mrow>
+                      <m:mi>,</m:mi>
+                      <m:mtext>66</m:mtext>
+                      <m:mtext> Nm</m:mtext>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "âm"} } = {  {P rSub { size 8{ ital "âm"} }  "." "1000"}  over  {ω rSub { size 8{ ital "âm"} } } } = {  {6,6 "." "1000"}  over  {"230",3} } ="28","66"" Nm"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5153012">Và tính tốc độ góc nhân tạo:</para>
+        <para id="id5153018">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mstyle fontsize="12pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>ω</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>nt</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>U</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>âm</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mo stretchy="false">(</m:mo>
+                                  </m:mrow>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>R</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi>æ</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">+</m:mo>
+                                    <m:msub>
+                                      <m:mi>R</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>æf</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">)</m:mo>
+                                  <m:mtext>.</m:mtext>
+                                  <m:msub>
+                                    <m:mi>I</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>âm</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mrow>
+                                <m:msub>
+                                  <m:mi fontstyle="italic">Kφ</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mtext/>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mtext>220</m:mtext>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mo stretchy="false">(</m:mo>
+                                </m:mrow>
+                                <m:mn>0,</m:mn>
+                                <m:mrow>
+                                  <m:mtext>26</m:mtext>
+                                  <m:mo stretchy="false">+</m:mo>
+                                  <m:mn>1,</m:mn>
+                                </m:mrow>
+                                <m:mtext>26</m:mtext>
+                                <m:mo stretchy="false">)</m:mo>
+                                <m:mtext>.</m:mtext>
+                                <m:mtext>35</m:mtext>
+                              </m:mrow>
+                              <m:mrow>
+                                <m:mn>0,</m:mn>
+                                <m:mtext>91</m:mtext>
+                              </m:mrow>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mtext>183</m:mtext>
+                        </m:mrow>
+                        <m:mi>,</m:mi>
+                        <m:mn>3</m:mn>
+                        <m:mtext> rad/s</m:mtext>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                  </m:mtable>
+                  <m:mrow/>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{ω rSub { size 8{ ital "nt"} } = {  {U rSub { size 8{ ital "âm"} }  -  \( R rSub { size 8{æ} } +R rSub { size 8{ ital "æf"} }  \)  "." I rSub { size 8{ ital "âm"} } }  over  {Kφ rSub { size 8{ ital "âm"} } } } }  {} # 
+"        "= {  {"220" -  \( 0,"26"+1,"26" \)  "." "35"}  over  {0,"91"} } ="183",3" rad/s" {} 
+} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id4585681">Ta có tọa độ điểm tương ứng với tốc độ nhân tạo [28,66; 183,3]</para>
+        <para id="id4585688">Vậy ta có thể dựng được đường đặc tính cơ nhân tạo có điện trở phụ trong mạch phần ứng như đường  trên hình 2 - 3.</para>
+      </section>
+      <section id="id-114010596143">
+        <title>Đặc tính cơ khi khởi động ĐMđl và tính điện trở khởi động:</title>
+        <section id="id-419657895286">
+          <title>Khởi động và xây dựng đặc tính cơ khi khởi động:</title>
+          <para id="id5300626">+ Nếu khởi động động cơ ĐMđl bằng phương pháp đóng trực tiếp thì dòng khởi động ban đầu rất lớn: Ikđbđ = Uđm/Rư  (10  20)Iđm, như vậy nó có thể đốt nóng động cơ, hoặc làm cho sự chuyển mạch khó khăn, hoặc sinh ra lực điện động lớn làm phá huỷ quá trình cơ học của máy.</para>
+          <para id="id5045031">+ Để đảm bảo an toàn cho máy, thường chọn:</para>
+          <para id="id5045037">Ikđbđ = Inm  Icp = 2,5Iđm(2-18)</para>
+          <para id="id4636695">+ Muốn thế, người ta thường đưa thêm điện trở phụ vào mạch phần ứng ngay khi bắt đầu khởi động, và sau đó thì loại dần chúng ra để đưa tốc độ động cơ lên xác lập.</para>
+          <para id="id4636706">I’kđbđ = I’nm = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {U rSub { size 8{ ital "âm"} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{æf} } } } "  "} {}</m:annotation></m:semantics></m:math>= (22,5)Iđm  Icp ; (2-19)</para>
+          <para id="id5188223">* Xây dựng các đặc tính cơ - điện khi khởi động ĐMđl:</para>
+          <para id="id5188241">- Từ các thông số định mức (Pđm; Uđm; Iđm; nđm, đm; ...) và thông số tải (Ic; Mc; Pc; ...), số cấp khởi động m, ta vẽ đặc tính cơ tự nhiên.</para>
+          <para id="id5126936">- Xác định dòng điện khởi động lớn nhất: Imax = I1 = (22,5)Iđm</para>
+          <para id="id5001714">- Xác định dòng điện khởi động nhỏ nhất: Imin = I2 = (1,11,3)Ic</para>
+          <para id="id4862782">- Từ điểm a(I 1) kẽ đường a0 nó sẽ cắt I2 = const tại b; từ b kẽ đường song song với trục hoành nó cắt I1 = const tại c; nối c0 nó sẽ cắt I2 = const tại d; từ d kẽ đường song song với trục hoành thì nó cắt I1 = const tại e; ... </para>
+          <para id="id4834586">Cứ như vậy cho đến khi nó gặp đường đặc tính cơ tự nhiên tại điểm giao nhau của đặc tính cơ TN và I1 = const, ta sẽ có đặc tính khởi động abcde...XL.</para>
+          <para id="id4834607">Nếu điểm cuối cùng gặp đặc tính TN mà không trùng với giao điểm của đặc tính cơ TN và I1 = const thì ta phải chọn lại I1 hoặc I2 rồi tiến hành lại từ đầu.</para>
+          <para id="id4838670">Hình 2-3: a) Sơ đồ nối dây ĐMđl khởi động 2 cấp, m = 2b) Các đặc tính khởi động ĐMđl, m = 2.CktRktfIktIưEK2 K1Rưf2 Rưf1Uư+-a)0120 Ic I2 I1 IưTNXL21abcdehb)</para>
+          <para id="id4946025"/>
+        </section>
+        <section id="id-947651900366">
+          <title>Tính điện trở khởi động:</title>
+          <section id="id-14812372497">
+            <title>a) Phương pháp đồ thị:</title>
+            <para id="id4946050">Dựa vào biểu thức của độ sụt tốc độ  trên các đặc tính cơ ứng với một giá trị dòng điện (ví dụ I1 ) ta có:</para>
+            <para id="id4946070"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>TN</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac></m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mi>;</m:mi><m:mtext/><m:mrow><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>NT</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac></m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{Δω rSub { size 8{ ital "TN"} } = {  {R rSub { size 8{æ} } }  over  {Kφ} } I rSub { size 8{1} } ;"     "Δω rSub { size 8{"NT"} } = {  {R rSub { size 8{æ} } +R rSub { size 8{æf} } }  over  {Kφ} } I rSub { size 8{1} } } {}</m:annotation></m:semantics></m:math>;(2-20)</para>
+            <para id="id3904311">Rút ra: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>æ</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fi</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>NT</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>TNi</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>TN</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mi>;</m:mi><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{æ ital "fi"} } = {  {Δω rSub { size 8{"NT"} }  - Δω rSub { size 8{ ital "TNi"} } }  over  {Δω rSub { size 8{ ital "TN"} } } } R rSub { size 8{æ} } ;"     "} {}</m:annotation></m:semantics></m:math>(2-21)</para>
+            <para id="id5205953">Qua đồ thị ta có:</para>
+            <para id="id5205958">
+              <m:math>
+                <m:semantics>
+                  <m:mrow>
+                    <m:mstyle fontsize="12pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi fontstyle="italic">æf1</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>ha</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mo stretchy="false">−</m:mo>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>he</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>he</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>æ</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:mtext>ae</m:mtext>
+                              <m:mtext>he</m:mtext>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:msub>
+                            <m:mi>R</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>æ</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mi>;</m:mi>
+                          <m:mtext/>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:mrow>
+                  <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{æf1} } = {  { ital "ha" -  ital "he"}  over  { ital "he"} } R rSub { size 8{æ} } = {  {"ae"}  over  {"he"} } R rSub { size 8{æ} } ;"     "} {}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </para>
+            <para id="id3995157">Tương tự như vậy:</para>
+            <section id="id-48341711678">
+              
+              <para id="id5453709">
+                <m:math>
+                  <m:semantics>
+                    <m:mrow>
+                      <m:mstyle fontsize="12pt">
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi fontstyle="italic">æf2</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>hc</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mo stretchy="false">−</m:mo>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>he</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>he</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi>æ</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mtext>ce</m:mtext>
+                                <m:mtext>he</m:mtext>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:msub>
+                              <m:mi>R</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mi>æ</m:mi>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mi>;</m:mi>
+                            <m:mtext/>
+                          </m:mrow>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:mrow>
+                    <m:annotation encoding="StarMath 5.0"> size 12{R rSub { size 8{æf2} } = {  { ital "hc" -  ital "he"}  over  { ital "he"} } R rSub { size 8{æ} } = {  {"ce"}  over  {"he"} } R rSub { size 8{æ} } ;"      "} {}</m:annotation>
+                  </m:semantics>
+                </m:math>
+              </para>
+              <para id="id4527406">Điện trở tổng ứng với mỗi đặc tính cơ:</para>
+              <para id="id4527412">R1 = Rư + Rưf (1) = Rư + (Rưf 1 + Rưf 2)</para>
+              <para id="id4527452">R2 = Rư + Rưf (2) = Rư + (Rưf 2)</para>
+            </section>
+          </section>
+          <section id="id-9670421664">
+            <title>b) Phương pháp giải tích:</title>
+            <para id="id4019082">Giả thiết động cơ được khởi động với m cấp điện trở phụ. Đặc tính khởi động đầu tiên và dốc nhất là đường 1 (hình 2-3b), sau đó đến cấp 2, cấp 3, ... cấp m, cuối cùng là đặc tính cơ tự nhiên::</para>
+            <para id="id5453633">Điện trở tổng ứng với mỗi đặc tính cơ:</para>
+            <para id="id5453639">R1 = Rư + Rưf (1) = Rư + (Rưf 1 + Rưf 2 + ... + Rưf m)</para>
+            <para id="id5453684">R2 = Rư + Rưf (2) = Rư + (Rưf 1 + Rưf 2 + ... + Rưf m-1)</para>
+            <para id="id4622030">...</para>
+            <para id="id4622036">Rm-1 = Rư + (Rưf m-1 + Rưf m)</para>
+            <para id="id3817394">Rm = Rư + (Rưf m)</para>
+            <para id="id3817417">Tại điểm b trên hình 2-3b ta có:</para>
+            <para id="id3817422"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{2} } = {  {U rSub { size 8{ ital "âm"} }  - E rSub { size 8{1} } }  over  {R rSub { size 8{1} } } } "  "} {}</m:annotation></m:semantics></m:math>(2-22)</para>
+            <para id="id4945238">Tại điểm c trên hình 2-3b ta có:</para>
+            <para id="id4945244"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>®</m:mi><m:mi>m</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{1} } = {  {U rSub { size 8{®m} } -E rSub { size 8{1} } }  over  {R rSub { size 8{2} } } } "  "} {}</m:annotation></m:semantics></m:math>(2-23)</para>
+            <para id="id3771505">Trong quá trình khởi động, ta lấy: </para>
+            <para id="id3771510"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">=</m:mo><m:mi>λ</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {I rSub { size 8{1} } }  over  {I rSub { size 8{2} } } } =λ} {}</m:annotation></m:semantics></m:math>= const(2-24)</para>
+            <para id="id5547309">Vậy: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mtext>.</m:mtext></m:mrow><m:mtext>.</m:mtext><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ= {  {I rSub { size 8{1} } }  over  {I rSub { size 8{2} } } } = {  {R rSub { size 8{1} } }  over  {R rSub { size 8{2} } } } = {  {R rSub { size 8{2} } }  over  {R rSub { size 8{3} } } } = "."  "."  "." = {  {R rSub { size 8{m - 1} } }  over  {R rSub { size 8{m} } } } = {  {R rSub { size 8{m} } }  over  {R rSub { size 8{æ} } } }  } {}</m:annotation></m:semantics></m:math>(2-25)</para>
+            <para id="id4767000">Rút ra:</para>
+            <para id="id4767005"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">λR</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">λR</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtext>.</m:mtext><m:mtext>.</m:mtext><m:mtext>.</m:mtext><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">λR</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">λR</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msup></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none R rSub { size 8{m} } =λR rSub { size 8{æ} }  {} # 
+ right rbrace  left none R rSub { size 8{m - 1} } =λR rSub { size 8{m} } =λ rSup { size 8{2} } R rSub { size 8{æ} }   {} # 
+ right rbrace  left none  "."  "."  "."  {} # 
+ right rbrace  left none R rSub { size 8{2} } =λR rSub { size 8{3} } =λ rSup { size 8{m - 1} } R rSub { size 8{æ} }  {} # 
+ right rbrace  left none R rSub { size 8{1} } =λR rSub { size 8{2} } =λ rSup { size 8{m} } R rSub { size 8{æ} }  {} # 
+ right rbra } }  rbrace  } {}</m:annotation></m:semantics></m:math>(2-26)</para>
+            <para id="id5152236">+ Nếu cho trước số cấp điện trở khởi động m và R1, Rư thì ta tính được bội số dòng điện khi khởi động:</para>
+            <para id="id5152269"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">=</m:mo><m:mroot><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">=</m:mo><m:mroot><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:mroot></m:mrow><m:mo stretchy="false">=</m:mo><m:mroot><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>âm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:mroot></m:mrow><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{λ= nroot { size 8{m} }  { {  {R rSub { size 8{1} }  }  over  {R rSub { size 8{æ} } } } } = nroot { size 8{m} }  { {  {U rSub { size 8{ ital "âm"} }  }  over  {R rSub { size 8{æ} }  "." I rSub { size 8{1} } } } } = nroot { size 8{m+1} }  { {  {U rSub { size 8{ ital "âm"} }  }  over  {R rSub { size 8{æ} }  "." I rSub { size 8{2} } } } } "  "} {}</m:annotation></m:semantics></m:math>(2-27)</para>
+            <para id="id4875906">Trong đó: R1 = Uđm/I1; rồi thay tiếp I1 = I2.</para>
+            <para id="id4875946">+ Nếu biết , R1, Rư ta xác định được số cấp điện trở khởi động:</para>
+            <para id="id4875969"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mtext>lg</m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">/</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow><m:mrow><m:mtext>lg</m:mtext><m:mi>λ</m:mi></m:mrow></m:mfrac></m:mrow><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{m= {  {"lg" \( R rSub { size 8{1} } /R rSub { size 8{æ} }  \) }  over  {"lg"λ} } "  "} {}</m:annotation></m:semantics></m:math>(2-28)</para>
+            <para id="id4655184">* Trị số các cấp khởi động được tính như sau:</para>
+            <para id="id4655190"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>æ</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mo stretchy="false">(</m:mo></m:mrow><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>æ</m:mi><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fm</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>m</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>λ</m:mi></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtext>.</m:mtext><m:mtext>.</m:mtext><m:mtext>.</m:mtext><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf2</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>3</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf1</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:msup><m:mi>λ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>m</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msup></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:mi>λ</m:mi><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:mo stretchy="false">)</m:mo><m:mtext>.</m:mtext><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none R rSub { size 8{æ ital "fm"} } =R rSub { size 8{m} }  - R rSub { size 8{æ} } = \( λ - 1 \)  "." R rSub { size 8{æ} }  {} # 
+ right rbrace  left none R rSub { size 8{æ ital "fm" - 1} } =R rSub { size 8{m - 1} }  - R rSub { size 8{m} } =λ \( λ - 1 \)  "." R rSub { size 8{æ} }  {} # 
+ right rbrace  left none  "."  "."  "."  {} # 
+ right rbrace  left none R rSub { size 8{æf2} } =R rSub { size 8{2} }  - R rSub { size 8{3} } =λ rSup { size 8{m - 2} }  \( λ - 1 \)  "." R rSub { size 8{æ} }  {} # 
+ right rbrace  left none R rSub { size 8{æf1} } =R rSub { size 8{1} }  - R rSub { size 8{2} } =λ rSup { size 8{m - 1} }  \( λ - 1 \)  "." R rSub { size 8{æ} }  {} # 
+ right rbra } }  rbrace  } {}</m:annotation></m:semantics></m:math>(2-29)</para>
+            <para id="id3951861">* Ví dụ 2-2:</para>
+            <para id="id3951866">Cho động cơ kích từ song song có các số liệu sau: Pđm = 25KW; Uđm = 220V; nđm = 420vg/ph; Iđm = 120A; Rư* = 0,08. Khởi động hai cấp điện trở phụ với tần suất 1lần/1ca, làm việc ba ca, mômen cản quy đổi về trục động cơ (cả trong thời gian khởi động) Mc  410Nm. Hảy xác định các cấp điện trở phụ.</para>
+            <para id="id4141892">* Giải:</para>
+            <para id="id4141896">Trước hết ta xác định các số liệu cần thiết của động cơ:</para>
+            <para id="id4141903">Điện trở định mức: Rđm = Uđm/Iđm = 220V/120A = 1,83.</para>
+            <para id="id4141930">Điện trở phần ứng: Rư = Rư*.Rđm = 0,08.1,83 = 0,146.</para>
+            <para id="id5006786">Tốc độ góc định mức: đm = nđm/ 9,55 = 420/ 9,55 = 44 rad/s.</para>
+            <para id="id5006806">Từ thông của động cơ và hệ số kết cấu của nó:</para>
+            <para id="id5006813">
+              <m:math>
+                <m:semantics>
+                  <m:mrow>
+                    <m:mstyle fontsize="12pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi fontstyle="italic">Kφ</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>âm</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mfrac>
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:msub>
+                                        <m:mi>U</m:mi>
+                                        <m:mstyle fontsize="8pt">
+                                          <m:mrow>
+                                            <m:mstyle fontstyle="italic">
+                                              <m:mrow>
+                                                <m:mtext>âm</m:mtext>
+                                              </m:mrow>
+                                            </m:mstyle>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:msub>
+                                      <m:mo stretchy="false">−</m:mo>
+                                      <m:msub>
+                                        <m:mi>R</m:mi>
+                                        <m:mstyle fontsize="8pt">
+                                          <m:mrow>
+                                            <m:mi>æ</m:mi>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:msub>
+                                    </m:mrow>
+                                    <m:mtext>.</m:mtext>
+                                    <m:msub>
+                                      <m:mi>I</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>âm</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mrow>
+                                  <m:msub>
+                                    <m:mi>ω</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>âm</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mfrac>
+                              </m:mrow>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mtext>220</m:mtext>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>0,</m:mn>
+                                  </m:mrow>
+                                  <m:mtext>146</m:mtext>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>120</m:mtext>
+                                </m:mrow>
+                                <m:mtext>44</m:mtext>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mn>4,6</m:mn>
+                          </m:mrow>
+                          <m:mtext> Wb</m:mtext>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:mrow>
+                  <m:annotation encoding="StarMath 5.0"> size 12{Kφ rSub { size 8{ ital "âm"} } = {  {U rSub { size 8{ ital "âm"} }  - R rSub { size 8{æ} }  "." I rSub { size 8{ ital "âm"} } }  over  {ω rSub { size 8{ ital "âm"} } } } = {  {"220" - 0,"146" "." "120"}  over  {"44"} } =4,6" Wb"} {}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </para>
+            <para id="id4949284">Dòng điện phụ tải: Ic = Mc/Kđm = 410/4,6 = 89A  0,74Iđm.</para>
+            <para id="id4949322">Với tần suất khởi động ít, dòng điện và mômen phụ tải nhỏ hơn định mức, nên ta coi trường hợp này thuộc loại khởi động bình thường với số cấp khởi động cho trước m = 2, dùng biểu thức (2-27), chọn trước giá trị I2: </para>
+            <para id="id4949341">I2 = 1,1.Ic = 1,1.89A = 98 A</para>
+            <para id="id4141723">Ta tính được bội số dòng điện khởi động:</para>
+            <para id="id4141729">
+              <m:math>
+                <m:semantics>
+                  <m:mrow>
+                    <m:mstyle fontsize="12pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>λ</m:mi>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mroot>
+                                <m:mfrac>
+                                  <m:msub>
+                                    <m:mi>U</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>âm</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>R</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi>æ</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mtext>.</m:mtext>
+                                    <m:msub>
+                                      <m:mi>I</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mn>2</m:mn>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mrow>
+                                </m:mfrac>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mi>m</m:mi>
+                                      <m:mo stretchy="false">+</m:mo>
+                                      <m:mn>1</m:mn>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mroot>
+                            </m:mrow>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mroot>
+                              <m:mfrac>
+                                <m:mtext>220</m:mtext>
+                                <m:mrow>
+                                  <m:mn>0,</m:mn>
+                                  <m:mtext>146</m:mtext>
+                                  <m:mtext>.</m:mtext>
+                                  <m:mtext>98</m:mtext>
+                                </m:mrow>
+                              </m:mfrac>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>2</m:mn>
+                                    <m:mo stretchy="false">+</m:mo>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mroot>
+                          </m:mrow>
+                          <m:mo stretchy="false">≈</m:mo>
+                          <m:mn>2,5</m:mn>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:mrow>
+                  <m:annotation encoding="StarMath 5.0"> size 12{λ= nroot { size 8{m+1} }  { {  {U rSub { size 8{ ital "âm"} } }  over  {R rSub { size 8{æ} }  "." I rSub { size 8{2} } } } } = nroot { size 8{2+1} }  { {  {"220"}  over  {0,"146" "." "98"} } }  approx 2,5} {}</m:annotation>
+                </m:semantics>
+              </m:math>
+            </para>
+            <para id="id3815308">Kiểm nghiệm lại giá trị dòng điện I1:</para>
+            <para id="id3815319">I1 = .I2 = 2,5.98A = 245A  2Iđm</para>
+            <para id="id5943563">Giá trị dòng khởi động thấp hơn giá trị cho phép, nghĩa là số liệu đã tính là hợp lý.</para>
+            <para id="id5943574">Hình 2-4: a) Sơ đồ nối dây ĐMđl khởi động 2 cấp, m = 2b) Các đặc tính khởi động ĐMđl, m = 2:Đường 1 có: R1 = Rư + Rưf1 + Rưf2Đường 2 có: R2 = Rư + Rưf2Đường TN có: R3 = Rư CktRktfIktIưEK2 K1Rưf2 Rưf1Uư+-a)0120 Ic I2 I1 IưTNXL21abcdehb)</para>
+            <para id="id4102126">Theo (2-26) ta xác định được các cấp điện trở tổng với hai đường đặc tính nhân tạo:</para>
+            <para id="id4102134">R1 = Rư = 2,5.0,146 = 0,365 </para>
+            <para id="id5466227">R2 = R1 = 2,5.0,365 = 0,912 </para>
+            <para id="id5466253">Và các điện trở phụ của các cấp sẽ là:</para>
+            <para id="id5466259">Rưf1 = R1 - Rư </para>
+            <para id="id4947038">= 0,365 - 0,146 = 0,219 </para>
+            <para id="id4947050">Rưf2 = R2 - Rưf1 - Rư </para>
+            <para id="id4947077">= 0,912 - 0,219 - 0,146 = 0,547 </para>
+          </section>
+        </section>
+      </section>
+      <section id="id-0782173798691">
+        <title>Các đặc tính cơ khi hãm ĐMđl:</title>
+        <para id="id3976310">Hãm là trạng thái mà động cơ sinh ra mômen quay ngược chiều với tốc độ, hay còn gọi là chế độ máy phát. Động cơ điện một chiều kích từ độc lập có ba trạng thái hãm:</para>
+        <section id="id-605015900419">
+          <title>Hãm tái sinh:</title>
+          <para id="id3976329">Hãm tái sinh khi tốc độ quay của động cơ lớn hơn tốc độ không tải lý tưởng ( &gt; 0). Khi hãm tái sinh, sức điện động của động cơ lớn hơn điện áp nguồn: E &gt; Uư, động cơ làm việc như một máy phát song song với lưới và trả năng lượng về nguồn, lúc này thì dòng hãm và mômen hãm đã đổi chiều so với chế độ động cơ.</para>
+          <para id="id3976368">Khi hãm tái sinh:</para>
+          <para id="id3976373"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi>R</m:mi></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>K</m:mi><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>φω</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mi>K</m:mi></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>φω</m:mtext></m:mrow></m:mstyle></m:mrow><m:mi>R</m:mi></m:mfrac></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mtext/><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">KφI</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none I rSub { size 8{h} } = {  {U rSub { size 8{æ} }  - E rSub { size 8{æ} } }  over  {R} } = {  {K ital "φω" rSub { size 8{0} }  - K ital "φω"}  over  {R} } &lt;0"  " {} # 
+ right rbrace  left none M rSub { size 8{h} } =KφI rSub { size 8{h} } &lt;0 {} # 
+ right rbra } }  rbrace  } {}</m:annotation></m:semantics></m:math>(2-30)</para>
+          <para id="id5117233">* Một số trạng thái hãm tái sinh:</para>
+          <para id="id5117239">Ih &lt; 0ôđ0Iư &gt; 0UưEUưEMhMHãm tái sinh (HTS),Trạng thái máy phátHình 2- 5a: Hãm tái sinh khi có động lực quay động cơ.Trạng thái động cơMhM0+ Hãm tái sinh khi  &gt; 0: lúc này máy sản xuất như là nguồn động lực quay rôto động cơ, làm cho động cơ trở thành máy phát, phát năng lượng trả về nguồn.</para>
+          <para id="id4100425">Vì E &gt; Uư, do đó dòng điện phần ứng sẽ thay đổi chiều so với trạng thái động cơ :</para>
+          <para id="id4100438"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>E</m:mi></m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æΣ</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{æ} } =I rSub { size 8{h} } = {  {U rSub { size 8{æ} }  - E}  over  {R rSub { size 8{æΣ} } } } &lt;0} {}</m:annotation></m:semantics></m:math> ; Mh = K.Ih &lt; 0 ;</para>
+          <para id="id4765428">Mômen động cơ đổi chiều (M &lt; 0) và trở nên ngược chiều với tốc độ, trở thành mômen hãm (Mh).</para>
+          <para id="id4765443">+ Hãm tái sinh khi giảm điện áp phần ứng (Uư2 &lt; Uư1), lúc này Mc là dạng mômen thế năng (Mc = Mtn). Khi giảm điện áp nguồn đột ngột, nghĩa là tốc độ 0 giảm đột ngột trong khi tốc độ  chưa kịp giảm, do đó làm cho tốc độ trên trục động cơ lớn hơn tốc độ không tải lý tưởng ( &gt; 02). Về mặt năng lượng, do động năng tích luỹ ở tốc độ cao lớn sẽ tuôn vào trục động cơ làm cho động cơ trở thành máy phát, phát năng lượng trả lại nguồn (hay còn gọi là hãm tái sinh), hình 2-5b.</para>
+          <para id="id4476965">01IhUư2E2IưUư1E1MhbđHTS02Mc MBA0Hình 2- 5b: Hãm tái sinh khi giảm tốc độ bằng cách giảm điện áp phần ứng động cơ (Uư2 &lt; Uư1).</para>
+          <para id="id4847033">+ Hãm tái sinh khi đảo chiều điện áp phần ứng (+Uư  - Uư): lúc này Mc là dạng mômen thế năng (Mc = Mtn). Khi đảo chiều điện áp phần ứng, nghĩa là đảo chiều tốc độ + 0  - 0, động cơ sẽ dần chuyển sang đường đặc tính có -Uư, và sẽ làm việc tại điểm B (B&gt;- 0). Về mặt năng lượng, do thế năng tích luỹ ở trên cao lớn sẽ tuôn vào động cơ, làm cho động cơ trở thành máy phát, phát năng lượng trả lại nguồn, hình 2-5c.</para>
+          <para id="id5001111">Trong thực tế, cơ cấu nâng hạ của cầu trục, thang máy, thì khi nâng tải, động cơ truyền động thường làm việc ở chế độ động cơ (điểm A hình 2-5c), và khi hạ tải thì động cơ làm việc ở chế độ máy phát (điểm B hình 2-5c).</para>
+          <para id="id5001128">bđ0Ih-Uư-EIưUưEMc MHTS-0BAôđHình 2- 5c: Hãm tái sinh khi đảo chiều điện áp phần ứng động cơ (+Uư  -Uư).</para>
+        </section>
+        <section id="id-753622510179">
+          <title>Hãm ngược:</title>
+          <para id="id4852159">Hãm ngược là khi mômen hãm của động cơ ngược chiều với tốc độ quay (M). Hãm ngược có hai trường hợp: </para>
+          <section id="id-89039699324">
+            <title>a) Đưa điện trở phụ lớn vào mạch phần ứng:</title>
+            <para id="id4852183">Động cơ đang làm việc ở điểm A, ta đưa thêm Rưf lớn vào mạch phần ứng thì động cơ sẽ chuyển sang điểm B, D và làm việc ổn định ở điểm E (ôđ = E và ôđA) trên đặc tính cơ có thêm Rưf lớn, và đoạn DE là đoạn hãm ngược, động cơ làm việc như một máy phát nối tiếp với lưới điện, lúc này sức điện động của động cơ đảo dấu nên:</para>
+            <para id="id4687987"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>K</m:mi></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>fw</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi>f</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mtext/><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">KfI</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none I rSub { size 8{h} } = {  {U rSub { size 8{­} } +E rSub { size 8{­} } }  over  {R rSub { size 8{­} } +R rSub { size 8{­f} } } } = {  {U rSub { size 8{­} } +K ital "fw"}  over  {R rSub { size 8{­} } +R rSub { size 8{­f} } } } "  " {} # 
+ right rbrace  left none M rSub { size 8{h} } =KfI rSub { size 8{h} }  {} # 
+ right rbra } }  rbrace  } {}</m:annotation></m:semantics></m:math>(2-31)</para>
+            <para id="id4677581">EưHình 2-6a: a) Sơ đồ hãm ngược bằng cách thêm Rưf.b) Đặc tính cơ khi hãm ngược bằng thêm Rưf.0IưUưMnm Mc MHNEAôđBDb)IhUưEưRktfUư+-CktIktIưERưfa)(+Rưf)MMcMhMc(Nâng)(Hạ)</para>
+            <para id="id3872248">Tại thời điểm chuyển đổi mạch điện thì mômen động cơ nhỏ hơn mômen cản (MB &lt; Mc) nên tốc độ động cơ giảm dần. Khi  = 0, động cơ ở chế độ ngắn mạch (điểm D trên đặc tính có Rưf ) nhưng mômen của nó vẫn nhỏ hơn mômen cản: Mnm &lt; Mc; Do đó mômen cản của tải trọng sẽ kéo trục động cơ quay ngược và tải trọng sẽ hạ xuống, ( &lt; 0, đoạn DE trên hình 2-6a). Tại điểm E, động cơ quay theo chiều hạ tải trọng, trường hợp này sự chuyển động cử hệ được thực hiện nhờ thế năng của tải.</para>
+          </section>
+          <section id="id-778354200992">
+            <title>b) Hãm ngược bằng cách đảo chiều điện áp phần ứng:</title>
+            <para id="id5024889">Động cơ đang làm việc ở điểm A, ta đổi chiều điện áp phần ứng (vì dòng đảo chiều lớn nên phải thêm điện trở phụ vào để hạn chế) thì: </para>
+            <para id="id5024896">Động cơ sẽ chuyển sang điểm B, C và sẽ làm việc xác lập ở D nếu phụ tải ma sát. Đoạn BC là đoạn hãm ngược, lúc này dòng hãm và mômen hãm của động cơ:</para>
+            <para id="id5024910"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mi>K</m:mi></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>φω</m:mtext></m:mrow></m:mstyle></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow><m:mtext>&lt;0  </m:mtext><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">KφI</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none I rSub { size 8{h} } = {  { - U rSub { size 8{æ} }  - E rSub { size 8{æ} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{æf} } } } = -  {  {U rSub { size 8{æ} } +K ital "φω"}  over  {R rSub { size 8{æ} } +R rSub { size 8{æf} } } } "&lt;0  " {} # 
+ right rbrace  left none M rSub { size 8{h} } =KφI rSub { size 8{h} } &lt;0 {} # 
+ right rbra } }  rbrace } {}</m:annotation></m:semantics></m:math>(2-32)</para>
+            <para id="id3745977">Phương trình đặc tính cơ:</para>
+            <para id="id3745986"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>æf</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  { - U rSub { size 8{æ} } }  over  {Kφ} }  -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{"æf"} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-33)</para>
+            <para id="id3967388">bđ0IưUưEưMc MHNDAôđBCb)Mc’Ih-UưEư-0RktfUư+-CktIktIưERưfa)Hình 2-6b: a) Sơ đồ hãm ngược bằng cách đảo chiều Uư.b) Đặc tính cơ khi hãm ngược bằng cách đảo Uư.</para>
+          </section>
+        </section>
+        <section id="id-363629976718">
+          <title>Hãm động năng: (cho Uư = 0)</title>
+          <section id="id-225994707893">
+            <title>a) Hãm động năng kích từ độc lập:</title>
+            <para id="id5015864">Động cơ đang làm việc với lưới điện (điểm A), thực hiện cắt phần ứng động cơ ra khỏi lưới điện và đóng vào một điện trở hãm Rh, do động năng tích luỹ trong động cơ, cho nên động cơ vẫn quay và nó làm việc như một máy phát biến cơ năng thành nhiệt năng trên điện trở hãm và điện trở phần ứng. </para>
+            <para id="id5015886">Phương trình đặc tính cơ khi hãm động năng:</para>
+            <para id="id5015892"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{h} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-34)</para>
+            <para id="id3337002">Tại thời điểm hãm ban đầu, tốc độ hãm ban đầu là hđ nên sức điện động ban đầu, dòng hãm ban đầu và mômen hãm ban đầu:</para>
+            <para id="id3337022"><m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mi>K</m:mi></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>φω</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>E</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:mi>K</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:msub><m:mtext>φω</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle></m:mrow><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow></m:mrow><m:mtext>&lt;0   </m:mtext><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">KφI</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>hd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtable><m:mtr><m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow><m:mrow/><m:mo stretchy="true">}</m:mo></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:mrow/><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{alignl { stack {
+ left none E rSub { size 8{ ital "hd"} } =K ital "φω" rSub { size 8{ ital "hd"} }  {} # 
+ right rbrace  left none I rSub { size 8{ ital "hd"} } = -  {  {E rSub { size 8{ ital "hd"} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{h} } } } = -  {  {K ital "φω" rSub { size 8{ ital "hd"} } }  over  {R rSub { size 8{æ} } +R rSub { size 8{h} } } } "&lt;0   " {} # 
+ right rbrace  left none M rSub { size 8{ ital "hd"} } =KφI rSub { size 8{ ital "hd"} } &lt;0 {} # 
+ right rbra } }  rbrace  } {}</m:annotation></m:semantics></m:math>(2-35)</para>
+            <para id="id4890280">Hình 2-7a: a) Sơ đồ hãm động năng kích từ độc lập.b) Đặc tính cơ khi hãm động năng kích từ độc lập.bđ0IưUưEưMc MHĐN NọỹiĐNAôđ2B1b)ôđ1B2Rh1Rh20C2C1a)U+-IktRktfCktIưERhMbđ2 Mbđ1</para>
+            <para id="id5014906">Trên đồ thị đặc tính cơ hãm động năng ta thấy rằng nếu mômen cản là phản kháng thì động cơ sẽ dừng hẵn (các đoạn B10 hoặc B20), còn nếu mômen cản là thế năng thì dưới tác dụng của tải sẽ kéo động cơ quay theo chiều ngược lại (ôđ1 hoặc ôđ2).</para>
+          </section>
+          <section id="id-42505848754">
+            <title>b) Hãm động năng tự kích từ :</title>
+            <para id="id4077866">Động cơ đang làm việc với lưới điện (điểm A), thực hiện cắt cả phần ứng và kích từ của động cơ ra khỏi lưới điện và đóng vào một điện trở hãm Rh, do động năng tích luỹ trong động cơ, cho nên động cơ vẫn quay và nó làm việc như một máy phát tự kích biến cơ năng thành nhiệt năng trên các điện trở. </para>
+            <para id="id4077886">Phương trình đặc tính cơ khi hãm động năng tự kích từ:</para>
+            <para id="id4077893">Hình 2-7b: a) Sơ đồ hãm động năng tự kích từ.b) Đặc tính cơ khi hãm động năng tự kích từ .a)U+-IktCktIưERhhbđ0IưUưEưMc MHĐN NọỹiĐNAôđ2B1b)ôđ1B2Rh1Rh20C2C1Mhđ1Mhđ2
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>kt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>h</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= -  {  {R rSub { size 8{æ} } "+R" rSub { size 8{ ital "kt"} } +R rSub { size 8{h} } }  over  { \( Kφ \)  rSup { size 8{2} } } }  M"  "} {}</m:annotation></m:semantics></m:math>(2-36)</para>
+            <para id="id5684109">Trên đồ thị đặc tính cơ hãm động năng tự kích từ ta thấy rằng trong quá trình hãm, tốc độ giảm dần và dòng kích từ cũng giảm dần, do đó từ thông của động cơ cũng giảm dần và là hàm của tốc độ, vì vậy các đặc tính cơ khi hãm động năng tự kích từ giống như đặc tính không tải của máy phát tự kích từ.</para>
+            <para id="id5684123">So với phương pháp hãm ngược, hãm động năng có hiệu quả hơn khi có cùng tốc độ hãm ban đầu, nhất là tốn ít năng lượng hơn.</para>
+          </section>
+        </section>
+        <section id="id-0559782667471">
+          <title>Các đặc tính cơ khi đảo chiều ĐMđl:</title>
+          <para id="id3931977">Giả sử động cơ đang làm việc ở điểm A theo chiều quay thuận trên đặc tính cơ tự nhiên thuận với tải Mc:</para>
+          <para id="id3931991"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>­®m</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi fontstyle="italic">Kf</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>®m</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>­®m</m:mtext></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:msub><m:mi fontstyle="italic">Kf</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>®m</m:mtext></m:mrow></m:mstyle></m:msub><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{w= {  {U rSub { size 8{"­®m"} } }  over  {Kf rSub { size 8{"®m"} } } } - {  {R rSub { size 8{"­®m"} } }  over  { \( Kf rSub { size 8{"®m"} }  \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-37)</para>
+          <para id="id5431349">Với M = Mc thì  = A = Thuận</para>
+          <para id="id5431383">Muốn đảo chiều động cơ, ta có thể đảo chiều điện áp phần ứng hoặc đảo chiều từ thông kích từ động cơ. Thường đảo chiều động cơ bằng cách đảo chiều điện áp phần ứng. Khi đảo chiều điện áp phần ứng thì 0 đảo dấu, còn  thì không đảo dấu, đặc tính cơ khi quay ngược chiều:</para>
+          <para id="id5112903"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">−</m:mo><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mi fontstyle="italic">Kφ</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo></m:mrow></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi fontstyle="italic">æf</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">[</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:mo stretchy="false">(</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>æ</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">)</m:mo><m:msup><m:mo stretchy="false">]</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  { - U rSub { size 8{æ} } }  over  {Kφ \( I rSub { size 8{æ} }  \) } }  -  {  {R rSub { size 8{æ} } +R rSub { size 8{æf} } }  over  { \[ Kφ \( I rSub { size 8{æ} }  \)  \]  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(2-38)</para>
+          <para id="id4046502">ôđ0Mc M-ôđA’b)Mc’-0RktfUư+-CktIktIưERưfa)Hình 2-8: a) Sơ đồ hãm ngược bằng cách đảo Uư.b) Đặc tính cơ khi hãm ngược bằng cách đảo Uư.(ĐCth)(ĐCng)AMM</para>
+          <para id="id4520402">Động cơ quay ngược chiều tương ứng với điểm A’ trên đặc tính cơ tự nhiên bên ngược, hoặc trên đặc tính cơ nhân tạo.</para>
+          <para id="id4520409">* Ví dụ 2-3:</para>
+          <para id="id4520414">Động cơ làm việc dài hạn, công suất định mức là 6,6KW; điện áp định mức: 220V; tốc độ định mức: 2200vòng/phút; điện trở mạch phần ứng gồm điện trở cuộn dây phần ứng và cực từ phụ: 0,26; Trước khi hãm động cơ làm ở điểm định mức A(M = Mđm ,  = đm); Hãy xác định trị số điện trở hãm đấu vào mạch phần ứng động cơ để hãm động năng kích từ độc lập với yêu cầu mômen hãm lớn nhất Mh.max = 2Mđm. Sử dụng sơ đồ hãm động năng kích từ độc lập như trong hình 2-9a.</para>
+          <para id="id4520472">* Giải:</para>
+          <para id="id4520476">Sử dụng sơ đồ hãm động năng kích từ độc lập hình 2-9a khi đó đảm bảo từ thông động cơ trong quá trình hãm là không đổi:  = đm.</para>
+          <para id="id3999175">Hình 2-9: a) Sơ đồ hãm động năng kích từ độc lập. b) Đặc tính cơ khi hãm động năng kích từ độc lập.bđ0IưUưEưMc MHĐN KTĐLABb)ôđRh0Ca)U+-IktRktfCktIưERhMh.max </para>
+          <para id="id4397614">Đặc tính cơ của động cơ trước khi hãm là đặc tính cơ tự nhiên, và khi chuyển sang đặc tính cơ hãm động năng kích từ độc lập (đoạn B0 trên hình 2-9b). </para>
+          <para id="id4397627">Điểm làm việc trước khi hãm là điểm định mức A, có:</para>
+          <para id="id4397632">Iư = Iđm = 35A, tương ứng mômen định mức Mđm;</para>
+          <para id="id5152111">A = đm = 230,3rad/s (xem ví dụ 2-1)</para>
+          <para id="id5152134">Sức điện động của động cơ trước khi hãm sẽ là:</para>
+          <para id="id5152141">Ebđ = EA = Uđm - Iư.Rư </para>
+          <para id="id5152175">Ebđ = 220 - 35.0,26 = 210,9V</para>
+          <para id="id5152185">Từ hình 2-9b ta thấy, mômen (và dòng điện) hãm lớn nhất sẽ có được tại thời điểm ban đầu của quá trình hãm, ngay khi chuyển đổi mạch điện từ chế độ động cơ trên đặc tính cơ tự nhiên sang mạch điện làm việc ở chế độ hãm động năng kích từ độc lập (điểm B):</para>
+          <para id="id5152199">Ih.max = Ih.bđ </para>
+          <para id="id5666984">Hoặc Mh.max = Mh.bđ</para>
+          <para id="id5667001">Vì  = đm nên mômen động cơ tỉ lệ thuận với dòng điện động cơ khi hãm, do đó để đảm bảo điều kiện Mh.max = 2Mđm thì:</para>
+          <para id="id5667037">Ih.bđ = 2Iđm = 2.35 = 70A</para>
+          <para id="id5667054">Điện trở tổng trong mạch phần ứng động cơ được xác định theo (2-34):</para>
+          <para id="id5667060">
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mrow>
+                    <m:mtable>
+                      <m:mtr>
+                        <m:mrow>
+                          <m:mstyle fontsize="12pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>R</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi fontstyle="italic">æΣ</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">=</m:mo>
+                                    <m:mrow>
+                                      <m:mo stretchy="false">∣</m:mo>
+                                      <m:mfrac>
+                                        <m:mrow>
+                                          <m:mi>K</m:mi>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>φω</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                        <m:msub>
+                                          <m:mi>I</m:mi>
+                                          <m:mstyle fontsize="8pt">
+                                            <m:mrow>
+                                              <m:mi>æ</m:mi>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:msub>
+                                      </m:mfrac>
+                                      <m:mo stretchy="false">∣</m:mo>
+                                    </m:mrow>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">=</m:mo>
+                                  <m:mrow>
+                                    <m:mo stretchy="false">∣</m:mo>
+                                    <m:mfrac>
+                                      <m:mrow>
+                                        <m:mi>K</m:mi>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:msub>
+                                              <m:mtext>φω</m:mtext>
+                                              <m:mstyle fontsize="8pt">
+                                                <m:mrow>
+                                                  <m:mi>A</m:mi>
+                                                </m:mrow>
+                                              </m:mstyle>
+                                            </m:msub>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                      <m:msub>
+                                        <m:mi>I</m:mi>
+                                        <m:mstyle fontsize="8pt">
+                                          <m:mrow>
+                                            <m:mrow>
+                                              <m:mi>h</m:mi>
+                                              <m:mtext>.</m:mtext>
+                                              <m:mstyle fontstyle="italic">
+                                                <m:mrow>
+                                                  <m:mtext>bâ</m:mtext>
+                                                </m:mrow>
+                                              </m:mstyle>
+                                            </m:mrow>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:msub>
+                                    </m:mfrac>
+                                    <m:mo stretchy="false">∣</m:mo>
+                                  </m:mrow>
+                                </m:mrow>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:mrow>
+                                  <m:mo stretchy="false">∣</m:mo>
+                                  <m:mfrac>
+                                    <m:msub>
+                                      <m:mi>E</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi>A</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:msub>
+                                      <m:mi>I</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mrow>
+                                            <m:mi>h</m:mi>
+                                            <m:mtext>.</m:mtext>
+                                            <m:mstyle fontstyle="italic">
+                                              <m:mrow>
+                                                <m:mtext>bâ</m:mtext>
+                                              </m:mrow>
+                                            </m:mstyle>
+                                          </m:mrow>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mfrac>
+                                  <m:mo stretchy="false">∣</m:mo>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtr>
+                      <m:mtr>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>R</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi fontstyle="italic">æΣ</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:mtext>210</m:mtext>
+                                  <m:mi>,</m:mi>
+                                  <m:mn>9</m:mn>
+                                </m:mrow>
+                                <m:mtext>70</m:mtext>
+                              </m:mfrac>
+                            </m:mrow>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mn>3,</m:mn>
+                          </m:mrow>
+                          <m:mtext>01</m:mtext>
+                          <m:mo stretchy="false">Ω</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mtr>
+                    </m:mtable>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{R rSub { size 8{æΣ} } = lline  {  {K ital "φω"}  over  {I rSub { size 8{æ} } } }  rline = lline  {  {K ital "φω" rSub { size 8{A} } }  over  {I rSub { size 8{h "."  ital "bâ"} } } }  rline = lline  {  {E rSub { size 8{A} } }  over  {I rSub { size 8{h "."  ital "bâ"} } } }  rline }  {} # 
+R rSub { size 8{æΣ} } = {  {"210",9}  over  {"70"} } =3,"01" %OMEGA  {} 
+} } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id4483306">Vậy điện trở hãm phải đấu vào phần ứng động cơ khi hãm động năng kích từ độc lập sẽ là:</para>
+          <para id="id4483314">Rh = Rư - Rư </para>
+          <para id="id4483341">Rh = 3,01 - 0,26 = 2,75 .</para>
+        </section>
+      </section>
+    </section>
+  </content>
+</document>

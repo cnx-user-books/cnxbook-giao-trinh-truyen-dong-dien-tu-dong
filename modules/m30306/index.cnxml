@@ -1,0 +1,358 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Chọn công suất động cơ điện</title>
+  <metadata>
+  <md:content-id>m30306</md:content-id><md:title>Chọn công suất động cơ điện</md:title>
+  <md:abstract>Phần này trình bày các khái niệm chung về chọn công suất</md:abstract>
+  <md:uuid>4a50de0d-7439-496d-833e-6ffb3ad71794</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-854612280625">
+      <title>KHÁI NIỆM CHUNG</title>
+      <para id="id6159381">Muốn hệ thống truyền động điện tự động (HT TĐĐTĐ) làm việc đúng các chỉ tiêu kỹ thuật, kinh tế và an toàn, cần chọn đúng động cơ điện.</para>
+      <para id="id5631239">Nếu chọn động cơ không phù hợp, công suất động cơ quá lớn, sẽ làm tăng giá thành, giảm hiệu suất truyền động và giảm hệ số công suất cos. </para>
+      <para id="id5631258">Ngược lại, nếu chọn động cơ có công suất quá nhỏ so với yêu cầu thì có thể động cơ không làm việc được hoặc bị quá tải dẫn đến phát nóng quá nhiệt độ cho phép gây cháy hoặc giảm tuổi thọ động cơ. </para>
+      <para id="id5631273">Khi chọn động cơ phải căn cứ vào trị số và chế độ làm việc của phụ tải; phải xét đến sự phát nóng của động cơ lúc bình thường cũng như lúc quá tải.</para>
+      <para id="id5631284">Khi máy điện làm việc sẽ phát sinh các tổn thất công suất P và tổn thất năng lượng: </para>
+      <para id="id5631299"><figure id="id5631309"><media id="id1167306094650" alt=""><image src="graphics1.wmf" mime-type="image/wmf" height="40" width="94"/></media></figure> (6-1)</para>
+      <para id="id5631346">Tổn thất này sẽ đốt nóng máy điện. Nếu máy điện không có sự trao đổi nhiệt với môi trường thì nhiệt độ trong máy điện sẽ tăng đến vô cùng và làm cháy máy điện. Thực tế thì trong quá trình làm việc, máy điện có trao đổi nhiệt với môi trường nên nhiệt độ trong nó chỉ tăng đến mội giá trị ổn định nào đó.</para>
+      <para id="id5631360">Đối với vật thể đồng nhất ta có: </para>
+      <para id="id5631368">P.dt = C.d + A..dt (6-2)</para>
+      <para id="id5631405">Trong đó: </para>
+      <para id="id5631410"> = (tomđ - tomt) là nhiệt sai (độ chênh nhiệt độ giữa máy điện và môi trường, tính theo độ oC).</para>
+      <para id="id5631447">tomđ là nhiệt độ của máy điện (oC).</para>
+      <para id="id5631468">tomt là nhiệt độ môi trường (oC).</para>
+      <para id="id5631488">A là hệ số toả nhiệt của máy điện (Jul/ cal.oC).</para>
+      <para id="id5631499">C là nhiệt dung của máy điện (Jul/ oC).</para>
+      <para id="id5631510">dt là khoảng thời gian nhỏ (s). </para>
+      <para id="id5631516">Giải phương trình (6-2) ta được:</para>
+      <para id="id5631521">+ Quá trình đốt nóng khi máy điện làm việc (nhiệt sai tăng):</para>
+      <para id="id5631528"> = ôđ + (bđ - ôđ).e-t/  (6-3)</para>
+      <para id="id5444109">+ Các đường cong phát nóng và nguội lạnh của máy điện:</para>
+      <para id="id5444116"> ôđ bđbđ ôđ t o t3 3o a) b)Hình 6 - 1: Đường cong phát nóng (a) và nguội lạnh (b) tổng quát</para>
+      <para id="id4681921">Trong đó:</para>
+      <para id="id4681925">ôđ = Q/ A là nhiệt sai ổn định của máy điện khi t =  .</para>
+      <para id="id4681952">Q là nhiệt lượng của máy điện (Jul/ s).</para>
+      <para id="id5475514">bđ là nhiệt sai ban đầu khi t = 0.</para>
+      <para id="id5475531"> = C/A là hằng số thời gian đốt nóng. </para>
+      <para id="id5475545">Khi t = 0 và bđ = 0 (tức ban đầu tomđ = tomt) thì:</para>
+      <para id="id5475580"> = ôđ.(1 - e-t/ ) (6-4)</para>
+      <para id="id5475624">+ Quá trình nguội lạnh khi máy điện ngừng làm việc (nhiệt sai giảm):</para>
+      <para id="id5475631"> = bđ.e-t/ o (6-5)</para>
+      <para id="id5475681">Trong đó: o là hằng số thời gian nguội lạnh.</para>
+      <para id="id5475698"> ôđ bđbđ ôđ 3 t o 3o ta) b)Hình 6 - 2: a) Đường cong phát nóng khi bđ = 0,b) Đường cong nguội lạnhquát</para>
+      <para id="id5654693">* Các chế độ làm việc của hệ phân loại theo  có 3 loại:</para>
+      <para id="id5654705">+ Chế độ dài hạn: khi có tải lâu dài, c.tải = ôđ (hình 6-3a).</para>
+      <para id="id5654734">+ Chế độ ngắn hạn: Trong thời gian có tải: c.tải &lt; ôđ như hình 6-3b.</para>
+      <para id="id5654764">+ Chế độ ngắn hạn lặp lại: lúc có tải: c.tải &lt; ôđ , lúc dừng thì k.tải  bđ như hình 6 - 3c, (c.tải  tlv , k.tải  tn ) .</para>
+      <para id="id5654862">P  P  P Pc Pc Pc Pc Pcôđ ôđ ôđmax maxt t ttlv tlv tna) b) c)Hình 6 - 3: Phân loại chế độ làm việc theo </para>
+    </section>
+    <section id="id-940529282519">
+      <title>CÁC CHỈ TIÊU CHẤT LƯỢNG VÀ CÁC BƯỚC CHỌN ĐỘNG CƠ ĐIỆN </title>
+      <section id="id-971707914788">
+        <title>Các chỉ tiêu</title>
+        <para id="id6292539">Chỉ tiêu kỹ thuật</para>
+        <para id="id6292545">Động cơ được chọn phải thích ứng với môi trường làm việc:</para>
+        <para id="id6292551">Tuỳ theo môi trường: khô - ướt, sạch - bẩn, nóng - lạnh, hoá chất ăn mòn, dễ nổ, ..., mà chọn các động cơ kiểu: hở - kín, chống nước, chống hoá chất, chống nổ, nhiệt đới hoá, ...</para>
+        <para id="id6292563">Động cơ được chọn phải thoả mãn điều kiện phát nóng khi làm việc bình thường cũng như khi quá tải (đây là điều kiện cơ bản):</para>
+        <para id="id6292570">đc  cp ; hay: tođc  tocp (6-6)</para>
+        <para id="id6292643">(tocp phụ thuộc vật liệu chế tạo và kết cấu từng loại động cơ)</para>
+        <para id="id6351532">Động cơ được chọn phải đảm bảo tốc độ yêu cầu: tốc độ định mức, có điều chỉnh tốc độ hay không, phạm vi điều chỉnh tốc độ, điều chỉnh trơn hay điều chỉnh có cấp.</para>
+        <para id="id6351544">Chọn loại động cơ thông dụng hay động cơ có điều chỉnh tốc độ. Chọn loại động cơ xoay chiều hay động cơ một chiều ...</para>
+        <para id="id6351553">Động cơ được chọn phải đảm bảo khởi động, hãm, đảo chiều ... tốt.</para>
+        <para id="id6351559">Chỉ tiêu kinh tế</para>
+        <para id="id6351567">Động cơ được chọn phải làm việc với hiệu suất kinh tế cao, vốn đầu tư bé, chi phí vận hành ít, bảo quản và sửa chữa thấp, sử dụng hết công suất...</para>
+      </section>
+      <section id="id-435103368355">
+        <title>Các bước chọn công suất động cơ</title>
+        <para id="id6351584">Để tính chọn công suất động cơ cần phải biết một số yêu cầu cơ bản:</para>
+        <para id="id6351590">- Đặc tính phụ tải Pyc(), Myc(), và đồ thị phụ tải Pc(t), Mc(t), c(t).</para>
+        <para id="id6351639">- Phạm vi điều chỉnh tốc độ D: min và max .</para>
+        <para id="id6351664">- Loại động cơ định chọn (xoay chiều, một chiều, đặc biệt).</para>
+        <para id="id6351671">- Phương pháp điều chỉnh và dùng bộ biến đổi gì trong hệ thống.</para>
+        <para id="id6351678">Điều kiện chọn: </para>
+        <para id="id6351686">Mđc  Mc + Mco + Mđg (6-7)</para>
+        <para id="id6351734">Các bước tiến hành chọn công suất động cơ:</para>
+        <para id="id6351740">Bước 1</para>
+        <para id="id6351745">Căn cứ Mc(t) hoặc Pc(t), Ic(t), ... hình 6-4a , tính mô men trung bình:</para>
+        <para id="id6351768"><figure id="id6351776"><media id="id5974733" alt=""><image src="graphics2.wmf" mime-type="image/wmf" height="92" width="114"/></media></figure> ; (6-8)</para>
+        <para id="id6351814">Dựa vào sổ tay tra cứu, </para>
+        <para id="id6351819">McMca) Mco Mcotnb)   tkđ txl th tMđg c) tMc.đg Mmaxd)tHình 6 - 4:Đồ thị các bước chọn Pđ.cơsơ bộ chọn động cơ có:</para>
+        <para id="id6307657">Mđm.chọn  Mtb ; (6-9)</para>
+        <para id="id6307685">Mđm.chọn - mô men định </para>
+        <para id="id6307698">mức của động cơ được chọn.</para>
+        <para id="id6307703">Bước 2</para>
+        <para id="id6307708">Tính mô men động </para>
+        <para id="id6307713">(trong quá trình quá độ) </para>
+        <para id="id6307718">dựa vào (t): </para>
+        <para id="id6307729"><figure id="id6307732"><media id="id1167308440841" alt=""><image src="graphics3.wmf" mime-type="image/wmf" height="164" width="114"/></media></figure> (6-10) </para>
+        <para id="id6307761">Trong đó:  là góc </para>
+        <para id="id6307772">nghiêng n(t) ở hình 6-4b </para>
+        <para id="id5442860">trong quá trình quá độ. </para>
+        <para id="id5442869">J là mô men quán tính </para>
+        <para id="id5442874">của hệ thống đã quy đổi về </para>
+        <para id="id5442880">trục động cơ. </para>
+        <para id="id5442887">Vẽ biểu đồ Mđg(t) như hình 6-4c.</para>
+        <para id="id5442898">Bước 3</para>
+        <para id="id5442902">Vẽ biếu đồ phụ tải động Mc.đg(t) như hình 6-4d:  </para>
+        <para id="id5442923">Mc.đg = Mc + Mco + Mđg ; (6-11) </para>
+        <para id="id5442964">Bước 4</para>
+        <para id="id5442968">Dựa vào Mc.đg(t) tiến hành kiểm tra khả năng quá tải của động cơ theo điều kiện:</para>
+        <para id="id5442982">M.Mđm  Mmax ; (6-12)</para>
+        <para id="id5443027">Động cơ thường: M = 2 </para>
+        <para id="id5443045">Động cơ ĐKdq : M = 2  3</para>
+        <para id="id5443073">Động cơ ĐKls : M = 1,8  3 </para>
+        <para id="id5443105">Động cơ ĐKrs, 2ls : M = 1,8  2,7 </para>
+        <para id="id5443134">Bước 5</para>
+        <para id="id5443139">Cuối cùng kiểm tra lại công suất động cơ theo điều kiện phát nóng (cụ thể sẽ khảo sát ở phần sau).</para>
+        <para id="id5443148">- Nếu sau khi kiểm tra mà không thoả mãn các điều kiện phát nóng và quá tải thì phải chọn lại động cơ; thường tăng công suất động cơ lên một cấp.</para>
+        <para id="id5443159">* Gần đúng: bỏ qua quá trình quá độ coi Mđg  0. Như vậy chỉ cần Mc(t) tĩnh, đi tính Mtb(t) rồi chọn sơ bộ động cơ, sau kiểm tra lại theo điều kiện phát nóng theo biểu đồ phụ tải tĩnh. </para>
+      </section>
+    </section>
+    <section id="id-0847874551455">
+      <title>CHỌN ĐỘNG CƠ ĐIỆN KHI KHÔNG ĐIỀU CHỈNH TỐC ĐỘ</title>
+      <section id="id-131275549415">
+        <title>Chọn động cơ điện làm việc dài hạn</title>
+        <para id="id6196742">Chọn động cơ phục vụ phụ tải dài hạn không đổi</para>
+        <para id="id6196748">Dựa vào Pc(t) hoặc Mc(t) đã quy đổi về trục động cơ.</para>
+        <para id="id6196766">Ví dụ như hình 6-5, dựa vào sổ tay, chọn động cơ có: </para>
+        <para id="id6196775">Pđm  Pc ; (6-13)</para>
+        <para id="id6196814">Thông thường chọn:</para>
+        <para id="id6196819">Pđm = (1  1,3).Pc ; (6-14)</para>
+        <para id="id6196860">PcPc(t)tHình 6 - 5: Phụ tải dài hạn</para>
+        <para id="id6197004">Không cần kiểm </para>
+        <para id="id6197009">nghiệm quá tải về mô </para>
+        <para id="id6197016">men, nhưng cần kiểm </para>
+        <para id="id6197022">nghiệm điều kiện khởi </para>
+        <para id="id6197027">động và phát nóng.</para>
+        <para id="id6197032">Chọn động cơ phục vụ phụ tải dài hạn biến đổi</para>
+        <para id="id6197039">McMc2 Mc2Mc4 Mc1 Mc1Mc3 Mcntt1 t2 t3 t4 tn t0 t1tckHình 6 - 6: Phụ tải dài hạn biến đổi </para>
+        <para id="id5370790">Các bước tiến hành chọn động cơ như mục 6.2, ở đây chỉ trình bày bước chọn công suất động cơ theo trị trung bình:</para>
+        <para id="id5370800"><figure id="id5370808"><media id="id1167313795755" alt=""><image src="graphics4.wmf" mime-type="image/wmf" height="92" width="114"/></media></figure> (6-15a)</para>
+        <para id="id5370845"><figure id="id5370853"><media id="id1167306759375" alt=""><image src="graphics5.wmf" mime-type="image/wmf" height="92" width="97"/></media></figure> (6-15b)</para>
+        <para id="id5370887">Động cơ chọn phải có:</para>
+        <para id="id5370891">Mđm = (1  1,3 )Mtb ;(6-16a)</para>
+        <para id="id5370924">Pđm = (1  1,3)Ptb ; (6-16b)</para>
+        <para id="id5370962">Điều kiện kiểm nghiệm: theo điều kiện phát nóng, quá tải về mô men và khởi động.</para>
+      </section>
+      <section id="id-686062170752">
+        <title>Chọn động cơ điện làm việc ngắn hạn</title>
+        <para id="id5370977">Chọn động cơ dài hạn làm việc cho phụ tải ngắn hạn</para>
+        <para id="id5556847">Pc Pc.nhôđ2ôđ1 =cp21ttlvHình 6 - 7: Phụ tải ngắn hạnNếu chọn Pdh.đm  Pc.nh </para>
+        <para id="id6174205">thì  &lt; cp , như vậy sẽ không </para>
+        <para id="id6174226">sử dụng hết khả năng chịu </para>
+        <para id="id6174231">nhiệt của động cơ. Vậy có thể </para>
+        <para id="id6174237">chọn công suất Pdh.đm &lt; Pc.nh ! </para>
+        <para id="id6174254">Giả sử động cơ dài hạn </para>
+        <para id="id6174260">có Pdh.đm và Mdh.đm. Khi nó làm </para>
+        <para id="id6174277">việc trong chế độ ngắn hạn </para>
+        <para id="id6174282">với thời gian tlv thì có thể tăng </para>
+        <para id="id6174293">phụ tải đến: </para>
+        <para id="id6174301">Pc.nh = .Pdh.đm ; (6-17a) </para>
+        <para id="id6174328">Mc.nh = .Mdh.đm ; (6-17b) </para>
+        <para id="id6174354">Khi đó phải tính toán thời gian làm việc sao cho phát nóng của động cơ đạt giá trị cho phép (để tận dụng hết khả năng chịu nhiệt của động cơ). </para>
+        <para id="id6174364">Với động cơ dài hạn (đường 1):</para>
+        <para id="id6174370">ôđ1 = (Pdh.đm / A) = cp (6-18)</para>
+        <para id="id6174420">Khi chọn động cơ dài hạn có công suất nhỏ hơn phụ tải ngắn hạn thì:</para>
+        <para id="id6174427">ôđ2 = (Pc.nh / A) &gt; ôđ1 = cp (6-19)</para>
+        <para id="id5363773">Muốn  tiến tới ôđ1 = cp trong thời gian làm việc tlv thì dựa vào phương trình đường cong phát nóng với điều kiện ban đầu là bđ = 0, ta có:</para>
+        <para id="id5363826">ôđ1 = ôđ2.(1 - e- tlv/ ) = (Pc.nh / A).(1 - e- tlv/ ) = cp ; (6-20)</para>
+        <para id="id5363895">Hệ số quá tải về nhiệt khi chọn Pdh.đm &lt; Pc.nh là:</para>
+        <para id="id5363913">qn = Pc.nh / Pdh.đm = ôđ2 / ôđ2 = 1 / (1 - e- tlv/ ) (6-21)</para>
+        <para id="id5363983">Mặt khác ta có:</para>
+        <para id="id5363988">Pdh.đm = Pc.nh.(1 - e- tlv/ ) (6-22)</para>
+        <para id="id5364038">Rút ra:</para>
+        <para id="id5364043">tlv = .ln[ Pc.nh / (Pc.nh - Pdh.đm)] (6-23)</para>
+        <para id="id6375379">Hệ số quá dòng khi chọn Pdh.đm &lt; Pc.nh là:</para>
+        <para id="id6375395">qd = Ic.nh / Idh.đm = Pc.nh / Pdh.đm (9 - 24)</para>
+        <para id="id6375435">Mặt khác: </para>
+        <para id="id6375439">qn = Pc.nh / Pdh.đm = (K + Vc.nh) / (K + Vdh.đm)</para>
+        <para id="id6375486">= (K + qd2.Vdh.đm) / (K + Vdh.đm) (6-25)</para>
+        <para id="id6375523">Đặt: K / Vdh.đm =  , (thường:  = 0,5  2) ta có:</para>
+        <para id="id6375553">qn = ( + qd2) / ( + 1) (6-26)</para>
+        <para id="id6375597"><figure id="id6375604"><media id="id7188829" alt=""><image src="graphics6.wmf" mime-type="image/wmf" height="51" width="126"/></media></figure> (6-27)</para>
+        <para id="id6375639">Và cuối cùng ta chọn động cơ dài hạn phục vụ cho phụ tải ngắn hạn: </para>
+        <para id="id6375647">Pdh.đm.chọn  Pc.nh / qd (6-28)</para>
+        <para id="id6375693">Chọn động cơ ngắn hạn phục vụ phụ tải ngắn hạn</para>
+        <para id="id6375699">Động cơ ngắn hạn được chế tạo có thời gian làm việc tiêu chuẩn là: </para>
+        <para id="id6375706">ttc =15, 30, 60, 90, ( phút ). Như vậy ta phải chọn:</para>
+        <para id="id6375718">tlv = ttc (6-29)</para>
+        <para id="id6375753">Pđm.chọn  Plv.nh (6-30)</para>
+        <para id="id5557477">Nếu tlv  ttc thì sơ bộ chọn động cơ có ttc và Pđm gần với giá trị tlv và Pc.nh. Sau đó xác định tổn thất động cơ Pđm với công suất Pđm, và Pc.nh với Pc.nh. Quy tắc chọn động cơ là:</para>
+        <para id="id5557564"> ÄPđm.chọn ≥ <figure id="id5557581"><media id="id1167312318292" alt=""><image src="graphics7.wmf" mime-type="image/wmf" height="49" width="121"/></media></figure> (6-30)</para>
+        <para id="id5557612">Đồng thời tiến hành kiểm nghiệm động cơ theo điều kiện quá tải về mômen, mômen khởi động và điều kiện phát nóng.</para>
+      </section>
+      <section id="id-918881867089">
+        <title>Chọn động cơ làm việc ngắn hạn lặp lại</title>
+        <para id="id5557628">Đồ thị phụ tải và đường cong phát nóng</para>
+        <para id="id5557634">Sau một số chu kỳ làm việc, (t) sẽ dao động trong khoảng min  max :</para>
+        <para id="id5557680">Trong khoảng tlv :  = ôđ - (ôđ - min ).e- t/  (6-31)</para>
+        <para id="id5557742">Trong khoảng tn :  = max.e- t/ o ; (6-32)</para>
+        <para id="id5557793">Ta tính được max và min :</para>
+        <para id="id5557817">max = ôđ.(1 - e- tlv/ ) + min.e- tlv/  (6-33)</para>
+        <para id="id6157130">min = max.e- tn/ o (6-34) </para>
+        <para id="id6157184">max = ôđ.<figure id="id6157209"><media id="id5650888" alt=""><image src="graphics8.wmf" mime-type="image/wmf" height="53" width="119"/></media></figure> (6-35)</para>
+        <para id="id6157245">min = ôđ.<figure id="id6157271"><media id="id8953392" alt=""><image src="graphics9.wmf" mime-type="image/wmf" height="53" width="167"/></media></figure>(6-36)</para>
+        <para id="id6157300">Nếu  = o thì:</para>
+        <para id="id6157321">max = ôđ.<figure id="id6157348"><media id="id1167312284064" alt=""><image src="graphics10.wmf" mime-type="image/wmf" height="53" width="82"/></media></figure>(6-37)</para>
+        <para id="id6157381">Khai triển chuỗi Furiê và lấy số hạng thứ 1 của chuỗi ta có:</para>
+        <para id="id6157388">max  ôđ.( tlv / tck ) = ôđ. (6-38)</para>
+        <para id="id6157455">P  Pc.nhll Pc.nhll Pc.nhllcp = ôđmax(t)min0 tlv tn tHình 6 - 8: Đồ thị phụ tải và đường cong phát nóng  </para>
+        <para id="id6283447">Chọn động cơ dài hạn phục vụ phụ tải ngắn hạn lặp lại</para>
+        <para id="id6283454">Thường chọn động cơ dài hạn có Pdh.đm &lt; Pc.nhll để tận dụng khả năng phát nóng cho phép của động cơ. Như vậy hệ số quá tải về nhiệt:</para>
+        <para id="id6283475">qn = ôđ / max = <figure id="id6283509"><media id="id7207817" alt=""><image src="graphics11.wmf" mime-type="image/wmf" height="46" width="106"/></media></figure> (6-39)</para>
+        <para id="id6283543">Biến đồi số mũ:</para>
+        <para id="id6283548"><figure id="id6283552"><media id="id6985731" alt=""><image src="graphics12.wmf" mime-type="image/wmf" height="53" width="331"/></media></figure>; (6-40)</para>
+        <para id="id6283581"> là hệ số xét tới điều kiện làm mát bị kém đi trong thời gian nghỉ.</para>
+        <para id="id6283593"> = 0,5 đối với động cơ điện một chiều.</para>
+        <para id="id6283605"> = 0,25 đối với động cơ điện xoay chiều.</para>
+        <para id="id6283617"> = <figure id="id6283625"><media id="id1167313940570" alt=""><image src="graphics13.wmf" mime-type="image/wmf" height="47" width="64"/></media></figure> là hằng số thời gian đóng điện tương đối có xét đến điều kiện làm mát bị kém đi trong thời gian nghỉ.</para>
+        <para id="id6283655">Cuối cùng ta có:</para>
+        <para id="id6283661"><figure id="id6283670"><media id="id1167307665518" alt=""><image src="graphics14.wmf" mime-type="image/wmf" height="46" width="107"/></media></figure>(6-41)</para>
+        <para id="id6283702">Chọn công suất động cơ dài hạn phục vụ phụ tải ngắn hạn lặp lại:</para>
+        <para id="id6283710">Pdh.đm.chọn  Pc.nh / qn (6- 42)</para>
+        <para id="id6283760">Chọn động cơ ngắn hạn lặp lại phục vụ phụ tải NHLL</para>
+        <para id="id6283766">Động cơ ngắn hạn lặp lại thường được chế tạo chuyên dụng có độ bền cơ khí cao, quán tính nhỏ (để đảm bảo khởi động và hãm thường xuyên) và khả năng qua tải lớn (từ 2,5  3,5 lần).</para>
+        <para id="id5369184">Đồng thời được chế tạo với thời gian đóng điện tiêu chuẩn là: tc% = 15%, 25%, 40% và 60%.</para>
+        <para id="id5369202">Động cơ được chọn:</para>
+        <para id="id5369206">tc% = fụtải% (6-43)</para>
+        <para id="id5369246">Pđm.chọn  Pc.nhll (6-44)</para>
+        <para id="id5369288">Trong trường hợp tc%  ft% thì cần hiệu chỉnh lại công suất động cơ:</para>
+        <para id="id5369320">Pđm.chọn = Pc.nhll .<figure id="id5369344"><media id="id2691001" alt=""><image src="graphics15.wmf" mime-type="image/wmf" height="53" width="51"/></media></figure> (6-45)</para>
+        <para id="id5369376">Sau đó phải kiểm tra về mô men quá tải, khởi động và phát nóng.</para>
+      </section>
+    </section>
+    <section id="id-849287085191">
+      <title>CHỌN ĐỘNG CƠ ĐIỆN KHI ĐIỀU CHỈNH TỐC ĐỘ</title>
+      <para id="id5369394">Để tính chọn công suất động cơ trong trường hợp này cần phải biết những yêu cầu cơ bản sau:</para>
+      <para id="id5369400">1. Đặc tính phụ tải Pyc(), Myc() và đồ thị phụ tải Pc(t), Mc(t), (t)</para>
+      <para id="id5369445">2. Phạm vi điều chỉnh tốc độ: D = max / min </para>
+      <para id="id5369474">3. Loại động cơ định chọn ( một chiều, xoay chiều, ... ).</para>
+      <para id="id5369481">4. Phương pháp điều chỉnh và bộ biến đổi trọng hệ thống TĐĐTĐ đó.</para>
+      <para id="id5369488">Hai yêu cầu trên nhằm xác định những tham số Pyc.max và Myc.max.</para>
+      <para id="id5369506">Ví dụ: Đối với phụ tải truyền động yêu cầu trong phạm vi điều chỉnh có P = const (xem hình 6-9a). </para>
+      <para id="id5369515">Ta có công suất yêu cầu cực đại: Pmax = Pđm = const, nhưng mô men yêu cầu cực đại lại phụ thuộc vào phạm vi điều chỉnh:</para>
+      <para id="id5369535">Mmax = Pđm / min .</para>
+      <para id="id5369565">Đối với phụ tải truyền động yêu cầu trong phạm vi điều chỉnh tốc độ, M = const (xem hình 6-9b). </para>
+      <para id="id5369576">Ta có: </para>
+      <para id="id5844964">Pmax = Mđm.max .</para>
+      <para id="id5844997"> max maxPc PcMc Mcmin minPmax MmaxMc, Pc Mc, Pca) b)Hình 6 - 9: Các đặc tính Pc() và Mc()</para>
+      <para id="id5641710">Hai yêu cầu về loại động cơ và loại truyền động có ý nghĩa đặc biệt quan trọng. Nó xác định kích thước công suất lắp đặt truyền động, bởi vì hai yêu cầu này cho biết hiệu suất truyền động và đặc tính điều chỉnh Pđ.ch(), Mđ.ch() của truyền động. Thông thường các đặc tính điều chỉnh này thường phù hợp với đặc tính phụ tải yêu cầu Pyc(), Myc() (xem hình 6 -10).</para>
+      <para id="id5641774">maxMđ.ch Pđ.chPyc MycminP Mmax Mc , Pc Hình 6 - 10: Các đặc tính Myc(), Pyc() và Mđ.ch(), Pđ.ch()</para>
+      <para id="id5504156">Tuy vậy có trường hợp, người ta thiết kế hệ truyền động có đặc tính điều chỉnh không phù hợp chỉ vì mục đích là đơn giản cấu trúc điều chỉnh.</para>
+      <para id="id5504167">Ví dụ: Đối với tải P = const, khi sử dụng động cơ điện một chiều, phương pháp điều chỉnh thích hợp là điều chỉnh từ thông kích từ. Nhưng ta dùng phương pháp điều chỉnh điện áp phần ứng thì khi tính chọn công suất động cơ cần phải xét yêu cầu Mmax (hình 6 - 11).</para>
+      <para id="id5504187">Vậy công suất động cơ lúc đó không phải là Pđm = Pyc mà:</para>
+      <para id="id5504205">Pđm = Mmax.max = (max / min ).Pyc = D.Pyc (6-46)</para>
+      <para id="id5445076">Như vậy công suất đặt sẽ lớn hơn D lần so với Pyc .</para>
+      <para id="id5445088"> max Pđm = Mmax.maxPyc Pđ.chMycmin MmaxMc , PcHình 6-11: Chọn động cơ có đặc tính Pđ.ch() không phù hợp </para>
+      <para id="id6175877">Mặt khác việc tính chọn công suất động cơ còn phụ thuộc vào phương pháp điều chỉnh tốc độ, ví dụ cùng một loại động cơ như động cơ không đồng bộ, mỗi phương pháp điều chỉnh khác nhau có đặc tính truyền động khác nhau, phương pháp điều chỉnh điện áp dùng tiristor có hiệu suất thấp so với phương pháp điều chỉnh tần số dùng bộ biến đổi tiristor. Vì vậy khi tính chọn công suất động cơ bắt buộc phải xem xét tới tổn thất cộng suất P và tiêu thụ công suất phản kháng Q trong suốt dải điều chỉnh.</para>
+      <para id="id6175903">Do vậy việc tính chọn công suất động cơ cho truyền động có điều chỉnh tốc độ cần phải gắn với một hệ truyền động chọn trước để có đầy đủ yêu cầu cơ bản cho việc tính chọn.</para>
+    </section>
+    <section id="id-215341344935">
+      <title>KIỂM NGHIỆM CÔNG SUẤT ĐỘNG CƠ ĐIỆN</title>
+      <para id="id6175924">Việc tính chọn công suất động cơ ở các mục trên được coi là giai đoạn chọn sơ bộ ban đầu. Để khẳng định chắc chắn việc tính chọn đó là chấp nhận được, ta cần phải kiểm nghiệm lại việc tính chọn đó.</para>
+      <para id="id6175938">Yêu cầu về kiểm nghiệm việc tính chọn công suất động cơ gồm có:</para>
+      <para id="id6175945">- Kiểm nghiệm phát nóng: </para>
+      <para id="id6175953">ôđ  cp(6-47)</para>
+      <para id="id6175996">- Kiểm nghiệm quá tải về mô men: </para>
+      <para id="id6176003">Mđm &gt; Mc.max (6-48)</para>
+      <para id="id6176034">- Kiểm nghiệm mô men khởi động: </para>
+      <para id="id6176040">Mkđ  Mc.mởmáy (6- 49)</para>
+      <para id="id6176076">Ta thấy rằng việc kiểm nghiệm theo yêu cầu quá tải về mô men và mô men khởi động có thể thực hiện dễ dàng. </para>
+      <para id="id6176086">Riêng về yêu cầu kiểm nghiệm phát nóng là khó khăn, không thể tính toán phát nóng động cơ một cách chính xác được (vì tính phát nóng động cơ là bài toán phức tạp). </para>
+      <para id="id6176097">Tuy vậy gần đúng có thể sử dụng các phương pháp kiểm nghiệm phát nóng gián tiếp qua các đại lượng điện sau đây.</para>
+      <section id="id-887748947213">
+        <title>Kiểm nghiệm động cơ bằng phương pháp tổn thất trung bình:</title>
+        <para id="id6176116">- Giả sử có đặc tính tải Pc(t) là đường cong thì phải hình thang hoá từng đoạn và trong mỗi đoạn được coi là có Pc = const (như hình 6 - 12).</para>
+        <para id="id6176140">Pc Pc2Pc6Pc1 Pc3 Pc5Pc4tt1 t2 t3 t4 t5Hình 6 - 12: Hình thang hoá đặc tính tải </para>
+        <para id="id5538878">Xuất phát từ phương pháp nhiệt sai cực đại (xem tài liệu tham khảo) với điều kiện xét ở chu kỳ xa điểm gốc toạ độ, lúc đó thì nhiệt sai của động cơ biến thiên theo quy luật xác định, </para>
+        <para id="id5538891">và ta có: bđ = cc = x . </para>
+        <para id="id5538928">Từ phương trình max(t) ta có:</para>
+        <para id="id5538943"><figure id="id5538946"><media id="id6713972" alt=""><image src="graphics16.wmf" mime-type="image/wmf" height="133" width="335"/></media></figure> (6-50)</para>
+        <para id="id5538976">Xem nhiệt sai ổn định x do lượng tổn thất công suất trung bình Ptb gây ra, ta có:</para>
+        <para id="id5539006"><figure id="id5539012"><media id="id1167311109810" alt=""><image src="graphics17.wmf" mime-type="image/wmf" height="43" width="68"/></media></figure>(6-51)</para>
+        <para id="id5539050">Thay vào ta có:</para>
+        <para id="id5539056"><figure id="id5539059"><media id="id1167305929977" alt=""><image src="graphics18.wmf" mime-type="image/wmf" height="135" width="335"/></media></figure> (6-52)</para>
+        <para id="id5539088">Khai triển hàm e- x và chỉ lấy 2 số hạng đầu, ta có:</para>
+        <para id="id5539100"><figure id="id5539106"><media id="id3989153" alt=""><image src="graphics19.wmf" mime-type="image/wmf" height="43" width="293"/></media></figure> (6-53)</para>
+        <para id="id5539135">Với giả thiết trong quá trình làm việc: A = const,  = const, ta có:</para>
+        <para id="id6368177"><figure id="id6368183"><media id="id5959224" alt=""><image src="graphics20.wmf" mime-type="image/wmf" height="92" width="158"/></media></figure> (6-54)</para>
+        <para id="id6368217">Và động cơ được chọn phải đảm bảo:</para>
+        <para id="id6368223">Pđm.chọn  Ptb (6-55)</para>
+        <para id="id6368267">Trong thực tế, việc tính toán Pi , Ptb có thể dựa vào Pc(t) và (Pc) của động cơ (xem hình 6-13):</para>
+        <para id="id6368313">Và Pđm.chọn được xác định theo công thức:</para>
+        <para id="id6368330"><figure id="id6368337"><media id="id1167319248581" alt=""><image src="graphics21.wmf" mime-type="image/wmf" height="47" width="149"/></media></figure>(6-56)</para>
+        <para id="id6368369">Đối với động cơ có quạt gió tự làm mát thì trong biểu thức (6-55) phải tính đến khả năng suy giảm của truyền nhiệt khi dừng máy, khi khởi động và hãm, ta có:</para>
+        <para id="id6368379"><figure id="id6368387"><media id="id1167319101760" alt=""><image src="graphics22.wmf" mime-type="image/wmf" height="72" width="204"/></media></figure> (6-57)</para>
+        <para id="id6368417">PcP1 P1P3P5P2 P4524 3 1 t1 t2 t3 t4 t5 t1 ttckHình 6 - 13: Các đặc tính Pc(t) và ( Pc )</para>
+        <para id="id5369884">Trong đó:</para>
+        <para id="id5369889"> là hệ số giảm truyền nhiệt khi khởi động và hãm,</para>
+        <para id="id5369902"> = 0,75 đối với động cơ điện một chiều,</para>
+        <para id="id5369916"> = 0,5 đối với động cơ điện xoay chiều.</para>
+        <para id="id5369932">tk là thời gian khởi động và hãm.</para>
+        <para id="id5369946"> là hệ số giảm truyền nhiệt khi động cơ dừng.</para>
+        <para id="id5369958"> = 0,5 đối với động cơ điện một chiều.</para>
+        <para id="id5369972"> = 0,25 đối với động cơ điện xoay chiều.</para>
+        <para id="id5369986">t0 là thời gian nghỉ của động cơ.</para>
+      </section>
+      <section id="id-0877229896021">
+        <title>Kiểm nghiệm động cơ theo đại lượng dòng điện đẳng trị</title>
+        <para id="id5370010">Xuất phát từ biểu thức:</para>
+        <para id="id5370018">P = K + V = K + bI2 (6-58)</para>
+        <para id="id5370046">Trong đó:</para>
+        <para id="id5370051">K là tổn thất công suất không đổi.</para>
+        <para id="id5370060">V là tổn thất công suất biến đổi, thường: V = bI2 .</para>
+        <para id="id5370077">I là dòng điện động cơ.</para>
+        <para id="id5370085">b là hệ số tỷ lệ.</para>
+        <para id="id5370094">iI2 I1 I3I4 I5tt1 t2 t3 t4 t5Hình 6 - 14a: Dòng điện i(t) </para>
+        <para id="id6005502">iI2 I5I4I6I1I3 I7I8t0 t1 t2 t3 t4 t5 t6 t7 t8 t9Hình 9 - 14b: Cách tính gần đúng i(t)</para>
+        <para id="id5632388">Như vậy tương đương với biểu thức Ptb ta có biểu thức dòng điện đẳng trị: </para>
+        <para id="id5632409"><figure id="id5632417"><media id="id1167316869693" alt=""><image src="graphics23.wmf" mime-type="image/wmf" height="72" width="193"/></media></figure> (6-59)</para>
+        <para id="id5632451">i IciIdittiHình 6 - 15: gãy khúc hoáĐiều kiện kiểm nghiệm:</para>
+        <para id="id5368692">Iđt  Iđm.chọn (6-60)</para>
+        <para id="id5368722">Để tính giá trị Iđt ta </para>
+        <para id="id5368736">phải tính quá trình quá độ.</para>
+        <para id="id5368742">Giả thiết có kết quả tính </para>
+        <para id="id5368747">dòng điện i(t), nó có dạng </para>
+        <para id="id5368758">đường cong liên tục, như </para>
+        <para id="id5368762">trên hình 6-14a (bậc thang </para>
+        <para id="id5368768">hoá) và trên hình 6-14b </para>
+        <para id="id5368773">(gãy khúc hoá) để tìm Ii và ti :</para>
+        <para id="id5368797">Trong trường hợp đường cong dòng điện có dạng tăng trưởng lớn như trên hình 6-15b, thì ta dùng công thức gần đúng: </para>
+        <para id="id5368806"><figure id="id5368814"><media id="id7356647" alt=""><image src="graphics24.wmf" mime-type="image/wmf" height="50" width="122"/></media></figure>(6-61)</para>
+        <para id="id5368846">I = Ici - Idi (6-62) </para>
+        <para id="id5368887">Trong đó: Idi, Ici xác định theo đồ thị trên hình 6-15. </para>
+      </section>
+      <section id="id-60013098843">
+        <title>Kiểm nghiệm động cơ theo đại lượng mô men đẳng trị</title>
+        <para id="id5368917">Phương pháp kiểm nghiệm động cơ theo điều kiện phát nóng gián tiếp là mô men được suy ra từ phương pháp dòng điện đẳng trị, khi mô men tỷ lệ với dòng điện: M = cI (c là hệ số tỷ lệ).</para>
+        <para id="id5368930">Đối với động cơ điện một chiều thì điều kiện này được thoả mãn khi từ thông của động cơ không đổi.</para>
+        <para id="id5368939">Đối với động cơ không đông bộ:</para>
+        <para id="id5368944">M = CmI22cos2 (6-62)</para>
+        <para id="id5368991">Ta cần phải có 2 = const, và cos2 = const ( tức là gần tốc độ định mức của động cơ ).</para>
+        <para id="id6100445">Tính mô men đẳng trị:</para>
+        <para id="id6100450"><figure id="id6100459"><media id="id6360623" alt=""><image src="graphics25.wmf" mime-type="image/wmf" height="54" width="140"/></media></figure> (6-63)</para>
+        <para id="id6100491">Kiểm nghiệm động cơ:</para>
+        <para id="id6100496">Mđm.chọn  Mđt (6-64)</para>
+      </section>
+      <section id="id-174129311232">
+        <title>Kiểm nghiệm động cơ theo đại lượng công suất đẳng trị</title>
+        <para id="id6100548">Trong truyền động mà tốc độ động cơ ít thay đổi thì P  M, do vậy có thể dùng đại lượng công suất đẳng trị để kiểm nghiệm phát nóng.</para>
+        <para id="id6100564">M P, P(t) M(t)(t)tHình 9 - 16: Minh hoạ cách tính toán hiệu chỉnh P(t)</para>
+        <para id="id6167025">Công suất đẳng trị:</para>
+        <para id="id6167030"><figure id="id6167039"><media id="id3059035" alt=""><image src="graphics26.wmf" mime-type="image/wmf" height="54" width="129"/></media></figure> (6-65)</para>
+        <para id="id6167071">Chọn động cơ có:</para>
+        <para id="id6167076">Pđm.chọn  Pđt (6-66)</para>
+        <para id="id6167116">Trong thực tế ở giản đồ phụ tải, tốc độ truyền động thường thay đổi lớn trong quá trình khởi động và hãm. Cho nên cần phải tính toán hiệu chỉnh P(t) như hình 6-16.</para>
+      </section>
+    </section>
+    <section id="id-700616210601">
+      <title>CÂU HỎI ÔN TẬP</title>
+      <para id="id6167137">1. Các quan hệ nhiệt sai của động cơ theo thời gian ụ = f(t) được sử dụng với mục đích gì ? nhịp độ tăng/giảm nhiệt sai khi ăn tải hoặc tháo tải của động cơ điện phụ thuộc vào thông số nào ? Nêu ý nghĩa của hằng số thời gian phát nóng Tn ?</para>
+      <para id="id6167157">2. Đồ thị phụ tải là gì ? Định nghĩa đồ thị phụ tải tĩnh và đồ thị phụ tải toàn phần. Sự khác nhau giữa hai loại đồ thị phụ tải đó là gì ? Công dụng của từng loại trong việc giải quyết bài toán tính chọn công suất động cơ ?</para>
+      <para id="id6167171">3. Đối với động cơ điện có máy chế độ làm việc ? Đặc điểm làm việc của động cơ ở từng chế độ đó ? Đồ thị phụ tải của từng loại chế độ được đặc trưng bởi những thông số nào ?</para>
+      <para id="id6167184">4. Viết công thức tính toán hoặc kiểm nghiệm phát nóng động cơ bằng phương pháp nhiệt sai, tổn thất công suất trung bình, các đại lượng đẳng trị ? Công dụng của từng phương pháp đối với bài toán chọn công suất động cơ ?</para>
+      <para id="id5087055">5. Các bước tính chọn công suất động cơ ở chế độ dài hạn và chế độ ngắn hạn, ngắn hạn lặp lại ?</para>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,326 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Khái niệm chung về hệ truyền động điện tự động.</title>
+  <metadata>
+  <md:content-id>m29827</md:content-id><md:title>Khái niệm chung về hệ truyền động điện tự động.</md:title>
+  <md:abstract>Phần này trình bày về các khái niệm về hệ truyền động điện tự động</md:abstract>
+  <md:uuid>a5299abd-4ccb-421d-93a9-644ff4593286</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-460846127148">
+      <title>MỤC ĐÍCH VÀ YÊU CẦU:</title>
+      <para id="id4945456">+ Nắm được cấu trúc chung của hệ thống truyền động điện tự động (HT-TĐĐTĐ).</para>
+      <para id="id4592478">+ Nắm được đặc tính của từng loại động cơ trong các hệ thống truyền động điện tự động cụ thể.</para>
+      <para id="id4592486">+ Phân tích được các phương pháp điều chỉnh tốc độ động cơ và vấn đề điều chỉnh tốc độ trong các hệ “bộ biến đổi - động cơ ”.</para>
+      <para id="id4506834">+ Khảo sát được quá trình quá độ của HT-TĐĐTĐ với các thông số của hệ hoặc của phụ tải.</para>
+      <para id="id4506842">+ Tính chọn các phương án truyền động và nắm được nguyên tắc cơ bản để chọn công suất động cơ điện.</para>
+      <para id="id4830196">+ Nắm được các nguyên tắc cơ bản điều khiển tự động HT-TĐĐTĐ.</para>
+      <para id="id4830203">+ Phân tích và đánh giá được các mạch điều khiển tự động điển hình của các máy hoặc hệ thống đã có sẵn.</para>
+      <para id="id3817098">+ Nắm được nguyên tắc làm việc của phần tử điều khiển logic.</para>
+      <para id="id3817105">+ Tổng hợp được một số mạch điều khiển logic.</para>
+      <para id="id3817109">+ Thiết kế được các mạch điều khiển tự động của các máy hoặc hệ thống theo yêu cầu công nghệ.</para>
+    </section>
+    <section id="id-239922793619">
+      <title>CẤU TRÚC VÀ PHÂN LOẠI HỆ THỐNG TRUYỀN ĐỘNG ĐIỆN TỰ ĐỘNG (TĐĐ TĐ)</title>
+      <section id="id-00186057949729">
+        <title>Cấu trúc của hệ thống truyền động điện tự động:</title>
+        <section id="id-210835203855">
+          <title>* Định nghĩa hệ thống truyền động điện tự động:</title>
+          <para id="id4040379">+ Hệ truyền động điện tự động (TĐĐ TĐ) là một tổ hợp các thiết bị điện, điện tử, v.v. phục vụ cho cho việc biến đổi điện năng thành cơ năng cung cấp cho các cơ cấu công tác trên các máy sản suất, cũng như gia công truyền tín hiệu thông tin để điều khiển quá trình biến đổi năng lượng đó theo yêu cầu công nghệ.</para>
+        </section>
+        <section id="id-977192171746">
+          <title>* Cấu trúc chung:</title>
+          <para id="id4968901">Hình 1-1: Mô tả cấu trúc chung của hệ TĐĐ TĐBBĐ: Bộ biến đổi; ĐC: Động cơ điện; MSX: Máy sản xuất; R và RT: Bộ điều chỉnh truyền động và công nghệ; K và KT: các Bộ đóng cắt phục vụ truyền động và công nghệ; GN: Mạch ghép nối; VH: Người vận hànhGNVHBBĐĐCMSXRRTKKTLướiPhần điệnPhần cơ</para>
+          <para id="id4874352">Cấu trúc của hệ TĐĐ TĐ gồm 2 phần chính:</para>
+          <para id="id4874358">- Phần lực (mạch lực): từ lưới điện hoặc nguồn điện cung cấp điện năng đến bộ biến đổi (BBĐ) và động cơ điện (ĐC) truyền động cho phụ tải (MSX). Các bộ biến đổi như: bộ biến đổi máy điện (máy phát điện một chiều, xoay chiều, máy điện khuếch đại), bộ biến đổi điện từ (khuếch đại từ, cuộn kháng bảo hoà), bộ biến đổi điện tử, bán dẫn (Chỉnh lưu tiristor, bộ điều áp một chiều, biến tần transistor, tiristor). Động cơ có các loại như: động cơ một chiều, xoay chiều, các loại động cơ đặc biệt.</para>
+          <para id="id4942409">- Phần điều khiển (mạch điều khiển) gồm các cơ cấu đo lường, các bộ điều chỉnh tham số và công nghệ, các khí cụ, thiết bị điều khiển đóng cắt phục vụ công nghệ và cho người vận hành. Đồng thời một số hệ TĐĐ TĐ khác có cả mạch ghép nối với các thiết bị tự động khác hoặc với máy tính điều khiển.</para>
+        </section>
+      </section>
+      <section id="id-806037421275">
+        <title>Phân loại hệ thống truyền động điện tự động:</title>
+        <para id="id4789309">- Truyền động điện không điều chỉnh: thường chỉ có động cơ nối trực tiếp với lưới điện, quay máy sản xuất với một tốc độ nhất định.</para>
+        <para id="id4876906">- Truyền động có điều chỉnh: tuỳ thuộc vào yêu cầu công nghệ mà ta có hệ truyền động điện điều chỉnh tốc độ, hệ truyền động điện tự động điều chỉnh mô men, lực kéo, và hệ truyền động điện tự động điều chỉnh vị trí. Trong hệ này có thể là hệ truyền động điện tự động nhiều động cơ. </para>
+        <para id="id4876914">- Theo cấu trúc và tín hiệu điều khiển mà ta có hệ truyền động điện tự động điều khiển số, hệ truyền động điện tự động điều khiển tương tự, hệ truyền động điện tự động điều khiển theo chương trình ...</para>
+        <para id="id4100243">- Theo đặc điểm truyền động ta có hệ truyền động điện tự động động cơ điện một chiều, động cơ điện xoay chiều, động cơ bước, v.v.</para>
+        <para id="id3760016">- Theo mức độ tự động hóa có hệ truyền động không tự động và hệ truyền động điện tự động.</para>
+        <para id="id3760025">- Ngoài ra, còn có hệ truyền động điện không đảo chiều, có đảo chiều, hệ truyền động đơn, truyền động nhiều động cơ, v.v.</para>
+      </section>
+    </section>
+    <section id="id-586200033069">
+      <title>ĐẶC TÍNH CƠ CỦA MÁY SẢN XUẤT VÀ ĐỘNG CƠ</title>
+      <section id="id-0309541407696">
+        <title>Đặc tính cơ của máy sản xuất:</title>
+        <para id="id4804164">+ Đặc tính cơ của máy sản xuất là quan hệ giữa tốc độ quay và mômen cản của máy sản xuất: Mc = f().</para>
+        <para id="id3816945">+ Đặc tính cơ của máy sản xuất rất đa dạng, tuy nhiên phần lớn chúng được biếu diễn dưới dạng biểu thức tổng quát: </para>
+        <para id="id3816953">Mc = Mco + (Mđm - M­co)
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:msup><m:mfenced open="" close=""><m:mfrac><m:mi>ω</m:mi><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>đm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( {  {ω}  over  {ω rSub { size 8{ ital "đm"} } } }  right ) rSup { size 8{q} } } {}</m:annotation></m:semantics></m:math>(1-1)</para>
+        <para id="id4756150">Trong đó:</para>
+        <para id="id4756155">Mc - mômen ứng với tốc độ .</para>
+        <para id="id4760488">Mco - mômen ứng với tốc độ  = 0.</para>
+        <para id="id4771288">Mđm - mômen ứng với tốc độ định mức đm</para>
+        <para id="id5089352">+ Ta có các trường hợp số mũ q ứng với các tải:</para>
+        <para id="id5089359">Khi q = -1, mômen tỷ lệ nghịch với tốc độ, tương ứng các cơ cấu máy tiện, doa, máy cuốn dây, cuốn giấy, ... (đường  hình 1-2).</para>
+        <para id="id5089363">Đặc điểm của loại máy này là tốc độ làm việc càng thấp thì mômen cản (lực cản) càng lớn.</para>
+        <para id="id5253093">Khi q = 0, Mc = Mđm = const, tương ứng các cơ cấu máy nâng hạ, cầu trục, thang máy, băng tải, cơ cấu ăn dao máy cắt gọt, ... (đường  hình 1-2).</para>
+        <para id="id4404037">Khi q = 1, mômen tỷ lệ bậc nhất với tốc độ, tương ứng các cơ cấu ma sát, máy bào, máy phát một chiều tải thuần trở, (đường  hình 1-2).</para>
+        <para id="id4404052">Khi q = 2, mômen tỷ lệ bậc hai với tốc độ, tương ứng các cơ cấu máy bơm, quạy gió, máy nén, (đường  hình 1-2).</para>
+        <para id="id4404057">+ Trên hình 1-2a biểu diễn các đặc tính cơ của máy sản xuất:</para>
+        <para id="id4616412">Hình 1-2: a) Các dạng đặc tính cơ của các máy sản xuất: q = -1; : q = 0; : q = 1; : q = 2.b) Dạng đặc tính cơ của máy sản xuất có tính thế năng.c) Dạng đặc tính cơ của máy sản xuất có tính phản kháng.McMM'cMcM'cMđmMđmMa)b)c)</para>
+        <para id="id4878093">+ Ngoài ra, một số máy sản xuất có đặc tính cơ khác, như:</para>
+        <para id="id4878100">- Mômen phụ thuộc vào góc quay Mc = f() hoặc mômne phụ thuộc vào đường đi Mc = f(s), các máy công tác có pittông, các máy trục không có cáp cân bằng có đặc tính thuộc loại này.</para>
+        <para id="id4647717">- Mômen phụ thuộc vào số vòng quay và đường đi Mc = f(,s) như các loại xe điện.</para>
+        <para id="id4647722">- Mômen phụ thuộc vào thời gian Mc = f(t) như máy nghiền đá, nghiền quặng.</para>
+        <para id="id4949079">Trên hình 1-2b biểu diễn đặc tính cơ của máy sản xuất có mômen cản dạng thế năng.</para>
+        <para id="id4949087">Trên hình 1-2c biểu diễn đặc tính cơ của máy sản xuất có mômen cản dạng phản kháng.</para>
+      </section>
+      <section id="id-928493061511">
+        <title>Đặc tính cơ của động cơ điện:</title>
+        <para id="id5153212">+ Đặc tính cơ của động cơ điện là quan hệ giữa tốc độ quay và mômen của động cơ: M = f(). </para>
+        <para id="id5153226">Hình 1-3: Các đặc tính cơ của bốn loại động cơ điệnM+ Nhìn chung có 4 loại đặc tính cơ của các loại động cơ đặc trưng như: động cơ điện một chiều kích từ song song hay độc lập (đường), và động cơ điện một chiều kích từ nối tiếp hay hỗn hợp (đường), động cơ điện xoay chiều không đồng bộ (đường), đồng bộ (đường), hình 1-3.</para>
+        <para id="id4805147">* Thường người ta phân biệt hai loại đặc tính cơ:</para>
+        <para id="id4977784">+ Đặc tính cơ tự nhiên: là đặc tính có được khi động cơ nối theo sơ đồ bình thường, không sử dụng thêm các thiết bị phụ trợ khác và các thông số nguồn cũng như của động cơ là định mức. Như vậy mỗi động cơ chỉ có một đặc tính cơ tự nhiên.</para>
+        <para id="id4977804">+ Đặc tính cơ nhân tạo hay đặc tính cơ điều chỉnh: là đặc tính cơ nhận được sự thay đổi một trong các thông số nào đó của nguồn, của động cơ hoặc nối thêm thiết bị phụ trợ vào mạch, hoặc sử dụng các sơ đồ đặc biệt. Mỗi động cơ có thể có nhiều đặ tính cơ nhân tạo.</para>
+      </section>
+      <section id="id-604192717926">
+        <title>Độ cứng đặc tính cơ:</title>
+        <para id="id4714732">+ Đánh giá và so sánh các đặc tính cơ, người ta đưa ra khái niệm “độ cứng đặc tính cơ ” và được định nghĩa:</para>
+        <para id="id4714744">Trang 6</para>
+        <para id="id4513250"> =
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>M</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  { partial M}  over  { partial ω} } } {}</m:annotation></m:semantics></m:math>; nếu đặc tính cơ tuyến tính thì:  =
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi fontstyle="italic">ΔM</m:mi><m:mi fontstyle="italic">Δω</m:mi></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {ΔM}  over  {Δω} } } {}</m:annotation></m:semantics></m:math>;  (1-2a)</para>
+        <para id="id5178840">Hoặc theo hệ đơn vị tương đối: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup><m:mo stretchy="false">=</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>dM</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:msup><m:mi fontstyle="italic">dω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β rSup { size 8{*} } = {  { ital "dM" rSup { size 8{*} } }  over  {dω rSup { size 8{*} } } } } {}</m:annotation></m:semantics></m:math>; (1-2b)</para>
+        <para id="id4864993">Trong đó: M và  là lượng sai phân của mômen và tốc độ tương ứng; M* = M/Mđm ; * = /đm ; hoặc * = /cb .</para>
+        <para id="id3969372">Hoặc tính theo đồ thị:  =
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:msub><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>M</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>ω</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tg</m:mtext></m:mrow></m:mstyle><m:mi>γ</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {m rSub { size 8{M} } }  over  {m rSub { size 8{ω} } } }  ital "tg"γ} {}</m:annotation></m:semantics></m:math>; (hình 1- 4) (1-3)</para>
+        <para id="id4040490">MXLmmMHình 1- 4: Cách tính độ cứng đặc tính cơ bằng đồ thịM()Trong đó: </para>
+        <para id="id4748457">+ mM là tỉ lệ xích </para>
+        <para id="id4748467">của trục mômen</para>
+        <para id="id4844034">+ m là tỉ lệ xích </para>
+        <para id="id4844044">của trục tốc độ</para>
+        <para id="id4844049">+  là góc tạo thành </para>
+        <para id="id4844060">giữa tiếp tuyến với </para>
+        <para id="id3772164">trục  tại điểm xét </para>
+        <para id="id3772175">của đặc tính cơ.</para>
+        <para id="id3772180">+ Động cơ không đồng bộ có độ cứng đặc tính cơ thay đổi giá trị ( &gt; 0,  &lt; 0). </para>
+        <para id="id3772295">+ Động cơ đồng bộ có đặc tính cơ tuyệt đối cứng (  ). </para>
+        <para id="id3787077">+ Động cơ một chiều kích từ độc lập có độ cứng đặc tính cơ cứng (  40).</para>
+        <para id="id3787096">+ Động cơ một chiều kích từ độc lập có độ cứng đặc tính cơ mềm (  10). </para>
+      </section>
+    </section>
+    <section id="id-663425314528">
+      <title>CÁC TRẠNG THÁI LÀM VIỆC CỦA HỆ TĐĐTĐ</title>
+      <para id="id4647750">+ Trong hệ truyền động điện tự động bao giờ cũng có quá trình biến đổi năng lượng điện năng thành cơ năng hoặc ngược lại. Chính quá trình biến đổi này quyết định trạng thái làm việc của hệ truyền động điện. Có thể lập Bảng 1-1:</para>
+      <table id="id3855258" summary="">
+        <tgroup cols="6">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <colspec colnum="5" colname="c5"/>
+          <colspec colnum="6" colname="c6"/>
+          <tbody>
+            <row>
+              <entry>TT</entry>
+              <entry>Biểu đồ công suất</entry>
+              <entry>Pđiện</entry>
+              <entry>Pcơ</entry>
+              <entry>P</entry>
+              <entry>Trạng thái làm việc</entry>
+            </row>
+            <row>
+              <entry>PđP1</entry>
+              <entry/>
+              <entry>0</entry>
+              <entry>= 0</entry>
+              <entry>= Pđiện</entry>
+              <entry>- Động cơ không tải</entry>
+            </row>
+            <row>
+              <entry>PPđPc2</entry>
+              <entry/>
+              <entry>0</entry>
+              <entry>0</entry>
+              <entry>= Pđ - Pc</entry>
+              <entry>- Động cơ có tải</entry>
+            </row>
+            <row>
+              <entry>PPc3</entry>
+              <entry/>
+              <entry>= 0</entry>
+              <entry>&lt; 0</entry>
+              <entry>= Pcơ </entry>
+              <entry>Hãmkhông tải</entry>
+            </row>
+            <row>
+              <entry>PPđPc4</entry>
+              <entry/>
+              <entry>&lt; 0</entry>
+              <entry>&lt; 0</entry>
+              <entry>= Pc - Pđ</entry>
+              <entry>Hãmtái sinh</entry>
+            </row>
+            <row>
+              <entry>PPđPc5</entry>
+              <entry/>
+              <entry>0</entry>
+              <entry>&lt; 0</entry>
+              <entry>= Pc + Pđ</entry>
+              <entry>Hãmngược</entry>
+            </row>
+            <row>
+              <entry>PPc6</entry>
+              <entry/>
+              <entry>= 0</entry>
+              <entry>&lt; 0</entry>
+              <entry>= Pcơ </entry>
+              <entry>Hãmđộng năng</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para id="id3816684">Ở trạng thái động cơ: Ta coi dòng công suất điện Pđiện có giá trị dương nếu như nó có chiều truyền từ nguồn đến động cơ và từ động cơ biến đổi công suất điện thành công suất cơ: Pcơ = M. cấp cho máy sản xuất và được tiêu thụ tại cơ cấu công tác của máy. Công suất cơ này có giá trị dương nếu như mômen động cơ sinh ra cùng chiều với tốc độ quay. </para>
+      <para id="id4075856">Ở trạng thái máy phát: thì ngược lại, khi hệ truyền động làm việc, trong một điều kiện nào đó cơ cấu công tác của máy sản xuất có thể tạo ra cơ năng do động năng hoặc thế năng tích lũy trong hệ đủ lớn, cơ năng đó được truyền về trục động cơ, động cơ tiếp nhận năng lượng này và làm việc như một máy phát điện. Công suất điện có giá trị âm nếu nó có chiều từ động cơ về nguồn, công suất cơ có giá trị âm khi nó truyền từ máy sản xuất về động cơ và mômen động cơ sinh ra ngược chiều với tốc độ quay. </para>
+      <para id="id4764557">Mômen của máy sản xuất được gọi là mômen phụ tải hay mômen cản. Nó cũng được định nghĩa dấu âm và dương, ngược lại với dấu mômen của động cơ.</para>
+      <para id="id4475128">+ Phương trình cân bằng công suất của hệ TĐĐ TĐ là:</para>
+      <para id="id4475135">Pđ = Pc + P (1-4)</para>
+      <para id="id4096179">Trong đó: Pđ là công suất điện; Pc là công suất cơ; P là tổn thất công suất.</para>
+      <para id="id4778283">- Trạng thái động cơ gồm: chế độ có tải và chế độ không tải. Trạng thái động cơ phân bố ở góc phần tư I, III của mặt phẳng (M).</para>
+      <para id="id4584515">- Trạng thái hãm có: Hãm không tải, Hãm tái sinh, Hãm ngược và Hãm động năng. Trạng thái hãm ở góc II, IV của mặt phẳng (M).</para>
+      <para id="id4584536">- Hãm tái sinh: Pđiện &lt; 0, Pcơ &lt; 0, cơ năng biến thành điện năng trả về lưới.</para>
+      <para id="id4784624">- Hãm ngược: Pđiện &gt; 0 , Pcơ &lt; 0, điện năng và cơ năng chuyển thành tổn thất P.</para>
+      <para id="id4129440">- Hãm động năng: Pđiện = 0, Pcơ &lt; 0, cơ năng biến thành công suất tổn thất P.</para>
+      <para id="id4977853">* Các trạng thái làm việc trên mặt phẳng [M, ]:</para>
+      <para id="id4977870">Trạng thái động cơ: tương ứng với các điểm nằm trong góc phần tư thứ nhất và góc phần tư thứ ba của mặt phẳng [M, ], hình 1 - 5.</para>
+      <para id="id5027406">Trạng thái máy phát: tương ứng với các điểm nằm trong góc phần tư thứ hai và góc phần tư thứ tư của mặt phẳng [M, ], hình 1 - 5. ở trạng thái này, mômen động cơ chống lại chiều chuyển động, nên động cơ có tác dụng như bộ hãm, và vì vậy trạng thái máy phát còn có tên gọi là "trạng thái hãm".</para>
+      <para id="id4951801">Trạng thái máy phátM &lt; 0 ; Mc &gt; 0 ;MMcGTrạng thái động cơM &gt; 0 ; Mc &lt; 0 ;MMcTrạng thái máy phátM &lt; 0 ; Mc &gt; 0 ;IIIIIIIVMMcTrạng thái động cơM &gt; 0 ; Mc &lt; 0 ;MMcM()Mc()Mc()M()Hình 1 - 5: Biểu diễn các trạng thái làm việc trên mặt phẳng [M, ]MII IIII IV</para>
+    </section>
+    <section id="id-924646173414">
+      <title>TÍNH ĐỔI CÁC ĐẠI LƯỢNG CƠ HỌC</title>
+      <section id="id-255192818531">
+        <title>Mômen và lực quy đổi:</title>
+        <para id="id5066492">+ Quan niệm về sự tính đổi như việc dời điểm đặt từ trục này về trục khác của mômen hay lực có xét đến tổn thất ma sát ở trong bộ truyền lực. Thường quy đổi mômen cản Mc, (hay lực cản Fc) của bộ phận làm việc về trục động cơ.</para>
+        <para id="id4742060">+ Điều kiện quy đổi: đảm bảo cân bằng công suất trong phần cơ của hệ TĐĐTĐ:</para>
+        <para id="id4742071">- Khi năng lượng truyền từ động cơ đến máy sản xuất:</para>
+        <para id="id4742078">Ptr = Pc + P (1-5)</para>
+        <para id="id4145200">Trong đó: Ptr là công suất trên trục động cơ, Ptr = Mcqđ., </para>
+        <para id="id4580095">(Mcqđ và  - mômen cản tĩnh quy đổi và tốc độ góc trên trục động cơ).</para>
+        <para id="id4789904">Pc là công suất của máy sản xuất, Pc = Mlv.lv , </para>
+        <para id="id4789935">(Mlv và lv - mômen cản và tốc độ góc trên trục làm việc).</para>
+        <para id="id4592573">P là tổn thất trong các khâu cơ khí.</para>
+        <para id="id4592583">* Nếu tính theo hiệu suất hộp tốc độ đối với chuyển động quay:</para>
+        <para id="id4592590"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tr</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>P</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mi>η</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>η</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cqd</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>.</m:mtext><m:mi>ω</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{P rSub { size 8{ ital "tr"} } = {  {P rSub { size 8{c} } }  over  {η rSub { size 8{i} } } } = {  {M rSub { size 8{ ital "lv"} }  "." ω rSub { size 8{ ital "lv"} } }  over  {η rSub { size 8{i} } } } =M rSub { size 8{ ital "cqd"} }  "." ω} {}</m:annotation></m:semantics></m:math> (1-6)</para>
+        <para id="id3933741">Rút ra: Mcqđ 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow/><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>η</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>η</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:mi>i</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {}= {  {M rSub { size 8{ ital "lv"} }  "." ω rSub { size 8{ ital "lv"} } }  over  {η rSub { size 8{i} }  "." ω} } = {  {M rSub { size 8{ ital "lv"} } }  over  {η rSub { size 8{i} }  "." i} } } {}</m:annotation></m:semantics></m:math>; (1-7)</para>
+        <para id="id4756110">Trong đó: i - hiệu suất của hộp tốc độ.</para>
+        <para id="id4756129">i = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi>ω</m:mi><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {ω}  over  {ω rSub { size 8{ ital "lv"} } } } } {}</m:annotation></m:semantics></m:math>- gọi là tỷ số truyền của hộp tốc độ.</para>
+        <para id="id5195388">* Nếu chuyển động tịnh tiến thì lực quy đổi:</para>
+        <para id="id5195399"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cqâ</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>F</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>lv</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:mi>η</m:mi><m:mtext>.</m:mtext><m:mi>ρ</m:mi></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M rSub { size 8{ ital "cqâ"} } = {  {F rSub { size 8{ ital "lv"} } }  over  {η "." ρ} } } {}</m:annotation></m:semantics></m:math>(1-8)</para>
+        <para id="id5023538">Trong đó:  = i.t - hiệu suất bộ truyền lực.</para>
+        <para id="id5066388"> t - hiệu suất của tang trống.</para>
+        <para id="id5066408">  = /vlv - gọi là tỷ số quy đổi.</para>
+        <para id="id3812088">- Khi năng lượng truyền từ máy sản xuất đến động cơ: </para>
+        <para id="id3812095">Ptr = Pc - P (tự chứng minh).</para>
+      </section>
+      <section id="id-336742485557">
+        <title>Quy đổi mômen quán tính và khối lượng quán tính:</title>
+        <para id="id4801480">+ Điều kiện quy đổi: bảo toàn động năng tích luỹ trong hệ thống:</para>
+        <para id="id4801491">W = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:munderover><m:msub><m:mi>W</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ Sum cSub { size 8{1} }  cSup { size 8{n} }  {W rSub { size 8{i} } } } {}</m:annotation></m:semantics></m:math>(1-9)</para>
+        <para id="id4617497">Chuyển động quay:W = J.
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:msup><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mn>2</m:mn></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {ω rSup { size 8{2} } }  over  {2} } } {}</m:annotation></m:semantics></m:math>(1-10)</para>
+        <para id="id4852238">Chuyển động tịnh tiến:W = m. 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:msup><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup><m:mn>2</m:mn></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {v rSup { size 8{2} } }  over  {2} } } {}</m:annotation></m:semantics></m:math>(1-11)</para>
+        <para id="id3883753">Nếu sử dụng sơ đồ tính toán phần cơ dạng đơn khối, và áp dụng các điều kiện trên ta có:</para>
+        <para id="id4403146"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qâ</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msubsup><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Â</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Â</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msubsup><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Â</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mn>2</m:mn></m:mfrac></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:munderover><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msubsup><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mn>2</m:mn></m:mfrac></m:mrow></m:mrow></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:munderover><m:mrow><m:msub><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msubsup><m:mi>v</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mn>2</m:mn></m:mfrac></m:mrow></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "qâ"} }  cdot  {  {ω rSub { size 8{Â} }  rSup { size 8{2} } }  over  {2} } =J rSub { size 8{Â} }  cdot  {  {ω rSub { size 8{Â} }  rSup { size 8{2} } }  over  {2} } + Sum cSub { size 8{1} }  cSup { size 8{n} }  {J rSub { size 8{i} }  cdot  {  {ω rSub { size 8{i} }  rSup { size 8{2} } }  over  {2} } } + Sum cSub { size 8{1} }  cSup { size 8{q} }  {m rSub { size 8{j} }  cdot  {  {v rSub { size 8{j} }  rSup { size 8{2} } }  over  {2} } } } {}</m:annotation></m:semantics></m:math>(1-12)</para>
+        <para id="id5112752"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>j</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qâ</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Â</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:munderover><m:mfrac><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>q</m:mi></m:mrow></m:mstyle></m:munderover><m:mfrac><m:msub><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>ρ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j rSub { size 8{ ital "qâ"} } =J rSub { size 8{Â} } + Sum cSub { size 8{1} }  cSup { size 8{n} }  { {  {J rSub { size 8{i} } }  over  {i rSub { size 8{i} }  rSup { size 8{2} } } } } + Sum cSub { size 8{1} }  cSup { size 8{q} }  { {  {m rSub { size 8{j} } }  over  {ρ rSub { size 8{j} }  rSup { size 8{2} } } } } } {}</m:annotation></m:semantics></m:math>(1-13)</para>
+        <para id="id4580051">Trong đó: Jqđ - mômen quán tính quy đổi về trục động cơ.</para>
+        <para id="id4580063"> Đ - tốc độ góc trên trục động cơ.</para>
+        <para id="id4129472"> JĐ - mômen quán tính của động cơ.</para>
+        <para id="id4129487"> Ji - mômen quán tính của bánh răng thứ i.</para>
+        <para id="id4129502"> mj - khối lượng quán tính của tải trọng thứ j.</para>
+        <para id="id5236534"> ii = /i - tỉ số truyền tốc độ từ trục thứ i.</para>
+        <para id="id4805916">  = /vj - tỉ số quy đổi vận tốc của tải trọng.</para>
+        <para id="id4805942">* Ví dụ: Sơ đồ truyền động của cơ cấu nâng, hạ :</para>
+        <para id="id4805953">Jđ , Mđ , đ i, i t , Jt , Mt , tvlv,FlvGHình 1- 6: Sơ đồ động học của cơ cấu nâng hạ động cơ điện;  hộp tốc độ; tang trống quay;  tải trọng 1234</para>
+        <para id="id5234482">Ta có: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qâ</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mrow><m:mrow><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Â</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>4</m:mn></m:mrow></m:mstyle></m:munderover><m:mfrac><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi>m</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>ρ</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J rSub { size 8{ ital "qâ"} } =J rSub { size 8{Â} } + Sum cSub { size 8{1} }  cSup { size 8{4} }  { {  {J rSub { size 8{i} } }  over  {i rSub { size 8{i} }  rSup { size 8{2} } } } } + {  {J rSub { size 8{t} } }  over  {i rSub { size 8{t} }  rSup { size 8{2} } } } + {  {m rSub { size 8{j} } }  over  {ρ rSub { size 8{j} }  rSup { size 8{2} } } } } {}</m:annotation></m:semantics></m:math>(1-14)</para>
+        <para id="id4958014">Trong đó: it = 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mfrac><m:mi>ω</m:mi><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>t</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {ω}  over  {ω rSub { size 8{t} } } } } {}</m:annotation></m:semantics></m:math>- tỉ số truyền tốc độ từ trục tang trống.</para>
+      </section>
+    </section>
+    <section id="id-60647411239">
+      <title>PHƯƠNG TRÌNH ĐỘNG HỌC CỦA HỆ TĐĐ TĐ</title>
+      <para id="id3970008">+ Là quan hệ giữa các đại lượng (, n, L, M, ...) với thời gian:</para>
+      <para id="id4601962">Dạng tổng quát: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:munderover><m:mo stretchy="false">∑</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>i</m:mi><m:mo stretchy="false">=</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:munderover><m:msub><m:mover accent="true"><m:mi>M</m:mi><m:mo stretchy="false">→</m:mo></m:mover><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">(</m:mo><m:mi>J</m:mi><m:mover accent="true"><m:mi>ω</m:mi><m:mo stretchy="false">→</m:mo></m:mover><m:mo stretchy="false">)</m:mo></m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ Sum cSub { size 8{i=1} }  cSup { size 8{n} }  { { vec  {M}} rSub { size 8{i} } } = {  {d \( J { vec  {ω}} \) }  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(1-15)</para>
+      <para id="id3854799">+ Nếu coi mômen do động cơ sinh ra và mômen cản ngược chiều nhau, và J = const, thì ta có phương trình dưới dạng số học:</para>
+      <para id="id3854808"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>J</m:mi></m:mrow><m:mfrac><m:mi fontstyle="italic">dω</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M - M rSub { size 8{c} } =J {  {dω}  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(1-16)</para>
+      <para id="id3868336">Theo hệ đơn vị SI: M(N.m); J(kg.m2); (Rad/s); t(s).</para>
+      <para id="id3868352">Theo hệ kỹ thuật: M(KG.m); GD(KG.m2); n(vg/ph); t(s):</para>
+      <para id="id3868364"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:msup><m:mtext>GD</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle><m:mtext>375</m:mtext></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dn</m:mtext></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M - M rSub { size 8{c} } = {  { ital "GD" rSup { size 8{2} } }  over  {"375"} }  cdot  {  { ital "dn"}  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(1-17)</para>
+      <para id="id4859729">Theo hệ hỗn hợp: M(N.m); J(kg.m2); n(vg/ph); t(s):</para>
+      <para id="id4859740"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mi>J</m:mi><m:mrow><m:mn>9,</m:mn><m:mtext>55</m:mtext></m:mrow></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dn</m:mtext></m:mrow></m:mstyle><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M - M rSub { size 8{c} } = {  {J}  over  {9,"55"} }  cdot  {  { ital "dn"}  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(1-18)</para>
+      <para id="id4805994">Mômen động: Mđg =
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>M</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">=</m:mo><m:mi>J</m:mi></m:mrow><m:mfrac><m:mi fontstyle="italic">dω</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{M - M rSub { size 8{c} } =J {  {dω}  over  { ital "dt"} } } {}</m:annotation></m:semantics></m:math>(1-19)</para>
+      <para id="id4588356">Từ phương trình (1-19) ta thấy rằng:</para>
+      <para id="id4863619">-Khi Mđg &gt; 0 hay M &gt; Mc , thì 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mi fontstyle="italic">dω</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac><m:mo stretchy="false">&gt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {dω}  over  { ital "dt"} } &gt;0} {}</m:annotation></m:semantics></m:math>  hệ tăng tốc.</para>
+      <para id="id4475116">-Khi Mđg &lt; 0 hay M &lt; Mc , thì 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mfrac><m:mi fontstyle="italic">dω</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ {  {dω}  over  { ital "dt"} } &lt;0} {}</m:annotation></m:semantics></m:math>  hệ giảm tốc.</para>
+      <para id="id4056165">- Khi Mđg = 0 hay M = Mc , thì d/dt = 0  hệ làm việc xác lập, hay hệ làm việc ổn định:  = const.</para>
+      <para id="id4520328">* Nếu chọn và lấy chiều của tốc độ  làm chuẩn thì: M(+) khi M và M(-) khi M. Còn Mc(+) khi Mc; Mc(-) khi Mc.</para>
+    </section>
+    <section id="id-582715270707">
+      <title>ĐIỀU KIỆN ỔN ĐỊNH TĨNH CỦA HỆ TĐĐ TĐ</title>
+      <para id="id5252840">Như ở trên đã nêu, khi M = Mc thì hệ TĐĐTĐ làm việc xác lập. Điểm làm việc xác lập là giao điểm của đặc tính cơ của động cơ điện (M) với đặc tính cơ của máy sản suất (Mc). Tuy nhiên không phải bất kỳ giao điểm nào của hai đặc tính cơ trên cũng là điểm làm việc xác lập ổn định mà phải có điều kiện ổn định, người ta gọi là ổn định tĩnh hay sự làm việc phù hợp giữa động cơ với tải.</para>
+      <para id="id4639421">Để xác định điểm làm việc, dựa vào phương trình động học:</para>
+      <para id="id4639426"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>J</m:mi><m:mrow><m:mfrac><m:mi>d</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mfrac><m:mo stretchy="false">=</m:mo><m:mrow><m:mfenced open="[" close="]"><m:mrow><m:msub><m:mfenced open="" close=""><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>M</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mfenced open="" close=""><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mfenced><m:mo stretchy="false">⋅</m:mo><m:mo stretchy="false">(</m:mo></m:mrow></m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">−</m:mo><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">)</m:mo></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{J {  {d}  over  { ital "dt"} } = left [ left ( {  { partial M}  over  { partial ω} }  right ) rSub { size 8{x} }  -  left ( {  { partial M rSub { size 8{c} } }  over  { partial ω} }  right ) rSub { size 8{x} }  right ] cdot  \( ω - ω rSub { size 8{x} }  \) } {}</m:annotation></m:semantics></m:math>(1-20)</para>
+      <para id="id4531315">Người ta xác định được điều kiện xác lập ổn định là:</para>
+      <para id="id5126959"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mfenced open="" close=""><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>M</m:mi></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:msub><m:mfenced open="" close=""><m:mfrac><m:mrow><m:mo stretchy="false">∂</m:mo><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">∂</m:mo><m:mi>ω</m:mi></m:mrow></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mi>x</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mo stretchy="false">&lt;</m:mo><m:mn>0</m:mn></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ left ( {  { partial M}  over  { partial ω} }  right ) rSub { size 8{x} }  -  left ( {  { partial M rSub { size 8{c} } }  over  { partial ω} }  right ) rSub { size 8{x} } &lt;0} {}</m:annotation></m:semantics></m:math>(1-21)</para>
+      <para id="id4034768">Hay:  - c &lt; 0 (1-22)</para>
+      <para id="id4034809">* Ví dụ: Xét hai điểm giao nhau của các đặc tính cơ:</para>
+      <para id="id5412073">Hình 1- 7: Xét điểm làm việc ổn định(M)AB(MC)Mc</para>
+      <para id="id4977882">Tại các điểm khảo sát thì ta thấy ba điểm A, B, C là các điểm làm việc xác lập ổn định. Điểm D là điểm làm việc không ổn định.</para>
+      <para id="id4977892">Trường hợp: A:  &lt; c vì  &lt; 0 và c = 0  xác lập ổn định.</para>
+      <para id="id4643770"> B:  &gt; c vì  &gt; 0 và c1 = 0  không ổn định.</para>
+    </section>
+    <section id="id-38542647309">
+      <title>ĐỘNG HỌC CỦA HỆ TĐĐ TĐ</title>
+      <para id="id3952922">Trong hệ TĐĐ TĐ có cả các thiết bị điện + cơ, trong đó các bộ phận cơ có nhiệm vụ chuyển cơ năng từ động cơ đến bộ phận làm việc của máy sản xuất và tại đó cơ năng được biến thành công hửu ích.</para>
+      <para id="id3952935">Động cơ điện có cả phần điện (stato) và phần cơ (roto và trục).</para>
+      <para id="id3952941">BĐ ĐC TL MSXPhần điện ĐK Phần cơHình 1- 8: Sơ đồ cấu trúc hệ TĐĐ TĐ </para>
+      <para id="id4475448">Phần cơ phụ thuộc vào kết cấu, vật liệu và loại máy, chúng rất đa dạng và phức tạp, bởi vậy phải đưa về dạng điển hình đặc trưng cho các loại, phần cơ có dạng tổng quát đặc trưng đó gọi là mẫu cơ học của truyền động điện.</para>
+      <para id="id4475463">Mẫu cơ học (đơn khối) là một vật thể rắn quay xung quanh một trục với tốc độ động cơ, nó có mômen quán tính J, chịu tác động của mômen động cơ (M) và mômen cản (Mc), hình 9.</para>
+      <para id="id4475480"> MJ Hình 1- 9: Mẫu cơ họcMc </para>
+      <para id="id3846947">Tính đàn hồi lớn cũng có thể xuất hiện ở những hệ thống có mạch động học dài mặc dù trong đó không chứa một phần tử đàn hồi nào. Sự biến dạng trên từng phần tử tuy nhỏ nhưng vì số phần tử rất lớn nên đối với toàn máy nó trở nên đáng kể.</para>
+      <para id="id3846951">Trong những trường hợp trên phần cơ khí của hệ không thể thay thế tương đương bằng mẫu cơ học đơn khối mà phải thay thế bằng mẫu cơ học đa khối, hình 9b.</para>
+      <para id="id4834758">MĐ12MđhMCJ1J2Động cơKhâu đàn hồiMáy sản xuấta)F1m1Khâu đàn hồib)m2F2FđhFđhMJđCMCJCKc)Hình 1- 10: Mẫu cơ học đa khối của hệ chuyển động quay (a),chuyển động tịnh tiến (b) có khâu cơ khí đàn hồi,và hệ trục mềm đàn hồi (c). </para>
+      <para id="id3855286">Nếu quy đổi mômen và mômen quán tính về một trục tốc độ nào đó (động cơ hoặc máy sản xuất) thì trong phần lớn các trường hợp hệ truyền động có khâu đàn hồi phần cơ của nó có thể thay tương đương bởi mấu cơ học đa khối gồm 3 khâu: khâu 1 gồm rôto hoặc phần ứng của động cơ với những phần tử nối cứng với động cơ như hộp tốc độ, trống tời v.v...; khâu 2 là khâu đàn hồi không quán tính; khâu 3 là khâu cơ của máy sản xuất; như hình 1- 9b. Trong đó Mđh là mômen đàn hồi.</para>
+    </section>
+    <section id="id-841860455477">
+      <title>CÂU HỎI ÔN TẬP</title>
+      <para id="id3855322">1. Chức năng và nhiệm vụ của hệ thống truyền động điện là gì ?</para>
+      <para id="id3806142">2. Có máy loại máy sản xuất và cơ cấu công tác ?</para>
+      <para id="id3806151">3. Hệ thống truyền động điện gồm các phần tử và các khâu nào ? Lấy ví dụ minh họa ở một máy sản xuất mà các anh (chị) đã biết ?</para>
+      <para id="id3806161">4. Mômen cản hình thành từ đâu ? Đơn vị đo lường của nó ? Công thức quy đổi mômen cản từ trục của cơ cấu công tác về trục động cơ ?</para>
+      <para id="id3806172">5. Mômen quán tính là gì ? Đơn vị đo lường của nó ? Công thức tính quy đổi mômen quán tính từ tốc độ i nào đó về tốc độ của trục động cơ  ?</para>
+      <para id="id3806197">6. Thế nào là mômen cản thế năng? Đặc điểm của nó thể hiện trên đồ thị theo tốc độ ? Lấy ví dụ một cơ cấu có mômen cản thế năng.</para>
+      <para id="id3872807">7. Thế nào là mômen cản phản kháng? Lấy ví dụ một cơ cấu có mômen cản phản kháng.</para>
+      <para id="id3872814">8. Định nghĩa đặc tính cơ của máy sản xuất. Phương trình tổng quát của nó và giải tích các đại lượng trong phương trình ?</para>
+      <para id="id3872824">9. Hãy vẽ đặc tính cơ của các máy sản xuất sau: máy tiện; cần trục, máy bào, máy bơm.</para>
+      <para id="id3872832">10. Viết phương trình chuyển động cho hệ truyền động điện có phần cơ dạng mẫu cơ học đơn khối và giải thích các đại lượng trong phương trình ?</para>
+      <para id="id3872843">11. Dùng phương trình chuyển động để phân tích các trạng thái làm việc của hệ thống truyền động tương ứng với dấu của các đại lượng M và Mc ?</para>
+      <para id="id3872861">12. Định nghĩa đặc tính cơ của động cơ điện ?</para>
+      <para id="id3872867">13. Định nghĩa độ cứng đặc tính cơ ? Có thể xá định độ cứng đặc tính cơ theo những cách nào ?</para>
+      <para id="id3872876">14. Phân biệt các trạng thái động cơ và các trạng thái hãm của động cơ điện bằng những dấu hiệu nào ? Lấy vị dụ thực tế về trạng thái hãm của động cơ trên một cơ cấu mà anh (chị) đã biết ?</para>
+      <para id="id3872889">15. Chiều của dòng năng lượng sẽ như thế nào khi động cơ làm việc ở trạng thái động cơ ?</para>
+      <para id="id3872897">16. Chiều của dòng năng lượng sẽ như thế nào khi động cơ làm việc ở trạng thái máy phát ?</para>
+      <para id="id3872905">17. Điều kiện ổn định tĩnh là gì ? Phân tích một điểm làm việc xác lập ổn định tĩnh trên tọa độ [M, ] và [Mc, ].</para>
+      <para id="id5172867">18. Mẫu cơ học đơn khối là gì ? Khi nào thì dùng mẫu cơ học đơn khối để khảo sát hệ thống truyền động điện ?</para>
+      <para id="id5172877">19. Mẫu cơ học đa khối là gì ? Khi nào thì dùng mẫu cơ học đa khối để khảo sát hệ thống truyền động điện ?</para>
+    </section>
+  </content>
+</document>

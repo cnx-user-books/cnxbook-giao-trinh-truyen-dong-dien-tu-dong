@@ -1,0 +1,507 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Điều chỉnh các thông số đầu ra của hệ thống truyền động điện</title>
+  <metadata>
+  <md:content-id>m29971</md:content-id><md:title>Điều chỉnh các thông số đầu ra của hệ thống truyền động điện</md:title>
+  <md:abstract>Phần này trình bày các khái niệm chung</md:abstract>
+  <md:uuid>f6771307-3a8c-4758-9183-c9cee9e42f1f</md:uuid>
+</metadata>
+
+<content>
+    <section id="id-59178475907">
+      <title>KHÁI NIỆM CHUNG:</title>
+      <section id="id-894955052585">
+        <title>Các định nghĩa:</title>
+        <para id="id4681279">Hệ thống truyền động điện không chỉ làm nhiệm vụ biến đổi điện năng thành cơ năng, mà còn điều khiển quá trình làm việc của cơ cấu công tác theo yêu cầu công nghệ của máy sản xuất. Yêu cầu công nghệ có thể được đảm bảo nếu hệ có khả năng đặt trước các thông số gia công cho tứng công đoạn, duy trì các thông số đó với một độ chính xác nào đó (như tốc độ, mômen, gia tốc, ví trí của cơ cấu công tác …), cưỡng bức thay đổi các giá trị đó theo ý muốn, hạn chế giá trị của chúng theo mức cho phép của quá trình công nghệ hoặc theo khả năng về độ bền, độ quá tải của máy.</para>
+        <para id="id6218960">Các thông số gia công nói trên có liên quan đến mômen M và tốc độ ự của động cơ điện, có các mối quan hệ được định nghĩa:</para>
+        <section id="id-0987161944566">
+          <title>a) Các thông số đầu ra hay còn gọi là thông số được điều chỉnh: </title>
+          <para id="id5669933">Đó là mômen (M), tốc độ (ự) của động cơ, … </para>
+          <para id="id5491658">Do M và ự là 2 trục của mặt phẳng tọa độ đặc tính cơ [M, ự], nên việc điều chỉnh chúng thường gọi là “điều chỉnh tọa độ”.</para>
+        </section>
+        <section id="id-769315512811">
+          <title>b) Các thông số đầu vào hay còn gọi là thông số điều chỉnh:</title>
+          <para id="id5396636">+ Đối với động cơ điện một chiều, thông số đầu vào là điện trở phần ứng Rư (hoạc Rưf), từ thông ệ (hoặc điện áp kích từ Ukt; dòng điện kích từ Ikt) và điện áp phần ứng Uư.</para>
+          <para id="id5404564">+ Đối với động cơ điện không đồng bộ, thông số đầu vào là điện trở mạch rôto R2 (hoạc R2f), điện trở mạch stato R1, điện kháng stato x1, điện áp stato u1 vàtần số của dòng điện stato f1.</para>
+          <para id="id6218420">+ Đối với động cơ điện đồng bộ, thông số đầu vào là tần số của dòng điện stato f1.</para>
+        </section>
+        <section id="id-738587444611">
+          <title>c) Các phần tử điều khiển:</title>
+          <para id="id6001549">Là các thiết bị hoặc dụng cụ làm thay đổi các thông số đầu vào.</para>
+          <para id="id6001556">Chú ý, người ta thường gọi việc điều chỉnh các thông số đầu ra là “điều khiển động cơ điện”.</para>
+        </section>
+      </section>
+      <section id="id-731202170811">
+        <title>Mục đích điều chỉnh các thông số đầu ra của động cơ:</title>
+        <para id="id5477983">Tùy theo yêu cầu công nghệ của máy sản xuất, việc điều chỉnh M, ự nhằm thực hiện các mục đích sau:</para>
+        <para id="id6005085">+ Đặt giá trị làm việc và duy trì mức đạt đó, ví dụ duy trì tốc độ làm việc khi phụ tải thay đổi ngẫu nhiên.</para>
+        <para id="id5394224">+ Thay đổi thông số theo quy luật yêu cầu, ví dụ trong thời gian khởi động và tăng tốc động cơ thang máy từ 0 lên đến tốc độ ổn định, mômen lúc đầu phải tăng tuyến tuyến tính theo thời gian, sau đó giữ không đổi, và cuối cùng giảm tuyến tính cho đến khi M = Mc.</para>
+        <para id="id5394229">+ Hạn chế thông số ở một mức độ cho phép, ví dụ hạn chế dòng điện khởi động Ikđ ≤ Icp.</para>
+        <para id="id4680070">+ Tạo ra một quy luật chuyển động cho cơ cấu công tác (tức cho trục động cơ) theo quy luật cho trước ở đầu vào với một độ chính xác nào đó.</para>
+      </section>
+      <section id="id-997164360832">
+        <title>Điều chỉnh không tự động và điều chỉnh tự động:</title>
+        <section id="id-245284551525">
+          <title>a) Điều chỉnh không tự động:</title>
+          <para id="id5042048">Là việc thay đổi thông số đầu ra bằng cách tác động lên thông số đầu vào một cách rời rạc. Mỗi lần tác động ta có một giá trị không đổi của thông số đầu vào và tương ứng ta được một đường đặc tính cơ (nhân tạo). Khi động cơ làm việc, các nhiễu loạn (như phụ tải thay đổi, điện áp nguồn dao động, …) sẽ tác động vào hệ, nhưng thông số đầu vào vẫn giữ không đổi nên điểm làm việc của động cơ chỉ di chuyển trên một đường đặc tính cơ. </para>
+          <para id="id5397801">Người ta gọi dạng điều chỉnh này là “điều chỉnh bằng tay” hay “điều chỉnh không tự động” hoặc “điều chỉnh vòng hở”. Phương pháp điều chỉnh này đơn giản nên vẫn được dùng trong các hệ truyền động điện hiện đại, tuy nhiên nó không đảm bảo được các yêu cầu cao về chế độ công nghệ.</para>
+        </section>
+        <section id="id-681515862962">
+          <title>b) Điều chỉnh tự động:</title>
+          <para id="id5669336">Được thực hiện nhờ sự thay đổi liên tục của thông số đầu vào theo mức độ sai lệch của thông số đầu ra so với giá trị định trước, nhằm khắc phục độ sai lệch đó. Như vậy khi có tác động của nhiễu làm ảnh hưởng đến thống số đầu ra, thì thông số đầu vào sẽ thay đổi và động cơ sẽ có một đường đặc tính cơ khác, điểm làm việc của động cơ sẽ dịch chuyển từ đường đặc tính nhân tạo này sang đặc tính nhân đạo khác và vạch ra một đường đặc tính cơ của hệ điều chỉnh tự động.</para>
+          <para id="id5669340">Vì vậy có thể định nghĩa: “đặc tính cơ của hệ điều chỉnh tự động là quỹ tích của các điểm làm việc của động cơ trên vô số các đặc tính cơ của hệ điều chỉnh vòng hở”. Hay còn gọi là “quỹ đạo pha trên tọa độ đặc tính cơ”.</para>
+          <para id="id5683164">Việc thay đổi tự động thông số đầu vào được thực hiện nhờ mạch phản hồi, mạch này lấy tín hiệu từ thông số đầu ra hoặc một thông số nào đó liên quan đến đầu ra, đưa trở lại gây tác động lên thông số đầu vào, tạo thành một hệ có liên hệ kín giữa đầu ra và đầu vào. Vì vậy người ta gọi hệ này là hệ “điều chỉnh vòng kín”. Hệ điều chỉnh tự động tuy phức tạp nhưng đảm bảo các chỉ tiêu chất lượng cao.</para>
+        </section>
+        <section id="id-632609263857">
+          <title>c) Nhiễu của các thông số đầu ra:</title>
+          <para id="id5167891">Đối với các hệ truyền động và động cơ điện, có hai thông số đầu ra chủ yếu là mômen và tốc độ. Có nhiều loại nhiễu gây tác động lên các thông số này như điện áp nguồn, tần số lưới điện, nhiệt độ môI trường, hệ số tự cảm của cuộn dây, … nhưng ta quan tâm đến các tác động nhiễu loạn chủ yếu.</para>
+          <para id="id5397822">Khi điều chỉnh tốc độ, thông số được điều chỉnh là ự, thông số điều chỉnh là một trong các thông số tạo ra đặc tính nhân tạo, còn chủ yếu là phụ tải biểu thị bằng mômen cản Mc, hoặc dòng tải Ic.</para>
+          <para id="id5052334">Ngược lại, khi điều chỉnh mômen hoặc dòng điện, thông số được điều chỉnh là M hoặc I, thì nhiễu loạn chủ yếu lại là tốc độ ự. Sự ảnh hưởng qua lại giữa hai đại lượng M và ự được thể hiện bằng đường đặc tính cơ và phương trình của nó.</para>
+        </section>
+      </section>
+    </section>
+    <section id="id-212996161925">
+      <title>CÁC CHỈ TIÊU CHẤT LƯỢNG:</title>
+      <section id="id-992107914493">
+        <title>Chỉ tiêu chất lượng động (chế độ quá độ): </title>
+        <para id="id5669265">* Độ quá điều chỉnh max (max  40% hoặc có thể nhỏ hơn).</para>
+        <para id="id5405114">* Thời gian quá độ Tqđ (Tqđ càng nhỏ càng tốt).</para>
+        <para id="id5945802">* số lần dao động n ( n = 23 là tốt).</para>
+        <para id="id5478084">h ựh ≡ ựxlmaxTqđ0t5%Hình 3-1: Đặc tính quá độ</para>
+      </section>
+      <section id="id-516374008078">
+        <title>Chỉ tiêu chất lượng tĩnh (chế độ xác lập): </title>
+        <section id="id-631432355809">
+          <title>Sai số tĩnh tốc độ s% :</title>
+          <para id="id5394850">Là đại lượng đặc trưng cho sự chính xác duy trì tốc độ đặt (đ):</para>
+          <para id="id5298120"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>s</m:mi><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfrac><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>ω</m:mi></m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext>.</m:mtext><m:mtext>100</m:mtext><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:msub><m:mi fontstyle="italic">Δω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:msup><m:mi>c</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{s%= {  {ω rSub { size 8{0} }  - ω}  over  {ω rSub { size 8{0} } } }  "." "100"%=Δω rSub { size 8{c}   rSup { size 8{*} } } %= {  {1}  over  {β rSup { size 8{*} } } } } {}</m:annotation></m:semantics></m:math>(3-1)</para>
+          <para id="id6003686"> - tốc độ làm việc thực của động cơ.</para>
+          <para id="id5406135">0 - tốc độ không tải của động cơ.</para>
+          <para id="id5396834">Äực - độ sụt tốc độ khi mômen tải thay đổi Mc = 0 → Mđm.</para>
+          <para id="id5945828">Sai số này càng nhỏ, điều chỉnh càng chính xác, và lí tưởng ta có hệ điều chỉnh tuyệt đối chính xác khi S% = 0. Thực tế người ta phải thiết kế các hệ truyền động diều chỉnh có độ chính xác đáp ứng yêu cầu công nghệ của máy sản xuất, như truyền động chính của máy cắt gọt kim loại yêu cầu S% ≤ 10%, tryuền động ăn dao : S% ≤ 5%, … </para>
+        </section>
+        <section id="id-516503206696">
+          <title>Phạm vi điều chỉnh tốc độ D:</title>
+          <para id="id6218475"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= {  {w rSub { size 8{"max"} } }  over  {w rSub { size 8{"min"} } } } } {}</m:annotation></m:semantics></m:math>(3-2)</para>
+          <para id="id5169031">D càng lớn càng tốt. Tuy nhiên, giá trị max bị hạn chế bởi độ bền cơ học của động cơ, bởi điều kiện chuyển mạch. Tốc độ min bị chặn bởi yêu cầu về mômen khởi động, về khả năng quá tải và về sai số tốc độ làm việc cho phép. </para>
+          <para id="id5669288">* Ví dụ trên hình 3-2:</para>
+          <para id="id5477499">0112maxmin02Mnm2McMHình 3-2: Xác định phạm vi điều chỉnhÄực</para>
+          <para id="id5168174">Cũng có trường hợp phối hợp hai phương pháp điều chỉnh tốc độ động cơ bằng diện như: thay đổi điện áp phần ứng động cơ một chiều sẽ điều chỉnh tốc độ từ ựmin đến ựđm, và phương pháp thay đổi từ thông kích từ thì điều chỉnh tốc độ từ ựđm đến ựmax.</para>
+          <para id="id5396890">Khi đó ta có “hệ điều chỉnh hai vùng tốc độ” và đạt được dải điều chỉnh rộng:</para>
+          <para id="id5478038"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>đm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>đm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow><m:mo stretchy="false">=</m:mo><m:msub><m:mi>D</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>U</m:mi></m:mrow></m:mstyle></m:msub></m:mrow><m:mtext>.</m:mtext><m:msub><m:mi>D</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Φ</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= {  {ω rSub { size 8{ ital "đm"} } }  over  {ω rSub { size 8{"min"} } } }  cdot  {  {ω rSub { size 8{"max"} } }  over  {ω rSub { size 8{ ital "đm"} } } } =D rSub { size 8{U} }  "." D rSub { size 8{Φ} } } {}</m:annotation></m:semantics></m:math>(3-3)</para>
+          <para id="id5041513">Giả thiết các đặc tính cơ là tuyến tính, có độ cứng không đổi 1 và 2 = 1, mômen tải không đổi Mc, sai số tốc độ tưng ứng sẽ là:</para>
+          <para id="id6004452"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>01</m:mtext></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mtext>.</m:mtext><m:mtext>100</m:mtext><m:mtext/><m:mtext> ;   </m:mtext><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>02</m:mtext></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mtext>.</m:mtext><m:mtext>100</m:mtext><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{s rSub { size 8{1} } %= {  {M rSub { size 8{c} } }  over  {ω rSub { size 8{"01"} }  "." β rSub { size 8{1} } } }  "." "100"%" ;   "s rSub { size 8{2} } %= {  {M rSub { size 8{c} } }  over  {ω rSub { size 8{"02"} }  "." β rSub { size 8{2} } } }  "." "100"%} {}</m:annotation></m:semantics></m:math>(3-4)</para>
+          <para id="id4679746">Nếu gọi bội số mômen khởi động là Knm2 = Mnm2/Mc thì:</para>
+          <para id="id6004280"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>K</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext>.</m:mtext><m:mtext>100</m:mtext><m:mtext/><m:mtext> ; hay  </m:mtext><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mfenced open="" close=""><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>02</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mfenced></m:mrow><m:mtext>.</m:mtext><m:mtext>100</m:mtext><m:mtext/></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{s rSub { size 8{2} } %= {  {1}  over  {K rSub { size 8{ ital "nm"2} } } }  "." "100"%" ; hay  "s rSub { size 8{2} } %= left (1 -  {  {ω rSub { size 8{"min"} } }  over  {ω rSub { size 8{"02"} } } }  right ) "." "100"%} {}</m:annotation></m:semantics></m:math>(3-5)</para>
+          <para id="id4681166"> 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfenced open="" close=""><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mfenced></m:mrow><m:mtext>.</m:mtext><m:mfrac><m:mrow><m:msub><m:mi>M</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>c</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:msub><m:mi>K</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle><m:mn>2</m:mn></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow><m:msub><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{w rSub { size 8{"min"} } = left (1-s rSub { size 8{2} }  right ) "."  {  {M rSub { size 8{c} }  "." K rSub { size 8{ ital "nm"2} } }  over  {β rSub { size 8{2} } } } } {}</m:annotation></m:semantics></m:math> (3-6)</para>
+          <para id="id6003018">Qua (3-6) ta thấy được quan hệ giữa D, s%,  và Knm.</para>
+          <para id="id5123347">Theo khả năng quá tải, ta có thể xác định phạm vi điều chỉnh:</para>
+          <para id="id5123353"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>D</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:mfenced open="" close=""><m:mrow><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tn</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced><m:mfenced open="" close=""><m:mrow><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:mfenced></m:mfrac><m:mo stretchy="false">⋅</m:mo><m:mfrac><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tn</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{D= {  {ω rSub { size 8{"max"} } }  over  {ω rSub { size 8{"min"} } } } = {  { left (β rSub { size 8{ ital "tn"} }  rSup { size 8{*} }  - 1 right )}  over  { left (β rSub { size 8{"min"} }  rSup { size 8{*} }  - 1 right )} }  cdot  {  {β rSub { size 8{"min"} }  rSup { size 8{*} } }  over  {β rSub { size 8{ ital "tn"} }  rSup { size 8{*} } } } } {}</m:annotation></m:semantics></m:math>(3-7)</para>
+          <para id="id5298380">Trong đó: õmin = Kqt.Mđm / ự0 ; 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msubsup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>min</m:mtext></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:msub><m:mi>K</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{β rSub { size 8{"min"} }  rSup { size 8{*} } =K rSub { size 8{ ital "qt"} } } {}</m:annotation></m:semantics></m:math>; Kqt = Mnm.min / Mđm</para>
+        </section>
+      </section>
+      <section id="id-394775566055">
+        <title>Độ trơn điều chỉnh tốc độ  :</title>
+        <para id="id5477528">Là sự chênh lệch giữa 2 cấp tốc độ liền nhau:</para>
+        <para id="id5477536"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>j</m:mi><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>i</m:mi><m:mo stretchy="false">+</m:mo><m:mn>1</m:mn></m:mrow></m:mrow></m:mstyle></m:msub><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{j= {  {w rSub { size 8{i+1} } }  over  {w rSub { size 8{i} } } } } {}</m:annotation></m:semantics></m:math>(3-8)</para>
+        <para id="id5204786">Trong đó: i - là tốc độ ổn định đạt được ở cấp i.</para>
+        <para id="id5051927"> i+1- là tốc độ ổn định đạt được ở cấp kế tiếp (i+1).</para>
+        <para id="id5394730">Hệ số  càng nhỏ càng tốt, lý tưởng là   1: đó là hệ điều chỉnh vô cấp. Còn hệ điều chỉnh có cấp nếu:   1.</para>
+        <section id="id-0630011762186">
+          <title>Sự phù hợp giữa đặc tính điều chỉnh và đặc tính tải:</title>
+          <para id="id5039072">Với các động cơ thì chế độ làm việc tối ưu thường là chế độ định mức của động cơ. Để sử dụng tốt động cơ khi điều chỉnh tốc độ cần lưu ý đến các chỉ tiêu như: dòng điện động cơ không vượt quá dòng định mức của nó, đảm bảo khả năng quá tải về mômen (trong khoảng thời gian ngắn), đảm bảo yêu cầu về ổn định tĩnh khi có nhiễu v.v... trong toàn giải điều chỉnh.</para>
+          <para id="id6002637">Vì vậy khi thiết kế hệ truyền động có điều chỉnh tốc độ, người ta thường chọn hệ truyền động cũng như phương pháp điều chỉnh, sao cho đặc tính điều chỉnh của hệ bám sát yêu cầu đặc tính của tải. Nếu đảm bảo được điều kiện này thì tổn thất trong quá trình điều chỉnh sẽ nhỏ nhất.</para>
+        </section>
+      </section>
+      <section id="id-447046228305">
+        <title>Chỉ tiêu kinh tế: </title>
+        <para id="id5938805">Nhiều trường hợp, chỉ tiêu kinh tế là chỉ tiêu quyết định sự lựa chọn phương án truyền động. Hệ truyền động điện điều chỉnh tốc độ cần đạt có vốn đầu tư thấp, giá thành hạ, chi phí vận hành, bảo quản, sửa chữa ít, đặc biệt là tổn thất năng lượng khi điều chỉnh và vận hành nhỏ. Năng suất của máy sản xuất do hệ điều chỉnh mang lại.</para>
+        <para id="id5169089">Tổn thất năng lượng bao gồm tổn thất nhiệt và tổn thất cơ:</para>
+        <para id="id5169094"><m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mi>Δ</m:mi><m:mtext>W=</m:mtext><m:mrow><m:msub><m:mi fontstyle="italic">ΔW</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>j</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">+</m:mo><m:msub><m:mi fontstyle="italic">ΔW</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>c</m:mi><m:mtext>.</m:mtext><m:mi>t</m:mi></m:mrow></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mtext>      =</m:mtext><m:mrow><m:munderover><m:mo stretchy="false">∫</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub></m:mrow></m:mstyle><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:munderover><m:mrow><m:msub><m:mi>J</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>Σ</m:mi></m:mrow></m:mstyle></m:msub><m:mtext>.</m:mtext><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi>ω</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mi fontstyle="italic">dω</m:mi></m:mrow></m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mo stretchy="false">+</m:mo><m:mrow><m:munderover><m:mo stretchy="false">∫</m:mo><m:msub><m:mi>t</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>1</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>t</m:mi><m:mstyle fontsize="6pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msub></m:munderover><m:mrow><m:msub><m:mi>M</m:mi><m:mi>c</m:mi></m:msub><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mtext>.</m:mtext><m:mo stretchy="false">(</m:mo><m:msub><m:mi>ω</m:mi><m:mn>0</m:mn></m:msub></m:mrow></m:mrow></m:mstyle><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mo stretchy="false">−</m:mo><m:mi>ω</m:mi></m:mrow><m:mo stretchy="false">)</m:mo><m:mstyle fontstyle="italic"><m:mrow><m:mtext>dt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:mrow></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{Δ"W="ΔW rSub { size 8{j} } +ΔW rSub { size 8{c "." t} } }  {} # 
+"      =" Int cSub { size 8{ω rSub { size 6{1} } } }  cSup {ω rSub { size 6{2} } }  {J rSub { size 8{Σ} }  "."  \( ω rSub { size 8{0} }  - ω \) dω}  size 12{+ Int cSub {t rSub { size 6{1} } }  cSup {t rSub { size 6{2} } }  {M rSub {c}  size 12{ "."  \( ω rSub {0} } size 12{ - ω \)  ital "dt"}} } {} 
+} } {}</m:annotation></m:semantics></m:math>(3-9)</para>
+        <para id="id5682101">Việc tính toán cụ thể các chỉ tiêu liên quan nêu trên sẽ cho thấy hiệu quả kinh tế, thời gian hoàn vốn và lợi ích nhờ việc sử dụng hệ điều chỉnh đã chọn. Thường người ta căn cứ các chỉ tiêu kỹ thuật để đề xuất vài phương án điều chỉnh, sau đó tính toán kinh tế để so sánh hiệu quả và quyết định chọn hệ thống hoặc phương pháp điều chỉnh thông số đầu ra của động cơ.</para>
+      </section>
+    </section>
+    <section id="id-411603127677">
+      <title>CÁC PHƯƠNG PHÁP ĐIỀU CHỈNH TỐC ĐỘ ĐỘNG CƠ ĐIỆN MỘT CHIỀU BẰNG THAY ĐỔI THÔNG SỐ:</title>
+      <section id="id-304885700477">
+        <title>Phương pháp điều chỉnh tốc độ ĐMđl bằng cách thay đổi điện trở phụ trong mạch phần ứng:</title>
+        <para id="id5682528">Từ phương trình đặc tính cơ tổng quát:</para>
+        <para id="id6002565"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>ω</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kφ</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:mrow><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:msub><m:mtext>+R</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>­f</m:mtext></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kφ</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{ω= {  {U rSub { size 8{­} } }  over  {Kφ} }  -  {  {R rSub { size 8{­} } "+R" rSub { size 8{"­f"} } }  over  { \( Kφ \)  rSup { size 8{2} } } } M } {}</m:annotation></m:semantics></m:math>(3-10)</para>
+        <para id="id5169256">Ta thấy rằng khi thay đổi Rưf thì 0 = const còn  thay đổi, vì vậy ta sẽ được các đường đặc tính điều chỉnh có cùng 0 và dốc dần khi Rưf càng lớn, với tải như nhau thì tốc độ càng thấp (hình 3-3): </para>
+        <para id="id5491215">đm0Mc Mb)Hình 3-3: a) Sơ đồ điều chỉnh tốc độ ĐMđl bằng cách thay đổi Rưf.b) Đặc tính điều chỉnh tốc độ ĐMđl bằng cách thay đổi Rưf.RktfUư+-CktIktIưERưfa)12Rưf1Rưf2TN0</para>
+        <para id="id5476825">Như vậy: 0 &lt; Rưf1 &lt; Rưf2 &lt; ... thì đm &gt; 1 &gt; 2 &gt; ... , nhưng nếu ta tăng Rưf đến một giá trị nào đó thì sẽ làm cho M  Mc và như thế động cơ sẽ không quay được và động cơ làm việc ở chế độ ngắn mạch,  = 0. Từ lúc này, ta có thay đổi Rưf thì tốc độ vẫn bằng không, nghĩa là không điều chỉnh tốc độ động cơ được nữa, do đó phương pháp điều chỉnh này là phương pháp điều chỉnh không triệt để. </para>
+        <section id="id-528792830242">
+          
+          <para id="id5169412">
+            <!--Empty sections are illegal in CNXML 0.5.  This empty paragraph is a place holder that added as a byproduct of the word importer.-->
+          </para>
+        </section>
+      </section>
+      <section id="id-339591152319">
+        <title>Phương pháp điều chỉnh tốc độ ĐMđl bằng cách thay đổi từ thông kích từ của động cơ:</title>
+        <para id="id6001958">Từ phương trình đặc tính cơ tổng quát:</para>
+        <para id="id6001964"><m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kf</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>­</m:mi><m:mi>S</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kf</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mo stretchy="false">⇒</m:mo><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi fontstyle="italic">Dw</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{w= {  {U rSub { size 8{­} } }  over  {Kf} } - {  {R rSub { size 8{­S} } }  over  { \( Kf \)  rSup { size 8{2} } } } M }  {} # 
+ drarrow w=w rSub { size 8{0} } -Dw {} 
+} } {}</m:annotation></m:semantics></m:math>(3-11)</para>
+        <para id="id5939637">Ta thấy rằng khi thay đổi  thì 0 và  đều thay đổi, vì vậy ta sẽ được các đường đặc tính điều chỉnh dốc dần (độ cứng  càng giảm) và cao hơn đặc tính cơ tự nhiên khi  càng nhỏ, với tải như nhau thì tốc độ càng cao khi giảm từ thông  (hình 3-4): </para>
+        <para id="id5267653">đm02Mc Mn2 Mn1 Mb)Hình 3-4: a) Sơ đồ điều chỉnh tốc độ ĐMđl bằng cách thay đổi .b) Đặc tính điều chỉnh tốc độ ĐMđl bằng cách thay đổi .RktfUư+-CktIktIưEa)122010đm1đm</para>
+        <para id="id5946523">Như vậy: đm &gt; 1 &gt; 2 &gt; ... thì đm &lt; 1 &lt; 2 &lt;... , nhưng nếu giảm  quá nhỏ thì có thể làm cho tốc độ động cơ lớn quá giới hạn cho phép, hoặc làm cho điều kiện chuyển mạch bị xấu đi do dòng phần ứng tăng cao, hoặc để đảm bảo chuyển mạch bình thường thì cần phải giảm dòng phần ứng và như vậy sẽ làm cho mômen cho phép trên trục động cơ giảm nhanh, dẫn đến động cơ bị quá tải. </para>
+      </section>
+      <section id="id-779999856646">
+        <title>Phương pháp điều chỉnh tốc độ ĐMđl bằng cách thay đổi điện áp phần ứng của động cơ:</title>
+        <para id="id5053425">Từ phương trình đặc tính cơ tổng quát:</para>
+        <para id="id5053431"><m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mi fontstyle="italic">Kf</m:mi></m:mfrac><m:mo stretchy="false">−</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>­</m:mi></m:mrow></m:mstyle></m:msub><m:mrow><m:mo stretchy="false">(</m:mo><m:mi fontstyle="italic">Kf</m:mi><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:mfrac></m:mrow></m:mrow><m:mi>M</m:mi></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mo stretchy="false">⇒</m:mo><m:mrow><m:mi>w</m:mi><m:mo stretchy="false">=</m:mo><m:mrow><m:msub><m:mi>w</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mi fontstyle="italic">Dw</m:mi></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{w= {  {U rSub { size 8{­} } }  over  {Kf} } - {  {R rSub { size 8{­} } }  over  { \( Kf \)  rSup { size 8{2} } } } M }  {} # 
+ drarrow w=w rSub { size 8{0} } -Dw {} 
+} } {}</m:annotation></m:semantics></m:math>(3-12)</para>
+        <para id="id5940872">Ta thấy rằng khi thay đổi Uư thì 0 thay đổi còn  = const, vì vậy ta sẽ được các đường đặc tính điều chỉnh song song với nhau. Nhưng muốn thay đổi Uư thì phải có bộ nguồn một chiều thay đổi được điện áp ra, thường dùng các bộ biến đổi (hình 3-5): </para>
+        <para id="id5673645">đm2M’c Mc Mb)Hình 3-5: a) Sơ đồ điều chỉnh tốc độ ĐMđl bằng cách thay đổi Uư.b) Đặc tính điều chỉnh tốc độ ĐMđl bằng cách thay đổi Uư.Uưđm10đmUư~IưEa)CktIkt+-BBĐ-0đm-UưđmUư1&gt;0Uư=0U’ư1&lt;0</para>
+        <para id="id6219202">Các bộ biến đổi có thể là: Bộ biến đổi máy điện: dùng máy phát điện một chiều (F), máy điện khuếch đại (MĐKĐ); Bộ biến đổi từ: khuếch đại từ (KĐT) một pha, ba pha; Bộ biến đổi điện tử - bán dẫn: các bộ chỉnh lưu (CL) dùng tiristor, các bộ băm điện áp (BĐA) dùng tiristor, transistor, … </para>
+        <para id="id5438762">* Ví dụ 3-1:</para>
+        <para id="id5438767">Cho ĐMđl có các thông số:</para>
+        <para id="id5438778">Pđm = 29KW; Uđm = 220V; Iđm = 151A; nđm = 1000vg/ph;</para>
+        <para id="id5438816">Rư = 0,07Ù; và hệ số quá tảI Kqt = 2.</para>
+        <para id="id5438835">Hảy xác định tốc độ cực tiểu và dải điều chỉnh theo khả năng quá tải yêu cầu ?</para>
+        <para id="id5438843">* Giải:</para>
+        <para id="id5438848">Điện trở định mức của động cơ:</para>
+        <para id="id5438853">Rđm = Uđm / Iđm = 220V / 151A = 1,45Ù</para>
+        <para id="id5052697">Giá trị tương đương của điện trở phần ứng:</para>
+        <para id="id5052703">Rư* = Rư / Rđm = 0,07Ù /1,45Ù = 0,048</para>
+        <para id="id5052735">Độ cứng đặc tính cơ tự nhiên: õtn* = 1/Rư* = 20,8</para>
+        <para id="id5052759">Độ cứng đặc tính cơ thấp nhất: õmin* = Kqt = 2</para>
+        <para id="id5052779">Giá trị tương đối của tốc độ cực đại (tức tốc độ định mức của động cơ) sẽ là:</para>
+        <para id="id5052788"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:mrow><m:mrow><m:msubsup><m:mi>n</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">=</m:mo><m:msubsup><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>max</m:mtext></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msubsup></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>đm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>ω</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>n</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>đm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>n</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mo stretchy="false">=</m:mo><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">−</m:mo><m:mfrac><m:mn>1</m:mn><m:msup><m:mi>β</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:msup></m:mfrac></m:mrow></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{"max"} }  rSup { size 8{*} } =ω rSub { size 8{"max"} }  rSup { size 8{*} } = {  {ω rSub { size 8{ ital "đm"} } }  over  {ω rSub { size 8{0} } } } = {  {n rSub { size 8{ ital "đm"} } }  over  {n rSub { size 8{0} } } } =1 -  {  {1}  over  {β rSup { size 8{*} } } } } {}</m:annotation></m:semantics></m:math>= 1 - Rư* </para>
+        <para id="id5297193"> = 1 - 0,048 = 0,0952</para>
+        <para id="id5297206">Tốc độ không tải lý tưởng:</para>
+        <para id="id5297212">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msub>
+                              <m:mi>n</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mn>0</m:mn>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:mfrac>
+                              <m:msub>
+                                <m:mi>n</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>đm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:msubsup>
+                                <m:mi>n</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>đm</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mrow/>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msubsup>
+                            </m:mfrac>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mtext>1000</m:mtext>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>vg</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mo stretchy="false">/</m:mo>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>ph</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mn>0,</m:mn>
+                              <m:mtext>0952</m:mtext>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>1050</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>vg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>ph</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{0} } = {  {n rSub { size 8{ ital "đm"} } }  over  {n rSub { size 8{ ital "đm"} }  rSup { size 8{*} } } } = {  {"1000" ital "vg"/ ital "ph"}  over  {0,"0952"} } ="1050" ital "vg"/ ital "ph"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5946725">Giá trị tương đối của tốc độ cực tiểu:</para>
+        <para id="id5946731">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mrow>
+                            <m:msubsup>
+                              <m:mi>n</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>min</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msubsup>
+                            <m:mo stretchy="false">=</m:mo>
+                            <m:msubsup>
+                              <m:mi>ω</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>min</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow/>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msubsup>
+                          </m:mrow>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mrow>
+                            <m:mn>1</m:mn>
+                            <m:mo stretchy="false">−</m:mo>
+                            <m:mfrac>
+                              <m:mn>1</m:mn>
+                              <m:msubsup>
+                                <m:mi>β</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mtext>min</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mrow/>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msubsup>
+                            </m:mfrac>
+                          </m:mrow>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mrow>
+                          <m:mn>1</m:mn>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:mn>2</m:mn>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>0,5</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{"min"} }  rSup { size 8{*} } =ω rSub { size 8{"min"} }  rSup { size 8{*} } =1 -  {  {1}  over  {β rSub { size 8{"min"} }  rSup { size 8{*} } } } =1 -  {  {1}  over  {2} } =0,5} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5394018">Vậy tốc độ quay cực tiểu của động cơ là:</para>
+        <para id="id5394024">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>n</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>min</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msubsup>
+                          <m:mi>n</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mtext>min</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msubsup>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>n</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>0</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mn>0,5</m:mn>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mtext>1050</m:mtext>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>vg</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">/</m:mo>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>ph</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mtext>525</m:mtext>
+                      </m:mrow>
+                      <m:mrow>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>vg</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mo stretchy="false">/</m:mo>
+                        <m:mstyle fontstyle="italic">
+                          <m:mrow>
+                            <m:mtext>ph</m:mtext>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{n rSub { size 8{"min"} } =n rSub { size 8{"min"} }  rSup { size 8{*} }  "." n rSub { size 8{0} } =0,5 "." "1050" ital "vg"/ ital "ph"="525" ital "vg"/ ital "ph"} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5477355">Từ giá trị của tốc độ cực đại và tốc độ cực tiểu, ta rút ra phạm vi điều chỉnh tốc độ:</para>
+        <para id="id5477364">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mi>D</m:mi>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:msub>
+                              <m:mi>n</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>max</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>n</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mtext>min</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mfrac>
+                          <m:mtext>1000</m:mtext>
+                          <m:mtext>525</m:mtext>
+                        </m:mfrac>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mn>1,9</m:mn>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{D= {  {n rSub { size 8{"max"} } }  over  {n rSub { size 8{"min"} } } } = {  {"1000"}  over  {"525"} } =1,9} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id5668925">Từ biểu thức (3-7) thay õ*min = Kqt = 2; õ*tn = 20,8; ta cũng được kết quả D = 1,9.</para>
+        <para id="id5668957">Hình 3-6: Sơ đồ giải thích về phạm vi điều chỉnh tốc độ theo khả năng quá tải yêu cầu0 Mđm Mc.max = Mnm.min Mựự0õtnựđmựminÂmin</para>
+        <para id="id5945914">Qua ví dụ trên ta thấy phạm vi điều chỉnh như vậy là rất hep.</para>
+        <para id="id5945921">Tuy nhiên, nếu xét theo yêu cầu về sai số tốc độ cho phép thì dảI điều chỉnh còn hẹp hơn nữa hoặc thậm chí còn không thể điều chỉnh được tốc độ. Thực vậy, ta biết:</para>
+        <para id="id5945933">s% = Äực* = R*ưể </para>
+        <para id="id5945962">ựmin = ự0 - ực.cp ; và ự*min = 1 - s% = 1 - R*ưể </para>
+        <para id="id5668202">Nếu s%cp = 10% thì D = 1,05 ≈ 1, nghĩa là hầu như không thể điều chỉnh được.</para>
+      </section>
+    </section>
+  </content>
+</document>
