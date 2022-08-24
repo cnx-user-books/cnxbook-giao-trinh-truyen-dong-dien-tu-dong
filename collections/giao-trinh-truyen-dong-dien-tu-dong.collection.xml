@@ -1,3 +1,23 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col10827</md:content-id>  <md:title>Giáo trình truyền động điện tự động</md:title>      <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>  <md:language>vi</md:language>              <md:uuid>7e1d8585-5c52-4ab7-91f3-207bd72bb021</md:uuid>
-<md:slug>giao-trinh-truyen-dong-dien-tu-dong</md:slug>
-</metadata>  <col:content>          <col:module document="m29827"/>                            <col:module document="m29956"/>                            <col:module document="m29960"/>                            <col:module document="m29961"/>                            <col:module document="m29971"/>                            <col:module document="m29891"/>                            <col:module document="m29970"/>                            <col:module document="m30698"/>                            <col:module document="m30306"/>                            <col:module document="m30532"/>                    </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="ThS. Kh&#x1B0;&#x1A1;ng C&#xF4;ng Minh">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10827</md:content-id>
+    <md:title>Gi&#xE1;o tr&#xEC;nh truy&#x1EC1;n &#x111;&#x1ED9;ng &#x111;i&#x1EC7;n t&#x1EF1; &#x111;&#x1ED9;ng</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>
+    <md:language>vi</md:language>
+    <md:uuid>7e1d8585-5c52-4ab7-91f3-207bd72bb021</md:uuid>
+    <md:slug>giao-trinh-truyen-dong-dien-tu-dong</md:slug>
+  </metadata>
+  <col:content>
+    <col:module document="m29827"/>
+    <col:module document="m29956"/>
+    <col:module document="m29960"/>
+    <col:module document="m29961"/>
+    <col:module document="m29971"/>
+    <col:module document="m29891"/>
+    <col:module document="m29970"/>
+    <col:module document="m30698"/>
+    <col:module document="m30306"/>
+    <col:module document="m30532"/>
+  </col:content>
+</col:collection>
