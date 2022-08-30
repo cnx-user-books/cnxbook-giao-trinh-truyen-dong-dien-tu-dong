@@ -741,7 +741,7 @@
             <title>a) Hãm ngược bằng cách đưa điện trở phụ lớn vào mạch rôto:</title>
             <para id="id4521378">Động cơ đang làm việc ở điểm A, ta đóng thêm điện trở hãm lớn (Rhn&gt; = R2f&gt;) vào mạch rôto, lúc này mômen động cơ giảm (M &lt; Mc) nên động cơ bị giảm tốc độ do sức cản của tải. Động cơ sẽ chuyển sang điểm B, rồi C và nếu tải là thế năng thì động cơ sẽ làm việc ổn định ở điểm D (ựD = ựôđ ngược chiều với tốc độ tại điểm A) trên đặc tính cơ có thêm điện trở hãm Rhn&gt;, và đoạn CD là đoạn hãm ngược, động cơ làm việc như một máy phát nối tiếp với lưới điện (hình 2-37). Động cơ vừa tiêu thụ điện từ lưới vứa sử dụng năng lượng thừa từ tải để tạo ra mômen hãm.</para>
             <para id="id4521444">Với:
-<m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mrow><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mrow><m:mrow><m:msubsup><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>'</m:mi></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:msup><m:mrow><m:mn>2f</m:mn><m:mo stretchy="false">&gt;</m:mo><m:mrow/></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mi>'</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:msub><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext>  ;    </m:mtext></m:mrow></m:mrow><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:msub><m:mtext>và     M</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mfrac><m:msubsup><m:mn>3U</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1f</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:msub><m:mn>2ω</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0">alignl { stack {
+<m:math><m:semantics><m:mtable><m:mtr><m:mtd><m:mrow><m:msub><m:mi>s</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mrow><m:mrow><m:msubsup><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mi>'</m:mi></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">+</m:mo><m:mfrac><m:msub><m:mi>R</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:msup><m:mrow><m:mn>2f</m:mn><m:mo stretchy="false">&gt;</m:mo><m:mrow/></m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mi>'</m:mi></m:mrow></m:mstyle></m:msup></m:mrow></m:mstyle></m:msub><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mfrac></m:mrow><m:mtext>  ;    </m:mtext></m:mrow></m:mrow><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:mtable><m:mtr><m:mtd><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle><m:mrow><m:msub><m:mtext>và     M</m:mtext><m:mstyle fontsize="8pt"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">≈</m:mo><m:mfrac><m:msubsup><m:mn>3U</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>1f</m:mn></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mrow><m:msub><m:mn>2ω</m:mn><m:mstyle fontsize="8pt"><m:mrow><m:mn>0</m:mn></m:mrow></m:mstyle></m:msub><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>nm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mfrac></m:mrow><m:mrow/></m:mtd></m:mtr></m:mtable><m:mrow/></m:mrow></m:mtd></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0">alignl { stack {
  size 12{s rSub { size 8{ ital "th"} }  approx  {  {R rSub { size 8{2} }  rSup { size 8{'} } +R rSub { size 8{2f&gt;} }  rSup { size 8{'} } }  over  {X rSub { size 8{ ital "nm"} } } } "  ;    "}  {} # 
 "và     M" rSub { size 8{"th"} }  approx  {  {3U rSub { size 8{1f} }  rSup { size 8{2} } }  over  {2ω rSub { size 8{0} } X rSub { size 8{ ital "nm"} } } }  {} 
 } } {}</m:annotation></m:semantics></m:math>(2-87)</para>
@@ -955,7 +955,7 @@
                                     <m:mi>E</m:mi>
                                     <m:mmultiscripts>
                                       <m:mtext/>
-                                      <m:mprescripts/>
+                                      <m:none/><m:none/><m:mprescripts/>
                                       <m:mstyle fontsize="8pt">
                                         <m:mrow>
                                           <m:mrow>
@@ -1187,7 +1187,7 @@
                     <m:mrow>
                       <m:mtable>
                         <m:mtr>
-                          <m:mrow>
+                          <m:mtd>
                             <m:mstyle fontsize="12pt">
                               <m:mrow>
                                 <m:mrow>
@@ -1207,7 +1207,7 @@
                                           <m:mi>M</m:mi>
                                           <m:mmultiscripts>
                                             <m:mtext/>
-                                            <m:mprescripts/>
+                                            <m:none/><m:none/><m:mprescripts/>
                                             <m:mstyle fontsize="8pt">
                                               <m:mrow>
                                                 <m:mrow>
@@ -1285,10 +1285,10 @@
                               </m:mrow>
                             </m:mstyle>
                             <m:mrow/>
-                          </m:mrow>
+                          </m:mtd>
                         </m:mtr>
                         <m:mtr>
-                          <m:mrow>
+                          <m:mtd>
                             <m:mrow>
                               <m:mrow>
                                 <m:mtext/>
@@ -1342,7 +1342,7 @@
                             <m:mi>,</m:mi>
                             <m:mn>4A</m:mn>
                             <m:mrow/>
-                          </m:mrow>
+                          </m:mtd>
                         </m:mtr>
                       </m:mtable>
                       <m:mrow/>
